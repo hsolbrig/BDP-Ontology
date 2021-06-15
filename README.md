@@ -39,5 +39,5 @@ https://www.cs.man.ac.uk/~rector/papers/Whats-in-a-code/Whats-in-a-code-rector-c
 
 Blending RDF and OWL
 
-Github: https://github.com/BD2KOnFHIR/BLENDINGFHIRandRDF
+Github: https://github.com/BD2KOnFHIR/BLENDINGFHIRandRDF <\br>
 Paper: https://jhu.pure.elsevier.com/en/publications/blending-fhir-rdf-and-owl
