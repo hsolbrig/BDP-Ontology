@@ -23,21 +23,21 @@ https://protege.stanford.edu/
 https://www.w3.org/TR/rdf11-primer/
 
 
-**3 Papers related to our project:
+**3 Papers related to our project:**
 
-**Previous approaches:
+**Previous approaches:**
 
 https://www.w3.org/TR/swbp-specified-values/
 
 https://www.cs.man.ac.uk/~rector/papers/Terminology-binding-final-revision-embedded-single-rector%20copy.pdf
 
-**Most recent approach (we're trying to enhance this):
+**Most recent approach (we're trying to enhance this):**
 
 https://www.cs.man.ac.uk/~rector/papers/Whats-in-a-code/Whats-in-a-code-rector-corrected.pdf
 
 
 
-**Blending RDF and OWL
+**Blending RDF and OWL**
 
 Github: https://github.com/BD2KOnFHIR/BLENDINGFHIRandRDF <br>
 Paper: https://jhu.pure.elsevier.com/en/publications/blending-fhir-rdf-and-owl
