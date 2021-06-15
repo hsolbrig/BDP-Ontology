@@ -1,7 +1,7 @@
 # BDP-Ontology
 
 
-<TODO> Project description, research questions & objectives to be updated.
+//TODO: Project description, research questions & objectives to be updated.
 
 
 
