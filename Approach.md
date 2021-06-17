@@ -63,6 +63,25 @@ Left Femur) and, possibly, a medication prescription example.
 Using these examples, we will use the appropriate set of ontologies, which will include SNOMED-CT, the NCIt or Mondo and whatever
 other ontologies may be needed.  
 
+We will use Protege to examine and edit each of these ontologies, providing whatever additional DL statements that may be necessary.
+[SoloOntology](https://github.com/hsolbrig/soloexample/blob/main/data/SoloOntology.owl) has a small example of one such set
+
+We will then use small prototypes to arrive at a first approximation of the algorithm needed to produce the accompanying 
+"proxy individuals" (see: [SoloCodeSets](https://github.com/hsolbrig/soloexample/blob/main/data/SoloCodesets.owl) for a
+first cut at an example). Note that we may need to draw on the value set definitions themselves to support this task.  Also
+note that the development of the proxy individuals may turn out to be as important an ontology engineering exercise as the
+creation of the ontology itself.
+
+Once we have an approximation, we will use FunOwl in combination with the source ontologies and other material to produce 
+first approximations of complete proxy value set spaces.  
+
+We will then use these approximations, the original ontology and sample data records in RDF to test the relative performance of
+the reasoning process.  For our first cut at this we intend to use very coarse measurements, starting with the amount of time
+it takes to (incrementally) classify the ontology itself, the ontology + the proxy individuals and, finally, the ontology + the
+proxy individuals + sample data records.
+
+We will then summarize our findings in the form of a poster and, if time permits, a paper.
+
 
 ## Definitions
 * __composite concept__ -
