@@ -2,7 +2,7 @@
 A novel approach has recently been proposed for addressing what has been referred to as the "TermInfo Problem".  The "Terminfo Problem"
 has focused on how clinical data records can be classified, compared and translated when information is represented in different levels of
 granularity.  While some tools exist and some work has been done in the area of classfication and comparison https://github.com/BD2KOnFHIR/BLENDINGFHIRandRDF,
-(CSIRO OntoServer), (quick literature search), the translation portion of the problem has remained relatively unaddressed.
+(CSIRO OntoServer), (quick literature search including Ronald's paper), the translation portion of the problem has remained relatively unaddressed.
 
 We are proposing an approach to the translation problem that utilizes the notion of "proxy individuals" -- placeholders that 
 represent the "unsaid" components of a data record, and can be used by a description logic (DL) reasoner to assemble any
