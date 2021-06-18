@@ -41,3 +41,13 @@ https://www.cs.man.ac.uk/~rector/papers/Whats-in-a-code/Whats-in-a-code-rector-c
 
 Github: https://github.com/BD2KOnFHIR/BLENDINGFHIRandRDF <br>
 Paper: https://jhu.pure.elsevier.com/en/publications/blending-fhir-rdf-and-owl
+
+
+
+
+
+Snorocket install
+
+https://aehrc.com/snorocket/
+
+Go to the Maven Central Repository and download the latest as snorocket-protege-4.0.1-jar-with-dependencies.jar and then copy it into Protege-5.5.0/Protege.app/Contents/Java/plugins
