@@ -1,8 +1,6 @@
 # BDP-Ontology
 
-
-//TODO: Project description, research questions & objectives to be updated.
-
+Refer to Approach.md for detailed information.
 
 
 # Background
@@ -44,10 +42,45 @@ Paper: https://jhu.pure.elsevier.com/en/publications/blending-fhir-rdf-and-owl
 
 
 
+# TODO (6/18/2021)
 
+
+1. Download: Copy of NCIT
+https://evs.nci.nih.gov/ftp1/NCI_Thesaurus/
+<br>
+A: "Thesaurus.OWL.zip"<br>
+AND<br>
+B: "ThesaurusInf_21.05d.OWL.zip"
+
+2. Load B into Protege and examine structures, be familiar with Protege. (we'll also load A later once we expand memory space for Protege)
+
+3. Download: Copy of SNOMED-CT
+
+To do this, you have to sign-up, get license, and download international release in rf2 format.
+
+4. Download: https://github.com/IHTSDO/classification-service
+
+Then, use this to convert rf2 to owl format.
+
+5. Get reasoner plugin ELK and Snorocket
+
+ELK can be downloaded by File>Check for plugin
 
 Snorocket install
 
 https://aehrc.com/snorocket/
 
-Go to the Maven Central Repository and download the latest as snorocket-protege-4.0.1-jar-with-dependencies.jar and then copy it into Protege-5.5.0/Protege.app/Contents/Java/plugins
+Go to the Maven Central Repository and download the latest as snorocket-protege-4.0.1-jar-with-dependencies.jar and then copy it into Protege-
+5.5.0/Protege.app/Contents/Java/plugins
+
+6. Change Memory Setting (To be informed further)
+
+7. Read Mondo Paper
+
+8. Read through background stuff more to familarize with concepts like equivalent class, subclass, protege...
+
+9. Read through BlendingFHIRandRDF tutorial.
+
+
+
+
