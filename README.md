@@ -45,7 +45,7 @@ Paper: https://jhu.pure.elsevier.com/en/publications/blending-fhir-rdf-and-owl
 # TODO (6/18/2021)
 
 
-1. Download: Copy of NCIT
+##1. Download: Copy of NCIT
 https://evs.nci.nih.gov/ftp1/NCI_Thesaurus/
 <br>
 A: "Thesaurus.OWL.zip"<br>
