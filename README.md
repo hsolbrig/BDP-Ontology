@@ -56,7 +56,7 @@ AND<br>
 B: "ThesaurusInf_21.05d.OWL.zip"
 
 ## 2. Load B into Protege and examine structures, be familiar with Protege. 
-We'll also load A later once we expand memory space for Protege, and run reasoner on A.
+Load A and run reasoner. It should give same thing as B.
 
 ## 3. Download
 
