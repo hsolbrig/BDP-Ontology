@@ -83,7 +83,24 @@ Go to the Maven Central Repository and download the latest as snorocket-protege-
 
 ## 6. Change Memory Setting 
 
-(To be informed further)
+edit Protege-5.5.0/Protégé.app/Contents/Info.plist
+```
+
+<array>
+            <string>-Dapple.laf.useScreenMenuBar=true</string>
+            <string>-Xss16M</string>
+            <string>-Xmx8G</string>
+            <string>-Xdock:name=Protégé</string>
+            <string>-DentityExpansionLimit=100000000</string>
+            <string>-Dlogback.configurationFile=conf/logback.xml</string>
+            <string>-Dfile.encoding=UTF-8</string>
+            <string>-XX:CompileCommand=exclude,javax/swing/text/GlyphView,getBreakSpot</string>
+        </array>
+```
+
+The element with "-Xmx" in it - change the current setting to "-Xmx8G"   -- this is assuming that your machine has at least 8GB of memory.
+        
+        
 
 ## 7. Read 
 
