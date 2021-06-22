@@ -62,7 +62,9 @@ We'll also load A later once we expand memory space for Protege, and run reasone
 
 Copy of SNOMED-CT
 
-To do this, you have to sign-up, get license, and download international release in rf2 format.
+https://www.nlm.nih.gov/healthit/snomedct/index.html
+
+To do this, you have to sign-up, get license (not sure if needed?), and download international release in rf2 format.
 
 ## 4. Download 
 
