@@ -43,7 +43,7 @@ Paper: https://jhu.pure.elsevier.com/en/publications/blending-fhir-rdf-and-owl
 <br>
 <br>
 
-# TODO (6/18/2021)
+# TODO (6/18/2021 ~ 6/27/2021)
 
 
 ## 1. Download
