@@ -64,7 +64,7 @@ Copy of SNOMED-CT
 
 https://www.nlm.nih.gov/healthit/snomedct/index.html
 
-To do this, you have to sign-up, get license (not sure if needed?), and download international release in rf2 format.
+To do this, you have to sign-up, get license (if needed), and download international release in rf2 format.
 
 ## 4. Download 
 
