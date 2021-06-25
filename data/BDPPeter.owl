@@ -1,0 +1,76 @@
+Prefix(:=<http://www.semanticweb.org/hsolbrig/ontologies/2021/5/untitled-ontology-11#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://www.semanticweb.org/hsolbrig/ontologies/2021/5/untitled-ontology-11>
+Import(<http://www.semanticweb.org/hsolbrig/ontologies/2021/5/untitled-ontology-10>)
+Import(<http://www.semanticweb.org/hsolbrig/ontologies/2021/5/untitled-ontology-12>)
+
+Declaration(NamedIndividual(<http://ontologies-r.us/bdp-ontology-1/John>))
+Declaration(NamedIndividual(<http://ontologies-r.us/bdp-ontology-1/Peter>))
+Declaration(NamedIndividual(<http://ontologies-r.us/bdp-ontology-1/PetersAwesomePhotography>))
+Declaration(NamedIndividual(<http://ontologies-r.us/bdp-ontology-1/PetersBasementEmbalming>))
+Declaration(NamedIndividual(<http://ontologies-r.us/bdp-ontology-1/PetersCrazyWoodworking>))
+Declaration(NamedIndividual(<http://ontologies-r.us/bdp-ontology-1/PetersInorganicGardening>))
+Declaration(NamedIndividual(<http://ontologies-r.us/bdp-ontology-1/Sally>))
+Declaration(NamedIndividual(<http://ontologies-r.us/bdp-ontology-1/SallysTubOLard>))
+Declaration(NamedIndividual(<http://ontologies-r.us/bdp-ontology-1/SallysWeirdHobby>))
+Declaration(NamedIndividual(<http://ontologies-r.us/bdp-ontology-1/a1>))
+
+
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: <http://ontologies-r.us/bdp-ontology-1/John> (<http://ontologies-r.us/bdp-ontology-1/John>)
+
+ClassAssertion(<http://ontologies-r.us/bdp-ontology-1/Person> <http://ontologies-r.us/bdp-ontology-1/John>)
+ObjectPropertyAssertion(<http://ontologies-r.us/bdp-ontology-1/hasHobby> <http://ontologies-r.us/bdp-ontology-1/John> <http://ontologies-r.us/bdp-ontology-1/a1>)
+DataPropertyAssertion(<http://ontologies-r.us/bdp-ontology-1/age> <http://ontologies-r.us/bdp-ontology-1/John> "17"^^xsd:integer)
+DataPropertyAssertion(<http://ontologies-r.us/bdp-ontology-1/name> <http://ontologies-r.us/bdp-ontology-1/John> "John")
+
+# Individual: <http://ontologies-r.us/bdp-ontology-1/Peter> (<http://ontologies-r.us/bdp-ontology-1/Peter>)
+
+ClassAssertion(<http://ontologies-r.us/bdp-ontology-1/Person> <http://ontologies-r.us/bdp-ontology-1/Peter>)
+ObjectPropertyAssertion(<http://ontologies-r.us/bdp-ontology-1/hasHobby> <http://ontologies-r.us/bdp-ontology-1/Peter> <http://ontologies-r.us/bdp-ontology-1/PetersAwesomePhotography>)
+ObjectPropertyAssertion(<http://ontologies-r.us/bdp-ontology-1/hasHobby> <http://ontologies-r.us/bdp-ontology-1/Peter> <http://ontologies-r.us/bdp-ontology-1/PetersBasementEmbalming>)
+ObjectPropertyAssertion(<http://ontologies-r.us/bdp-ontology-1/hasHobby> <http://ontologies-r.us/bdp-ontology-1/Peter> <http://ontologies-r.us/bdp-ontology-1/PetersCrazyWoodworking>)
+ObjectPropertyAssertion(<http://ontologies-r.us/bdp-ontology-1/hasHobby> <http://ontologies-r.us/bdp-ontology-1/Peter> <http://ontologies-r.us/bdp-ontology-1/PetersInorganicGardening>)
+ObjectPropertyAssertion(<http://ontologies-r.us/bdp-ontology-1/parentOf> <http://ontologies-r.us/bdp-ontology-1/Peter> <http://ontologies-r.us/bdp-ontology-1/John>)
+
+# Individual: <http://ontologies-r.us/bdp-ontology-1/PetersAwesomePhotography> (<http://ontologies-r.us/bdp-ontology-1/PetersAwesomePhotography>)
+
+ClassAssertion(<http://ontologies-r.us/bdp-ontology-1/Photography> <http://ontologies-r.us/bdp-ontology-1/PetersAwesomePhotography>)
+
+# Individual: <http://ontologies-r.us/bdp-ontology-1/PetersBasementEmbalming> (<http://ontologies-r.us/bdp-ontology-1/PetersBasementEmbalming>)
+
+ClassAssertion(<http://ontologies-r.us/bdp-ontology-1/Embalming> <http://ontologies-r.us/bdp-ontology-1/PetersBasementEmbalming>)
+
+# Individual: <http://ontologies-r.us/bdp-ontology-1/PetersCrazyWoodworking> (<http://ontologies-r.us/bdp-ontology-1/PetersCrazyWoodworking>)
+
+ClassAssertion(<http://ontologies-r.us/bdp-ontology-1/WoodWorking> <http://ontologies-r.us/bdp-ontology-1/PetersCrazyWoodworking>)
+
+# Individual: <http://ontologies-r.us/bdp-ontology-1/PetersInorganicGardening> (<http://ontologies-r.us/bdp-ontology-1/PetersInorganicGardening>)
+
+ClassAssertion(<http://ontologies-r.us/bdp-ontology-1/Gardening> <http://ontologies-r.us/bdp-ontology-1/PetersInorganicGardening>)
+
+# Individual: <http://ontologies-r.us/bdp-ontology-1/Sally> (<http://ontologies-r.us/bdp-ontology-1/Sally>)
+
+ObjectPropertyAssertion(<http://ontologies-r.us/bdp-ontology-1/hasHobby> <http://ontologies-r.us/bdp-ontology-1/Sally> <http://ontologies-r.us/bdp-ontology-1/SallysWeirdHobby>)
+
+# Individual: <http://ontologies-r.us/bdp-ontology-1/SallysWeirdHobby> (<http://ontologies-r.us/bdp-ontology-1/SallysWeirdHobby>)
+
+ObjectPropertyAssertion(<http://ontologies-r.us/bdp-ontology-1/utilizes> <http://ontologies-r.us/bdp-ontology-1/SallysWeirdHobby> <http://ontologies-r.us/bdp-ontology-1/SallysTubOLard>)
+
+# Individual: <http://ontologies-r.us/bdp-ontology-1/a1> (<http://ontologies-r.us/bdp-ontology-1/a1>)
+
+ClassAssertion(<http://ontologies-r.us/bdp-ontology-1/WoodWorking> <http://ontologies-r.us/bdp-ontology-1/a1>)
+
+
+)

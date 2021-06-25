@@ -1,0 +1,31 @@
+Prefix(:=<http://www.semanticweb.org/hsolbrig/ontologies/2021/5/untitled-ontology-10#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://www.semanticweb.org/hsolbrig/ontologies/2021/5/untitled-ontology-10>
+
+Declaration(Class(<http://ontologies-r.us/bdp-ontology-1/Person>))
+Declaration(ObjectProperty(<http://ontologies-r.us/bdp-ontology-1/parentOf>))
+Declaration(DataProperty(<http://ontologies-r.us/bdp-ontology-1/age>))
+Declaration(DataProperty(<http://ontologies-r.us/bdp-ontology-1/name>))
+
+############################
+#   Data Properties
+############################
+
+# Data Property: <http://ontologies-r.us/bdp-ontology-1/age> (<http://ontologies-r.us/bdp-ontology-1/age>)
+
+DataPropertyRange(<http://ontologies-r.us/bdp-ontology-1/age> xsd:integer)
+
+# Data Property: <http://ontologies-r.us/bdp-ontology-1/name> (<http://ontologies-r.us/bdp-ontology-1/name>)
+
+DataPropertyDomain(<http://ontologies-r.us/bdp-ontology-1/name> DataSomeValuesFrom(<http://ontologies-r.us/bdp-ontology-1/name> xsd:string))
+
+
+
+
+)

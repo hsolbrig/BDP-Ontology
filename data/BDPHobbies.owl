@@ -1,0 +1,76 @@
+Prefix(:=<http://www.semanticweb.org/hsolbrig/ontologies/2021/5/untitled-ontology-12#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://www.semanticweb.org/hsolbrig/ontologies/2021/5/untitled-ontology-12>
+
+Declaration(Class(<http://ontologies-r.us/bdp-ontology-1/Embalming>))
+Declaration(Class(<http://ontologies-r.us/bdp-ontology-1/Gardening>))
+Declaration(Class(<http://ontologies-r.us/bdp-ontology-1/Hobby>))
+Declaration(Class(<http://ontologies-r.us/bdp-ontology-1/Hobbyist>))
+Declaration(Class(<http://ontologies-r.us/bdp-ontology-1/Material>))
+Declaration(Class(<http://ontologies-r.us/bdp-ontology-1/Photography>))
+Declaration(Class(<http://ontologies-r.us/bdp-ontology-1/Wood>))
+Declaration(Class(<http://ontologies-r.us/bdp-ontology-1/WoodWorker>))
+Declaration(Class(<http://ontologies-r.us/bdp-ontology-1/WoodWorking>))
+Declaration(ObjectProperty(<http://ontologies-r.us/bdp-ontology-1/hasHobby>))
+Declaration(ObjectProperty(<http://ontologies-r.us/bdp-ontology-1/utilizes>))
+
+############################
+#   Object Properties
+############################
+
+# Object Property: <http://ontologies-r.us/bdp-ontology-1/hasHobby> (<http://ontologies-r.us/bdp-ontology-1/hasHobby>)
+
+ObjectPropertyRange(<http://ontologies-r.us/bdp-ontology-1/hasHobby> <http://ontologies-r.us/bdp-ontology-1/Hobby>)
+
+# Object Property: <http://ontologies-r.us/bdp-ontology-1/utilizes> (<http://ontologies-r.us/bdp-ontology-1/utilizes>)
+
+ObjectPropertyRange(<http://ontologies-r.us/bdp-ontology-1/utilizes> <http://ontologies-r.us/bdp-ontology-1/Material>)
+
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://ontologies-r.us/bdp-ontology-1/Embalming> (<http://ontologies-r.us/bdp-ontology-1/Embalming>)
+
+SubClassOf(<http://ontologies-r.us/bdp-ontology-1/Embalming> <http://ontologies-r.us/bdp-ontology-1/Hobby>)
+
+# Class: <http://ontologies-r.us/bdp-ontology-1/Gardening> (<http://ontologies-r.us/bdp-ontology-1/Gardening>)
+
+SubClassOf(<http://ontologies-r.us/bdp-ontology-1/Gardening> <http://ontologies-r.us/bdp-ontology-1/Hobby>)
+
+# Class: <http://ontologies-r.us/bdp-ontology-1/Hobby> (<http://ontologies-r.us/bdp-ontology-1/Hobby>)
+
+SubClassOf(<http://ontologies-r.us/bdp-ontology-1/Hobby> ObjectSomeValuesFrom(<http://ontologies-r.us/bdp-ontology-1/utilizes> <http://ontologies-r.us/bdp-ontology-1/Material>))
+
+# Class: <http://ontologies-r.us/bdp-ontology-1/Hobbyist> (<http://ontologies-r.us/bdp-ontology-1/Hobbyist>)
+
+EquivalentClasses(<http://ontologies-r.us/bdp-ontology-1/Hobbyist> ObjectMinCardinality(1 <http://ontologies-r.us/bdp-ontology-1/hasHobby>))
+
+# Class: <http://ontologies-r.us/bdp-ontology-1/Photography> (<http://ontologies-r.us/bdp-ontology-1/Photography>)
+
+SubClassOf(<http://ontologies-r.us/bdp-ontology-1/Photography> <http://ontologies-r.us/bdp-ontology-1/Hobby>)
+
+# Class: <http://ontologies-r.us/bdp-ontology-1/Wood> (<http://ontologies-r.us/bdp-ontology-1/Wood>)
+
+SubClassOf(<http://ontologies-r.us/bdp-ontology-1/Wood> <http://ontologies-r.us/bdp-ontology-1/Material>)
+
+# Class: <http://ontologies-r.us/bdp-ontology-1/WoodWorker> (<http://ontologies-r.us/bdp-ontology-1/WoodWorker>)
+
+SubClassOf(<http://ontologies-r.us/bdp-ontology-1/WoodWorker> ObjectSomeValuesFrom(<http://ontologies-r.us/bdp-ontology-1/hasHobby> <http://ontologies-r.us/bdp-ontology-1/WoodWorking>))
+
+# Class: <http://ontologies-r.us/bdp-ontology-1/WoodWorking> (Wood Working)
+
+AnnotationAssertion(rdfs:label <http://ontologies-r.us/bdp-ontology-1/WoodWorking> "Wood Working")
+SubClassOf(<http://ontologies-r.us/bdp-ontology-1/WoodWorking> <http://ontologies-r.us/bdp-ontology-1/Hobby>)
+SubClassOf(<http://ontologies-r.us/bdp-ontology-1/WoodWorking> ObjectSomeValuesFrom(<http://ontologies-r.us/bdp-ontology-1/utilizes> <http://ontologies-r.us/bdp-ontology-1/Wood>))
+
+
+)
