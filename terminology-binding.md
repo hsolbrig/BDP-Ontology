@@ -114,6 +114,18 @@ TBD: Discuss fourth issue separately.
 
 Functional syntax for [Model of Meaning](data/ModelOfMeaning.owl)
 
+One will note that the model of meaning is completely decoupled from both the  
+model of codes and the information model. It would have been interesting to see what the authors would
+have done with a slightly more inclusive model that included, say, the notion of a "Person" or "Patient".
+Would they have accepted something in the form of `ClassAssertion( o:Person :Joe)`?  In an information model,
+one would expect `:Joe` to have some sort of unique identifier, which, formally, we would use to create the
+appropriate URI for Joe.  As an example, if the data record asserted: `"id": "p12345"` for Joe, we might
+use this to assemple a URI of a form such as "http://memorial.hospital.org/patient/p12345" and refer to it
+as `:p12345` instead of our placeholder, `:Joe`.
+
+What I wouldn't expect the authors to do, however, is to create an infrastructure similar to what is described
+in this paper to allow `ObjectPropertyAssertion( bdptc:sub_code_of bdptc:code_for_patient :p12345 )`.
+
 Notes:
 1. We need to make sure that the last assertion is as the authors intended.  This is kind of an
    interesting assertion -- that every instance of a `diabetic brittleness state` is also an instance
