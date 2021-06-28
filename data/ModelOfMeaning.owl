@@ -1,0 +1,87 @@
+Prefix(:=<http://ontologies.r.us/bdp/terminology-binding#>)
+Prefix(tb:=<http://ontologies.r.us/bdp/terminology-binding/>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://ontologies.r.us/bdp/terminology-binding>
+
+Declaration(Class(<http://ontologies-r.us/bdp/terminology-binding/Brittle>))
+Declaration(Class(<http://ontologies-r.us/bdp/terminology-binding/Brittleness>))
+Declaration(Class(<http://ontologies-r.us/bdp/terminology-binding/Brittleness_state>))
+Declaration(Class(<http://ontologies-r.us/bdp/terminology-binding/Damage>))
+Declaration(Class(<http://ontologies-r.us/bdp/terminology-binding/Diabetes>))
+Declaration(Class(<http://ontologies-r.us/bdp/terminology-binding/Diabetes_type_1>))
+Declaration(Class(<http://ontologies-r.us/bdp/terminology-binding/Diabetes_type_2>))
+Declaration(Class(<http://ontologies-r.us/bdp/terminology-binding/Diabetic_brittleness>))
+Declaration(Class(<http://ontologies-r.us/bdp/terminology-binding/Diabetic_brittleness_state>))
+Declaration(Class(<http://ontologies-r.us/bdp/terminology-binding/Disorder>))
+Declaration(Class(<http://ontologies-r.us/bdp/terminology-binding/Insulin>))
+Declaration(Class(<http://ontologies-r.us/bdp/terminology-binding/Insulin_metabolism>))
+Declaration(Class(<http://ontologies-r.us/bdp/terminology-binding/Metabolic_Disorder>))
+Declaration(Class(<http://ontologies-r.us/bdp/terminology-binding/Pancreatic_islet_cells>))
+Declaration(Class(<http://ontologies-r.us/bdp/terminology-binding/Reduced_effectiveness>))
+Declaration(Class(<http://ontologies-r.us/bdp/terminology-binding/Resistance>))
+Declaration(Class(<http://ontologies-r.us/bdp/terminology-binding/Well_controlled>))
+Declaration(ObjectProperty(<http://ontologies-r.us/bdp/terminology-binding/has_locus>))
+Declaration(ObjectProperty(<http://ontologies-r.us/bdp/terminology-binding/has_quality>))
+Declaration(ObjectProperty(<http://ontologies-r.us/bdp/terminology-binding/has_state>))
+Declaration(ObjectProperty(<http://ontologies-r.us/bdp/terminology-binding/is_caused_by>))
+Declaration(ObjectProperty(<http://ontologies-r.us/bdp/terminology-binding/is_quality_of>))
+Declaration(ObjectProperty(<http://ontologies-r.us/bdp/terminology-binding/is_state_of>))
+############################
+#   Object Properties
+############################
+
+# Object Property: <http://ontologies-r.us/bdp/terminology-binding/has_quality> (<http://ontologies-r.us/bdp/terminology-binding/has_quality>)
+
+InverseObjectProperties(<http://ontologies-r.us/bdp/terminology-binding/has_quality> <http://ontologies-r.us/bdp/terminology-binding/is_quality_of>)
+
+# Object Property: <http://ontologies-r.us/bdp/terminology-binding/has_state> (<http://ontologies-r.us/bdp/terminology-binding/has_state>)
+
+InverseObjectProperties(<http://ontologies-r.us/bdp/terminology-binding/has_state> <http://ontologies-r.us/bdp/terminology-binding/is_state_of>)
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://ontologies-r.us/bdp/terminology-binding/Brittle> (<http://ontologies-r.us/bdp/terminology-binding/Brittle>)
+
+DisjointClasses(<http://ontologies-r.us/bdp/terminology-binding/Brittle> <http://ontologies-r.us/bdp/terminology-binding/Well_controlled>)
+
+# Class: <http://ontologies-r.us/bdp/terminology-binding/Diabetes> (<http://ontologies-r.us/bdp/terminology-binding/Diabetes>)
+
+SubClassOf(<http://ontologies-r.us/bdp/terminology-binding/Diabetes> <http://ontologies-r.us/bdp/terminology-binding/Metabolic_Disorder>)
+SubClassOf(<http://ontologies-r.us/bdp/terminology-binding/Diabetes> ObjectExactCardinality(1 <http://ontologies-r.us/bdp/terminology-binding/has_quality> <http://ontologies-r.us/bdp/terminology-binding/Brittleness>))
+
+# Class: <http://ontologies-r.us/bdp/terminology-binding/Diabetes_type_1> (<http://ontologies-r.us/bdp/terminology-binding/Diabetes_type_1>)
+
+SubClassOf(<http://ontologies-r.us/bdp/terminology-binding/Diabetes_type_1> <http://ontologies-r.us/bdp/terminology-binding/Diabetes>)
+SubClassOf(<http://ontologies-r.us/bdp/terminology-binding/Diabetes_type_1> ObjectSomeValuesFrom(<http://ontologies-r.us/bdp/terminology-binding/is_caused_by> ObjectIntersectionOf(<http://ontologies-r.us/bdp/terminology-binding/Damage> ObjectSomeValuesFrom(<http://ontologies-r.us/bdp/terminology-binding/has_locus> <http://ontologies-r.us/bdp/terminology-binding/Pancreatic_islet_cells>))))
+DisjointClasses(<http://ontologies-r.us/bdp/terminology-binding/Diabetes_type_1> <http://ontologies-r.us/bdp/terminology-binding/Diabetes_type_2>)
+
+# Class: <http://ontologies-r.us/bdp/terminology-binding/Diabetes_type_2> (<http://ontologies-r.us/bdp/terminology-binding/Diabetes_type_2>)
+
+SubClassOf(<http://ontologies-r.us/bdp/terminology-binding/Diabetes_type_2> <http://ontologies-r.us/bdp/terminology-binding/Diabetes>)
+SubClassOf(<http://ontologies-r.us/bdp/terminology-binding/Diabetes_type_2> ObjectSomeValuesFrom(<http://ontologies-r.us/bdp/terminology-binding/is_caused_by> ObjectUnionOf(ObjectIntersectionOf(<http://ontologies-r.us/bdp/terminology-binding/Reduced_effectiveness> ObjectSomeValuesFrom(<http://ontologies-r.us/bdp/terminology-binding/has_locus> <http://ontologies-r.us/bdp/terminology-binding/Insulin>)) ObjectIntersectionOf(<http://ontologies-r.us/bdp/terminology-binding/Resistance> ObjectSomeValuesFrom(<http://ontologies-r.us/bdp/terminology-binding/has_locus> <http://ontologies-r.us/bdp/terminology-binding/Insulin_metabolism>)))))
+
+# Class: <http://ontologies-r.us/bdp/terminology-binding/Diabetic_brittleness> (<http://ontologies-r.us/bdp/terminology-binding/Diabetic_brittleness>)
+
+EquivalentClasses(<http://ontologies-r.us/bdp/terminology-binding/Diabetic_brittleness> ObjectIntersectionOf(<http://ontologies-r.us/bdp/terminology-binding/Brittleness> ObjectSomeValuesFrom(<http://ontologies-r.us/bdp/terminology-binding/is_quality_of> <http://ontologies-r.us/bdp/terminology-binding/Diabetes>)))
+SubClassOf(<http://ontologies-r.us/bdp/terminology-binding/Diabetic_brittleness> ObjectExactCardinality(1 <http://ontologies-r.us/bdp/terminology-binding/has_state> <http://ontologies-r.us/bdp/terminology-binding/Brittleness_state>))
+
+# Class: <http://ontologies-r.us/bdp/terminology-binding/Diabetic_brittleness_state> (<http://ontologies-r.us/bdp/terminology-binding/Diabetic_brittleness_state>)
+
+EquivalentClasses(<http://ontologies-r.us/bdp/terminology-binding/Diabetic_brittleness_state> ObjectIntersectionOf(<http://ontologies-r.us/bdp/terminology-binding/Brittleness_state> ObjectSomeValuesFrom(<http://ontologies-r.us/bdp/terminology-binding/is_state_of> <http://ontologies-r.us/bdp/terminology-binding/Diabetic_brittleness>)))
+SubClassOf(<http://ontologies-r.us/bdp/terminology-binding/Diabetic_brittleness_state> ObjectUnionOf(<http://ontologies-r.us/bdp/terminology-binding/Brittle> <http://ontologies-r.us/bdp/terminology-binding/Well_controlled>))
+
+# Class: <http://ontologies-r.us/bdp/terminology-binding/Metabolic_Disorder> (<http://ontologies-r.us/bdp/terminology-binding/Metabolic_Disorder>)
+
+SubClassOf(<http://ontologies-r.us/bdp/terminology-binding/Metabolic_Disorder> <http://ontologies-r.us/bdp/terminology-binding/Disorder>)
+
+
+)

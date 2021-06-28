@@ -1,0 +1,67 @@
+Prefix(:=<http://ontologies.r.us/bdp/cbi/>)
+Prefix(cbi:=<http://ontologies.r.us/bdp/cbi/>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://ontologies.r.us/bdp/cbi>
+Import(<http://ontologies.r.us/bdp/data-model>)
+
+Declaration(Class(<http://ontologies-r.us/bdp/cbi/Coding_entity>))
+Declaration(Class(<http://ontologies-r.us/bdp/cbi/Qualifier>))
+Declaration(Class(<http://ontologies-r.us/bdp/cbi/Qualifier_name_code>))
+Declaration(Class(<http://ontologies-r.us/bdp/cbi/Qualifier_value_code>))
+Declaration(ObjectProperty(<http://ontologies-r.us/bdp/cbi/has_qualifier>))
+Declaration(ObjectProperty(<http://ontologies-r.us/bdp/cbi/has_qualifier_name_code>))
+Declaration(ObjectProperty(<http://ontologies-r.us/bdp/cbi/has_qualifier_value_code>))
+Declaration(NamedIndividual(<http://ontologies-r.us/bdp/cbi/code_for_diabetic_brittleness_qualifier>))
+Declaration(NamedIndividual(<http://ontologies-r.us/bdp/cbi/code_for_diabetic_brittleness_value>))
+
+############################
+#   Classes
+############################
+
+# Class: <http://ontologies-r.us/bdp/cbi/Coding_entity> (<http://ontologies-r.us/bdp/cbi/Coding_entity>)
+
+SubClassOf(<http://ontologies-r.us/bdp/cbi/Coding_entity> <http://ontologies-r.us/bdp/terminology-codes/Coding_entity>)
+
+# Class: <http://ontologies-r.us/bdp/cbi/Qualifier> (<http://ontologies-r.us/bdp/cbi/Qualifier>)
+
+SubClassOf(<http://ontologies-r.us/bdp/cbi/Qualifier> <http://ontologies-r.us/bdp/cbi/Coding_entity>)
+SubClassOf(<http://ontologies-r.us/bdp/cbi/Qualifier> ObjectExactCardinality(1 <http://ontologies-r.us/bdp/cbi/has_qualifier_name_code> <http://ontologies-r.us/bdp/cbi/Qualifier_name_code>))
+
+# Class: <http://ontologies-r.us/bdp/cbi/Qualifier_name_code> (<http://ontologies-r.us/bdp/cbi/Qualifier_name_code>)
+
+SubClassOf(<http://ontologies-r.us/bdp/cbi/Qualifier_name_code> <http://ontologies-r.us/bdp/terminology-codes/Code>)
+
+# Class: <http://ontologies-r.us/bdp/cbi/Qualifier_value_code> (<http://ontologies-r.us/bdp/cbi/Qualifier_value_code>)
+
+SubClassOf(<http://ontologies-r.us/bdp/cbi/Qualifier_value_code> <http://ontologies-r.us/bdp/terminology-codes/Code>)
+
+# Class: <http://ontologies-r.us/bdp/terminology-codes/Code_for_diabetes_and_subcodes> (<http://ontologies-r.us/bdp/terminology-codes/Code_for_diabetes_and_subcodes>)
+
+SubClassOf(<http://ontologies-r.us/bdp/terminology-codes/Code_for_diabetes_and_subcodes> ObjectMaxCardinality(1 <http://ontologies-r.us/bdp/cbi/has_qualifier> ObjectIntersectionOf(<http://ontologies-r.us/bdp/cbi/Qualifier> ObjectHasValue(<http://ontologies-r.us/bdp/cbi/has_qualifier_name_code> <http://ontologies-r.us/bdp/cbi/code_for_diabetic_brittleness_qualifier>))))
+
+# Class: <http://ontologies-r.us/bdp/terminology-codes/Coding_entity> (<http://ontologies-r.us/bdp/terminology-codes/Coding_entity>)
+
+SubClassOf(<http://ontologies-r.us/bdp/terminology-codes/Coding_entity> ObjectExactCardinality(1 <http://ontologies-r.us/bdp/cbi/has_qualifier_value_code> <http://ontologies-r.us/bdp/cbi/Qualifier_value_code>))
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: <http://ontologies-r.us/bdp/cbi/code_for_diabetic_brittleness_qualifier> (<http://ontologies-r.us/bdp/cbi/code_for_diabetic_brittleness_qualifier>)
+
+ClassAssertion(<http://ontologies-r.us/bdp/cbi/Qualifier_name_code> <http://ontologies-r.us/bdp/cbi/code_for_diabetic_brittleness_qualifier>)
+
+# Individual: <http://ontologies-r.us/bdp/cbi/code_for_diabetic_brittleness_value> (<http://ontologies-r.us/bdp/cbi/code_for_diabetic_brittleness_value>)
+
+ClassAssertion(<http://ontologies-r.us/bdp/cbi/Qualifier_value_code> <http://ontologies-r.us/bdp/cbi/code_for_diabetic_brittleness_value>)
+
+
+SubClassOf(ObjectIntersectionOf(<http://ontologies-r.us/bdp/cbi/Qualifier> ObjectHasValue(<http://ontologies-r.us/bdp/cbi/has_qualifier_name_code> <http://ontologies-r.us/bdp/cbi/code_for_diabetic_brittleness_qualifier>)) ObjectExactCardinality(1 <http://ontologies-r.us/bdp/cbi/has_qualifier_value_code> <http://ontologies-r.us/bdp/terminology-codes/Subcode_of_code_for_diabetic_brittleness>))
+)

@@ -1,0 +1,90 @@
+Prefix(:=<http://ontologies.r.us/bdp/data-model/>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+Prefix(bdpdm:=<http://ontologies.r.us/bdp/data-model/>)
+
+
+Ontology(<http://ontologies.r.us/bdp/data-model>
+Import(<http://ontologies.r.us/bdp/terminology-codes>)
+
+Declaration(Class(<http://ontologies-r.us/bdp/cbi/Diabetes_data_structure_complete>))
+Declaration(Class(<http://ontologies-r.us/bdp/data-model/Brittleness_attr>))
+Declaration(Class(<http://ontologies-r.us/bdp/data-model/Coded_Attribute>))
+Declaration(Class(<http://ontologies-r.us/bdp/data-model/Condition_data_structure>))
+Declaration(Class(<http://ontologies-r.us/bdp/data-model/Diabetes_data_structure>))
+Declaration(Class(<http://ontologies-r.us/bdp/data-model/Diagnosis_attr>))
+Declaration(Class(<http://ontologies-r.us/bdp/data-model/Placeholder_cls_diabetes_only_code>))
+Declaration(Class(<http://ontologies-r.us/bdp/data-model/Placeholder_cls_diabetes_or_subcode>))
+Declaration(Class(<http://ontologies-r.us/bdp/data-model/Placeholder_cls_diabetic_brittleness_subcode>))
+Declaration(Class(<http://ontologies-r.us/bdp/data-model/Topic_attr>))
+Declaration(ObjectProperty(<http://ontologies-r.us/bdp/data-model/has_attr>))
+Declaration(ObjectProperty(<http://ontologies-r.us/bdp/data-model/has_code>))
+############################
+#   Object Properties
+############################
+
+# Object Property: <http://ontologies-r.us/bdp/data-model/has_code> (<http://ontologies-r.us/bdp/data-model/has_code>)
+
+FunctionalObjectProperty(<http://ontologies-r.us/bdp/data-model/has_code>)
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://ontologies-r.us/bdp/cbi/Diabetes_data_structure_complete> (<http://ontologies-r.us/bdp/cbi/Diabetes_data_structure_complete>)
+
+SubClassOf(<http://ontologies-r.us/bdp/cbi/Diabetes_data_structure_complete> <http://ontologies-r.us/bdp/data-model/Diabetes_data_structure>)
+SubClassOf(<http://ontologies-r.us/bdp/cbi/Diabetes_data_structure_complete> ObjectAllValuesFrom(<http://ontologies-r.us/bdp/data-model/has_attr> ObjectUnionOf(<http://ontologies-r.us/bdp/data-model/Brittleness_attr> <http://ontologies-r.us/bdp/data-model/Diagnosis_attr> <http://ontologies-r.us/bdp/data-model/Topic_attr>)))
+
+# Class: <http://ontologies-r.us/bdp/data-model/Brittleness_attr> (<http://ontologies-r.us/bdp/data-model/Brittleness_attr>)
+
+SubClassOf(<http://ontologies-r.us/bdp/data-model/Brittleness_attr> <http://ontologies-r.us/bdp/data-model/Coded_Attribute>)
+DisjointClasses(<http://ontologies-r.us/bdp/data-model/Brittleness_attr> <http://ontologies-r.us/bdp/data-model/Topic_attr>)
+
+# Class: <http://ontologies-r.us/bdp/data-model/Coded_Attribute> (<http://ontologies-r.us/bdp/data-model/Coded_Attribute>)
+
+EquivalentClasses(<http://ontologies-r.us/bdp/data-model/Coded_Attribute> ObjectExactCardinality(1 <http://ontologies-r.us/bdp/data-model/has_code> <http://ontologies-r.us/bdp/terminology-codes/Code>))
+DisjointClasses(<http://ontologies-r.us/bdp/data-model/Coded_Attribute> <http://ontologies-r.us/bdp/data-model/Condition_data_structure>)
+
+# Class: <http://ontologies-r.us/bdp/data-model/Condition_data_structure> (<http://ontologies-r.us/bdp/data-model/Condition_data_structure>)
+
+SubClassOf(<http://ontologies-r.us/bdp/data-model/Condition_data_structure> ObjectExactCardinality(1 <http://ontologies-r.us/bdp/data-model/has_attr> <http://ontologies-r.us/bdp/data-model/Diagnosis_attr>))
+SubClassOf(<http://ontologies-r.us/bdp/data-model/Condition_data_structure> ObjectExactCardinality(1 <http://ontologies-r.us/bdp/data-model/has_attr> <http://ontologies-r.us/bdp/data-model/Topic_attr>))
+
+# Class: <http://ontologies-r.us/bdp/data-model/Diabetes_data_structure> (<http://ontologies-r.us/bdp/data-model/Diabetes_data_structure>)
+
+SubClassOf(<http://ontologies-r.us/bdp/data-model/Diabetes_data_structure> <http://ontologies-r.us/bdp/data-model/Condition_data_structure>)
+SubClassOf(<http://ontologies-r.us/bdp/data-model/Diabetes_data_structure> ObjectSomeValuesFrom(<http://ontologies-r.us/bdp/data-model/has_attr> ObjectIntersectionOf(<http://ontologies-r.us/bdp/data-model/Brittleness_attr> ObjectAllValuesFrom(<http://ontologies-r.us/bdp/data-model/has_code> <http://ontologies-r.us/bdp/data-model/Placeholder_cls_diabetic_brittleness_subcode>))))
+SubClassOf(<http://ontologies-r.us/bdp/data-model/Diabetes_data_structure> ObjectSomeValuesFrom(<http://ontologies-r.us/bdp/data-model/has_attr> ObjectIntersectionOf(<http://ontologies-r.us/bdp/data-model/Diagnosis_attr> ObjectSomeValuesFrom(<http://ontologies-r.us/bdp/data-model/has_code> <http://ontologies-r.us/bdp/data-model/Placeholder_cls_diabetes_or_subcode>))))
+SubClassOf(<http://ontologies-r.us/bdp/data-model/Diabetes_data_structure> ObjectSomeValuesFrom(<http://ontologies-r.us/bdp/data-model/has_attr> ObjectIntersectionOf(<http://ontologies-r.us/bdp/data-model/Topic_attr> ObjectSomeValuesFrom(<http://ontologies-r.us/bdp/data-model/has_code> <http://ontologies-r.us/bdp/data-model/Placeholder_cls_diabetes_only_code>))))
+SubClassOf(<http://ontologies-r.us/bdp/data-model/Diabetes_data_structure> ObjectExactCardinality(1 <http://ontologies-r.us/bdp/data-model/has_attr> <http://ontologies-r.us/bdp/data-model/Brittleness_attr>))
+
+# Class: <http://ontologies-r.us/bdp/data-model/Diagnosis_attr> (<http://ontologies-r.us/bdp/data-model/Diagnosis_attr>)
+
+SubClassOf(<http://ontologies-r.us/bdp/data-model/Diagnosis_attr> <http://ontologies-r.us/bdp/data-model/Coded_Attribute>)
+DisjointClasses(<http://ontologies-r.us/bdp/data-model/Diagnosis_attr> <http://ontologies-r.us/bdp/data-model/Topic_attr>)
+
+# Class: <http://ontologies-r.us/bdp/data-model/Placeholder_cls_diabetes_only_code> (<http://ontologies-r.us/bdp/data-model/Placeholder_cls_diabetes_only_code>)
+
+SubClassOf(<http://ontologies-r.us/bdp/data-model/Placeholder_cls_diabetes_only_code> <http://ontologies-r.us/bdp/terminology-codes/Code>)
+
+# Class: <http://ontologies-r.us/bdp/data-model/Placeholder_cls_diabetes_or_subcode> (<http://ontologies-r.us/bdp/data-model/Placeholder_cls_diabetes_or_subcode>)
+
+SubClassOf(<http://ontologies-r.us/bdp/data-model/Placeholder_cls_diabetes_or_subcode> <http://ontologies-r.us/bdp/terminology-codes/Code>)
+
+# Class: <http://ontologies-r.us/bdp/data-model/Placeholder_cls_diabetic_brittleness_subcode> (<http://ontologies-r.us/bdp/data-model/Placeholder_cls_diabetic_brittleness_subcode>)
+
+SubClassOf(<http://ontologies-r.us/bdp/data-model/Placeholder_cls_diabetic_brittleness_subcode> <http://ontologies-r.us/bdp/terminology-codes/Code>)
+
+# Class: <http://ontologies-r.us/bdp/data-model/Topic_attr> (<http://ontologies-r.us/bdp/data-model/Topic_attr>)
+
+SubClassOf(<http://ontologies-r.us/bdp/data-model/Topic_attr> <http://ontologies-r.us/bdp/data-model/Coded_Attribute>)
+SubClassOf(<http://ontologies-r.us/bdp/data-model/Topic_attr> <http://ontologies-r.us/bdp/data-model/Diabetes_data_structure>)
+SubClassOf(<http://ontologies-r.us/bdp/data-model/Topic_attr> ObjectAllValuesFrom(<http://ontologies-r.us/bdp/data-model/has_attr> ObjectUnionOf(<http://ontologies-r.us/bdp/data-model/Brittleness_attr> <http://ontologies-r.us/bdp/data-model/Diagnosis_attr> <http://ontologies-r.us/bdp/data-model/Topic_attr>)))
+
+
+)
