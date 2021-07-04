@@ -40,6 +40,12 @@ https://www.cs.man.ac.uk/~rector/papers/Whats-in-a-code/Whats-in-a-code-rector-c
 Github: https://github.com/BD2KOnFHIR/BLENDINGFHIRandRDF <br>
 Paper: https://jhu.pure.elsevier.com/en/publications/blending-fhir-rdf-and-owl
 
+**Using Z: Specification, Refinement and Proof**
+
+PDF: http://www.usingz.com/usingz.pdf
+
+&nbsp; &nbsp; &nbsp; &nbsp; See section __4.4 Definite description__
+
 <br>
 <br>
 
