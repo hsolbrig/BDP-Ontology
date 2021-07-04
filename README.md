@@ -97,7 +97,7 @@ copy it into Protégé.app/Contents/Java/plugins
 
 ## 6. Change Memory Setting 
 
-~~ edit Protege-5.5.0/Protégé.app/Contents/Info.plist~~
+~~edit Protege-5.5.0/Protégé.app/Contents/Info.plist~~
 
 edit Protege-5.2.0/Protégé.app/Contents/Info.plist
 ```
