@@ -86,12 +86,21 @@ Snorocket install
 
 https://aehrc.com/snorocket/
 
-Go to the Maven Central Repository and download the latest as snorocket-protege-4.0.1-jar-with-dependencies.jar and then copy it into Protege-
-5.5.0/Protege.app/Contents/Java/plugins
+This line _should_ be crossed out:~~Go to the Maven Central Repository and download the latest as snorocket-protege-4.0.1-jar-with-dependencies.jar and then copy it into Protege-
+5.5.0/Protege.app/Contents/Java/plugins~
+
+Update: Protege5.5.0 is not compatible either the snorocket 3.2.0 release nor snorocket 4.0.1.  We have to switch back to Protege 5.2 and snorocket 3.2:
+
+* Download Protege 5.2.0 from the bottom of page: https://github.com/protegeproject/protege-distribution/releases/tag/v5.2.0, then unzip and (optionally) move
+Protege-5.2.0/Protégé.app to /Applications.  (Mac OSX Only)
+* Download Snorocket from https://search.maven.org/remotecontent?filepath=au/csiro/snorocket-protege/3.2.0/snorocket-protege-3.2.0-jar-with-dependencies.jar and
+copy it into Protégé.app/Contents/Java/plugins
 
 ## 6. Change Memory Setting 
 
-edit Protege-5.5.0/Protégé.app/Contents/Info.plist
+This line should be crossed out: edit ~~Protege-5.5.0/Protégé.app/Contents/Info.plist~~
+
+edit Protege-5.2.0/Protégé.app/Contents/Info.plist
 ```
 
 <array>
