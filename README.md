@@ -86,8 +86,7 @@ Snorocket install
 
 https://aehrc.com/snorocket/
 
-This line _should_ be crossed out:~~Go to the Maven Central Repository and download the latest as snorocket-protege-4.0.1-jar-with-dependencies.jar and then copy it into Protege-~
-5.5.0/Protege.app/Contents/Java/plugins~
+This line _should_ be crossed out:~~Go to the Maven Central Repository and download the latest as snorocket-protege-4.0.1-jar-with-dependencies.jar and then copy it into Protege-5.5.0/Protege.app/Contents/Java/plugins~~
 
 Update: Protege5.5.0 is not compatible either the snorocket 3.2.0 release nor snorocket 4.0.1.  We have to switch back to Protege 5.2 and snorocket 3.2:
 
