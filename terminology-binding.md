@@ -168,6 +168,58 @@ Functional syntax for in Figure 8 is added to [Model of Codes](data/ModelOfCodes
 ### Section 5.5 Code Binding Interface
 Figure 9 is represented in the [Code Binding Interface](data/CodeBindingInterface.owl)
 
+### Section 6 Discussion
+The paper asserts that "If the model of codes accurately reflects the model of meaning, then this will effectively bind the 
+information model to the model of meaning." noting, however, that "_the binding is indirect_".
+
+The authors stress the difference between "validity" and "accuracy".
+
+
+## How this relates to Proxy Codes
+We would argue that there is a hidden component in the models above that needs further elucidation.  We have the following:
+* __Ontology__: A formal "dictionary" that carries the shared understanding of our universe of discourse (UOD). It includes
+statements in the form of "When we say X, we are referring to the set of things with the following characteristics."  Ontology
+  provides answers to questions like "Are all instances of people instances of living organisms?" and "Can an animal be
+  a "patient"?" as well as more fundamental questions like "Are genes composed of nucleotides?" and "Are whales mammals?". 
+  Ontology also covers "verbs" ("predicates", "properties", "binary relationships", etc.).  What does it mean to have a parent?
+  What entities can have parents? What characteristics must be shared between an entity and its parent?  What does the notion
+  of "role" entail?  What does it mean to have a role of "Primary Physician", etc.
+  
+  Formal ontology can be used to detect errors in its definitions and assumptions.  As an example, if our UOD declares that
+  members of the class "Person" must be alive, that the domain and range of the property, "has biological parent" are people and that
+  every person has exactly two parents, we have accidentally also claimed that membership in the class "Person" requires that all
+  of one's ancestors must be alive.
+  
+  _Note:_ We also argue that non-definitional knowledge does not belong in ontology, at least the way we're using the term "ontology".  The purpose
+  of ontology is to declare what _necessarily_ must be true in order for an individual to be an instance of a particular class.
+  This applies in the situation where one axiomatically declares " individual X is an instance of class C" or "the set of
+  individuals in class C' are necessarily also instances of class C", which is a shorthand for stating that X (or all of the members in C')
+  must have certain characteristics.
+  
+  This situation _also_ applies when we are attempting to determine whether a given individual (or set of individuals) is, or even _can be_
+  instances of class C.  As an example, if we assert that, in our UOD, all instances of the class _Organism_ must 
+  have an "is_living" relationship with one of
+  two states: _alive_ of _deceased_, and that all instances of the class _Person_ are also instances of the class _Organism_, where 
+  instances of the class _Person_ must be alive, it is now possible to determine that the instance of _Organism_ known as Edgar Allen Poe is
+  not an instance of a _Person_ according to our UOD.
+  
+* __"Logical" Bindings__:  Assertions about individuals stated using the terms of our ontology.  "Joe Smith is a _Person_".  "Dr.
+  Alicia Jones has a _primary physician role_ with Joe Smith."  "Joe Smith's parents are Alan Smith and Tamera Southwick."  Note that this
+  also includes assertions of the form "John Smith _was born on_ December 17, 1953" and "John Smith's _name_ is 'John Quincy Smith'".
+  
+   One of the characteristics of __Logical Bindings__ is that the same set of facts can take more than one form.  "John Smith's _first name_ is
+  'John'.  John Smith's _last name_ is 'Smith'", etc., where certain integrity constraints must hold (e.g. assuming we are talking western
+  naming conventions, if John Smitn's _name_ is 'John Quincy Smith', John Smith's first name must necessarily be "John").  Similarly, the 
+  assertion that "John Smith is an instance of a _Blond Haired Person_" must co-exist with the assertions that "John Smith's _hair color_ is
+  an instance of the color _Blond_".
+  
+  _Logical Bindings_ represent an collection of assertions.
+
+* __Information Model__: An information model encompasses a grammar (syntax) and a set of rules for translating to and from
+  __Logical Bindings__.  The information model defines what Logical Binding elements must, can, and cannot be represented in
+  a conforming statement as well as _how_ each of these binding elements are to be represented.
+
+
 ## Additional notes
 To get to the heart of the matter, if you were putting together an information model that, say,
 asserts relationships between different people, the following elements would make perfect sense:
