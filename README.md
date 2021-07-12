@@ -33,6 +33,14 @@ https://www.cs.man.ac.uk/~rector/papers/Terminology-binding-final-revision-embed
 
 https://www.cs.man.ac.uk/~rector/papers/Whats-in-a-code/Whats-in-a-code-rector-corrected.pdf
 
+**Interesting paper that relates to Chute's presentation**
+AIM: a personal view of where I have been and where we might be going (Alan Rector)
+
+One possible link if you have University access: https://www.sciencedirect.com/science/article/pii/S0933365701000781
+
+Not directly related to this project but great background.
+
+
 
 
 **Blending RDF and OWL**
