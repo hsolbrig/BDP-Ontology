@@ -1,0 +1,13 @@
+{
+  "@context": {
+    "sct": "http://snomed.info/id/",
+    "o": "http://ontologies-r.us/bdp/diabetes#",
+    "@base": "http://example.org/bdp#",
+    "patient_id": "@id",
+    "name": "o:name",
+    "dx": {
+      "@type": "@id",
+      "@id": "o:hasDiagnosis"
+    }
+  }
+}
