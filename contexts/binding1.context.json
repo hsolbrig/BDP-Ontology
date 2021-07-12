@@ -1,6 +1,7 @@
 {
   "@context": {
     "sct": "http://snomed.info/id/",
+    "proxy": "http://ontologies-r.us/bdp/dm_proxy#",
     "o": "http://ontologies-r.us/bdp/diabetes#",
     "@base": "http://example.org/bdp#",
     "patient_id": "@id",

@@ -1,0 +1,96 @@
+Prefix(:=<http://ontologies-r.us/bdp/diabetes/inferences/untitled-ontology-64#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://ontologies-r.us/bdp/diabetes/inferences/untitled-ontology-64>
+
+Declaration(Class(<http://ontologies-r.us/bdp/diabetes#PersonRecord>))
+Declaration(Class(<http://ontologies-r.us/bdp/terminology-binding/Brittle>))
+Declaration(Class(<http://ontologies-r.us/bdp/terminology-binding/Brittleness>))
+Declaration(Class(<http://ontologies-r.us/bdp/terminology-binding/Brittleness_state>))
+Declaration(Class(<http://ontologies-r.us/bdp/terminology-binding/Diabetes>))
+Declaration(Class(<http://ontologies-r.us/bdp/terminology-binding/Diabetes_type_1>))
+Declaration(Class(<http://ontologies-r.us/bdp/terminology-binding/Diabetes_type_2>))
+Declaration(Class(<http://ontologies-r.us/bdp/terminology-binding/Diabetic_brittleness>))
+Declaration(Class(<http://ontologies-r.us/bdp/terminology-binding/Diabetic_brittleness_state>))
+Declaration(Class(<http://ontologies-r.us/bdp/terminology-binding/Disorder>))
+Declaration(Class(<http://ontologies-r.us/bdp/terminology-binding/Metabolic_Disorder>))
+Declaration(Class(<http://ontologies-r.us/bdp/terminology-binding/Well_controlled>))
+Declaration(ObjectProperty(<http://ontologies-r.us/bdp/diabetes#hasDiagnosis>))
+Declaration(ObjectProperty(<http://ontologies-r.us/bdp/terminology-binding/has_quality>))
+Declaration(ObjectProperty(<http://ontologies-r.us/bdp/terminology-binding/has_state>))
+Declaration(ObjectProperty(<http://ontologies-r.us/bdp/terminology-binding/is_quality_of>))
+Declaration(ObjectProperty(<http://ontologies-r.us/bdp/terminology-binding/is_state_of>))
+Declaration(NamedIndividual(<http://example.org/A12345>))
+Declaration(NamedIndividual(<http://ontologies-r.us/bdp/dm_proxy#290002008>))
+############################
+#   Object Properties
+############################
+
+# Object Property: <http://ontologies-r.us/bdp/terminology-binding/has_quality> (<http://ontologies-r.us/bdp/terminology-binding/has_quality>)
+
+InverseObjectProperties(<http://ontologies-r.us/bdp/terminology-binding/has_quality> <http://ontologies-r.us/bdp/terminology-binding/is_quality_of>)
+
+# Object Property: <http://ontologies-r.us/bdp/terminology-binding/has_state> (<http://ontologies-r.us/bdp/terminology-binding/has_state>)
+
+InverseObjectProperties(<http://ontologies-r.us/bdp/terminology-binding/has_state> <http://ontologies-r.us/bdp/terminology-binding/is_state_of>)
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://ontologies-r.us/bdp/terminology-binding/Brittle> (<http://ontologies-r.us/bdp/terminology-binding/Brittle>)
+
+DisjointClasses(<http://ontologies-r.us/bdp/terminology-binding/Brittle> <http://ontologies-r.us/bdp/terminology-binding/Well_controlled>)
+
+# Class: <http://ontologies-r.us/bdp/terminology-binding/Diabetes> (<http://ontologies-r.us/bdp/terminology-binding/Diabetes>)
+
+SubClassOf(<http://ontologies-r.us/bdp/terminology-binding/Diabetes> <http://ontologies-r.us/bdp/terminology-binding/Metabolic_Disorder>)
+
+# Class: <http://ontologies-r.us/bdp/terminology-binding/Diabetes_type_1> (<http://ontologies-r.us/bdp/terminology-binding/Diabetes_type_1>)
+
+SubClassOf(<http://ontologies-r.us/bdp/terminology-binding/Diabetes_type_1> <http://ontologies-r.us/bdp/terminology-binding/Diabetes>)
+DisjointClasses(<http://ontologies-r.us/bdp/terminology-binding/Diabetes_type_1> <http://ontologies-r.us/bdp/terminology-binding/Diabetes_type_2>)
+
+# Class: <http://ontologies-r.us/bdp/terminology-binding/Diabetes_type_2> (<http://ontologies-r.us/bdp/terminology-binding/Diabetes_type_2>)
+
+SubClassOf(<http://ontologies-r.us/bdp/terminology-binding/Diabetes_type_2> <http://ontologies-r.us/bdp/terminology-binding/Diabetes>)
+
+# Class: <http://ontologies-r.us/bdp/terminology-binding/Diabetic_brittleness> (<http://ontologies-r.us/bdp/terminology-binding/Diabetic_brittleness>)
+
+SubClassOf(<http://ontologies-r.us/bdp/terminology-binding/Diabetic_brittleness> <http://ontologies-r.us/bdp/terminology-binding/Brittleness>)
+
+# Class: <http://ontologies-r.us/bdp/terminology-binding/Diabetic_brittleness_state> (<http://ontologies-r.us/bdp/terminology-binding/Diabetic_brittleness_state>)
+
+SubClassOf(<http://ontologies-r.us/bdp/terminology-binding/Diabetic_brittleness_state> <http://ontologies-r.us/bdp/terminology-binding/Brittleness_state>)
+
+# Class: <http://ontologies-r.us/bdp/terminology-binding/Metabolic_Disorder> (<http://ontologies-r.us/bdp/terminology-binding/Metabolic_Disorder>)
+
+SubClassOf(<http://ontologies-r.us/bdp/terminology-binding/Metabolic_Disorder> <http://ontologies-r.us/bdp/terminology-binding/Disorder>)
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: <http://example.org/A12345> (<http://example.org/A12345>)
+
+ClassAssertion(<http://ontologies-r.us/bdp/diabetes#PersonRecord> <http://example.org/A12345>)
+ObjectPropertyAssertion(<http://ontologies-r.us/bdp/diabetes#hasDiagnosis> <http://example.org/A12345> <http://ontologies-r.us/bdp/dm_proxy#290002008>)
+
+# Individual: <http://ontologies-r.us/bdp/dm_proxy#290002008> (<http://ontologies-r.us/bdp/dm_proxy#290002008>)
+
+ClassAssertion(<http://ontologies-r.us/bdp/terminology-binding/Brittleness> <http://ontologies-r.us/bdp/dm_proxy#290002008>)
+ClassAssertion(<http://ontologies-r.us/bdp/terminology-binding/Diabetes> <http://ontologies-r.us/bdp/dm_proxy#290002008>)
+ClassAssertion(<http://ontologies-r.us/bdp/terminology-binding/Diabetes_type_1> <http://ontologies-r.us/bdp/dm_proxy#290002008>)
+ClassAssertion(<http://ontologies-r.us/bdp/terminology-binding/Diabetic_brittleness> <http://ontologies-r.us/bdp/dm_proxy#290002008>)
+ClassAssertion(<http://ontologies-r.us/bdp/terminology-binding/Disorder> <http://ontologies-r.us/bdp/dm_proxy#290002008>)
+ClassAssertion(<http://ontologies-r.us/bdp/terminology-binding/Metabolic_Disorder> <http://ontologies-r.us/bdp/dm_proxy#290002008>)
+
+
+)

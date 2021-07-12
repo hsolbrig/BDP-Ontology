@@ -4,6 +4,7 @@ Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
 Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
 Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
 Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+Prefix(proxy:=<http://ontologies-r.us/bdp/dm_proxy#>)
 
 
 Ontology(<http://ontologies-r.us/bdp/diabetes>
@@ -11,6 +12,7 @@ Ontology(<http://ontologies-r.us/bdp/diabetes>
 Declaration(Class(:PersonRecord))
 Declaration(ObjectProperty(:hasDiagnosis))
 Declaration(DataProperty(:name))
+Declaration(NamedIndividual(<http://ontologies-r.us/bdp/dm_proxy#290002008>))
 
 ############################
 #   Object Properties
@@ -30,6 +32,7 @@ ObjectPropertyDomain(:hasDiagnosis :PersonRecord)
 # Class: :PersonRecord (:PersonRecord)
 
 AnnotationAssertion(rdfs:comment :PersonRecord "Description of the diagnosis for a person")
+
 
 
 )
