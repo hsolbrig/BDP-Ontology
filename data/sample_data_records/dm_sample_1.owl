@@ -1,0 +1,14 @@
+@prefix : <http://example.org/bdp#> .
+@prefix o: <http://ontologies-r.us/bdp/diabetes#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.org/A12345> a o:PersonRecord .
+<http://example.org/A12345> o:hasDiagnosis sct:290002008 .
+<http://example.org/A12345> o:name "Joe Johnson" .
+
+<http://example.org/o> a owl:Ontology .
+<http://example.org/o>  owl:imports <http://ontologies-r.us/bdp/diabetes> .
+

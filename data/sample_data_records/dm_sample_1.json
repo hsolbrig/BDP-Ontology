@@ -1,0 +1,7 @@
+{
+  "patient_id": "A12345",
+  "name": "Joe Johnson",
+  "dx": "sct:290002008",
+  "@type": "http://ontologies-r.us/bdp/diabetes#PersonRecord",
+  "@context": "https://raw.githubusercontent.com/hsolbrig/BDP-Ontology/main/contexts/binding1.context.json"
+}

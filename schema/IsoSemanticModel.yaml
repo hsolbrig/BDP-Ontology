@@ -1,0 +1,49 @@
+id: http://example.org/bdpontology/isosemantic_model
+
+prefixes:
+  metatype: https://w3id.org/linkml/types/
+  isom: https://example.org/bdpontology/isosemantic_model/
+  xsd: http://www.w3.org/2001/XMLSchema#
+
+
+default_range: string
+default_prefix: isom
+
+imports:
+  - linkml:types
+
+
+classes:
+  Patient:
+    description: A patient
+    attributes:
+      id:
+        identifier: true
+
+  DxBase:
+    description: base class for various isosemantic variants
+    attributes:
+      id:
+        identifier: true
+      patient:
+        range: Patient
+        required: true
+
+  GeneralPractice:
+    isA: DxBase
+    description: Fine-grained observation
+    attributes:
+      Prob_Dx:
+        range: DxEnum
+        required: true
+      BodySite:
+        range: AnatomyEnum
+      Status:
+        range: DxModifierEnum
+        required: true
+
+enums
+
+
+
+
