@@ -5,8 +5,3 @@
   "@type": "http://ontologies-r.us/bdp/diabetes#PersonRecord",
   "@context": "https://raw.githubusercontent.com/hsolbrig/BDP-Ontology/main/contexts/binding1.context.json"
 }
-
-{
-  "id": "A12345",
-  "has_metabolic_dmage": True
-}

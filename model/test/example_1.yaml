@@ -1,0 +1,14 @@
+patients:
+  p001:
+    name: John Smith
+
+clinicians:
+  c001:
+    name: Ann Johnson
+
+pre_coord_dxes:
+  dx001:
+    patient: p001
+    source: c001
+    date: 07-19-2021T11:30
+    topic: brittle_dm_2

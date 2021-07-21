@@ -1,4 +1,22 @@
-# 
+# Working through the Diabetes example from [Rector's binding paper](https://www.cs.man.ac.uk/~rector/papers/Terminology-binding-final-revision-embedded-single-rector%20copy.pdf)
+
+We begin by observing that this paper only indirectly references the key semantics document - the [Model of Meaning](data/ModelOfMeaning.owl).
+
+While the [Model of Codes](data/ModelOfCodes.owl) is derived from the model of meaning, there are no direct links.  In this document we propose
+an alternative approach:
+1) Define a source and a target information model using data modeling tool.  For our purposes, we will use LinkML.
+2) Define the _semantics_ of the source and target information model in OWL.  In this context, "semantics" is used to define what is being
+_asserted_ by information model statements.
+3) Use the definitions in step 2 to determine what additional information can be inferred from the semantics of record
+that is "acceptable" or "consistent" with the source information model.
+4) Use this additional information to determine what could be asserted in the "semantics" of the target information model.
+
+
+
+## Define a source and target information model
+
+
+
 
 ## Example from Rectors binding Paper
 

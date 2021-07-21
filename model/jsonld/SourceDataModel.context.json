@@ -1,0 +1,63 @@
+{
+   "_comments": "Auto generated from SourceDataModel.yaml by jsonldcontextgen.py version: 0.1.1\n    Generation date: 2021-07-19 16:08\n    Schema: diabetes\n    \n    id: https://ontologies-r.us/diabetes\n    description: Data structures to represent the model from Dr. Alan Rector's Terminology Binding paper\n    license: https://creativecommons.org/publicdomain/zero/1.0/\n    ",
+   "@context": {
+      "dbdx": "https://ontologies-r.us/diabetes/",
+      "foaf": "http://xmlns.com/foaf/0.1/",
+      "linkml": "https://w3id.org/linkml/",
+      "sct": "http://snomed.info/id/",
+      "scti": "http://ontologies-r.us/individuals/sct/",
+      "skos": "http://www.w3.org/2004/02/skos/core#",
+      "@vocab": "https://ontologies-r.us/diabetes/",
+      "clinicians": {
+         "@type": "@id"
+      },
+      "patients": {
+         "@type": "@id"
+      },
+      "post_coord_dxs": {
+         "@type": "@id"
+      },
+      "pre_coord_dxs": {
+         "@type": "@id"
+      },
+      "brittleness": {
+         "@context": {
+            "@vocab": "@null",
+            "text": "skos:notation",
+            "description": "skos:prefLabel",
+            "meaning": "@id"
+         }
+      },
+      "diagnosis": {
+         "@context": {
+            "@vocab": "@null",
+            "text": "skos:notation",
+            "description": "skos:prefLabel",
+            "meaning": "@id"
+         }
+      },
+      "date": {
+         "@type": "xsd:dateTime"
+      },
+      "patient": {
+         "@type": "@id"
+      },
+      "recordid": "@id",
+      "source": {
+         "@type": "@id"
+      },
+      "topic": {
+         "@context": {
+            "@vocab": "@null",
+            "text": "skos:notation",
+            "description": "skos:prefLabel",
+            "meaning": "@id"
+         }
+      },
+      "id": "@id",
+      "name": {
+         "@id": "foaf:name"
+      }
+   }
+}
+

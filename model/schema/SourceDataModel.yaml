@@ -1,0 +1,171 @@
+id: https://ontologies-r.us/diabetes
+license: https://creativecommons.org/publicdomain/zero/1.0/
+description: Data structures to represent the model from Dr. Alan Rector's Terminology Binding paper
+
+prefixes:
+  dbdx: https://ontologies-r.us/diabetes/
+  foaf: http://xmlns.com/foaf/0.1/
+  sct: http://snomed.info/id/
+  scti: http://ontologies-r.us/individuals/sct/
+  linkml: https://w3id.org/linkml/
+
+default_prefix: dbdx
+default_range: string
+
+imports:
+  - linkml:types
+
+classes:
+  Person:
+    description: A placeholder for a person identifier
+    attributes:
+      id:
+        identifier: True
+        description: |-
+          An identifier assigned to the patient by this particular model.
+        range: string
+      name:
+        description: A person's name
+        required: True
+        range: string
+        slot_uri: foaf:name
+
+  Patient:
+    description: A person undergoing diagnosis or care
+    is_a: Person
+
+  Clinician:
+    description: A person providing care
+    is_a: Person
+
+  DiagnosisRecord:
+    description: A simplified diagnosis record
+    attributes:
+      recordid:
+        description: The id of a formal diagnostic event
+        identifier: true
+        range: string
+      patient:
+        description: The patient to whom the diagnosis applies
+        range: Patient
+        required: true
+      source:
+        description: The clinician who asserted the diagnosis
+        range: Clinician
+        required: true
+      date:
+        description: The date and time that the assertion was made
+        range: datetime
+        required: true
+      topic:
+        description: The topic of the diagnostic record
+        range: DiagnosisTopics
+        required: true
+
+
+  DiabeticDataStructure1:
+    description: A model of a post-coordinated diabetes data structure
+    is_a: DiagnosisRecord
+    slot_usage:
+      topic:
+        description: Exact code for diabetes mellitus
+        range: DiabetesDiagnosisTopics
+    attributes:
+      diagnosis:
+        description: The code for diabetes or any kind of diabetes
+        range: DiabetesDiagnosisTopics
+        required: false
+      brittleness:
+        description: How well managed the diabetes is
+        range: DiabeticBrittleness
+        required: true
+
+  DiabeticDataStructure2:
+    description: A model of a pre-coordinated diabetes data structure
+    is_a: DiagnosisRecord
+    slot_usage:
+      topic:
+        description: Exact code for diabetes mellitus
+        range: PrecoordinatedDiagnoses
+
+  DataBase:
+    description: A collection of Patients / Clinicians and both forms of DiabeticDataStructures
+    attributes:
+      patients:
+        description: Reference Patients
+        range: Patient
+        inlined: true
+        multivalued: true
+      clinicians:
+        description: Reference Clinicians
+        range: Clinician
+        inlined: true
+        multivalued: true
+      post_coord_dxs:
+        description: Post coordinated diagnoses
+        range: DiabeticDataStructure1
+        inlined: true
+        multivalued: true
+      pre_coord_dxs:
+        description: Pre coordinated diagnoses
+        range: DiabeticDataStructure2
+        inlined: true
+        multivalued: true
+
+enums:
+  DiagnosisTopics:
+    description: >-
+      Any topic of a diagnosis record
+    code_set: sct_dx_codes
+    pv_formula: CODE
+
+  DiabetesTopic:
+    description: Valid topic of codes for diabetes
+    permissible_values:
+      73211009:
+        description: Diabetes mellitus (disorder)
+        meaning: scti:73211009
+
+  DiabetesDiagnosisTopics:
+    description: Specific diabetes codes
+    notes: Formally, these codes would exist in a value set, computed according to
+    permissible_values:
+      46635009:
+        description: Diabetes mellitus type 1 (disorder)
+        meaning: scti:46635009
+      44054006:
+        description: Diabetes mellitus type 2 (disorder)
+        meaning: scti:44054006
+
+  DiabeticBrittleness:
+    description: A diabetic brittleness assessment
+    permissible_values:
+      yes:
+        description: Brittle diabetes mellitus (finding)
+        meaning: scti:11530004
+      no:
+        description: Diabetic - good control (finding)
+        meaning: scti:170763003
+
+  PrecoordinatedDiagnoses:
+    description: A complete code that represents the type and brittless state of diabetes as one element
+    permissible_values:
+      brittle_dm_1:
+        description: Brittle diabetes mellitus type 1
+        meaning: scti:290002008
+      brittle_dm_2:
+        description: Brittle diabetes mellitus type 2
+        meaning: scti:445353002
+      controlled_dm_1:
+        description: Well Controlled diabetes mellitus type 1
+        meaning: scti:444074000
+      controlled_dm_2:
+        description: Well controlled diabetes mellitus type 2
+        meaning: scti:444110003
+      dm_1:
+        description: Diabetes mellitus type 1 - controlled state unknown
+        meaning: dbdx:dm1_unk
+      dm_2:
+        description: Diabetes mellitus type 2 - controlled state unknown
+        meaning: dbdx:dm2_unk
+

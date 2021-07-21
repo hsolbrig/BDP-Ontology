@@ -1,0 +1,25 @@
+{
+    "_meta": {
+        "hash": {
+            "sha256": "64a949f7b1934dd96851ba85fa089f6bc5357b1f32ba536821595d46006e471f"
+        },
+        "pipfile-spec": 6,
+        "requires": {
+            "python_version": "3.9"
+        },
+        "sources": [
+            {
+                "name": "pypi",
+                "url": "https://pypi.org/simple",
+                "verify_ssl": true
+            }
+        ]
+    },
+    "default": {
+        "linkml": {
+            "path": "/Users/solbrig/git/linkml/linkml",
+            "version": "==1.0.2.dev32"
+        }
+    },
+    "develop": {}
+}
