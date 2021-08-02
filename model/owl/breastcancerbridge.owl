@@ -1,0 +1,36 @@
+Prefix(:=<http://ontologies-r.us/bdp/bcrbridge#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://ontologies-r.us/bdp/bcrbridge>
+Import(<http://ontologies-r.us/bdp/bcr>)
+Import(<http://purl.obolibrary.org/obo/ero.owl>)
+Import(<http://purl.obolibrary.org/obo/hp/releases/2021-08-02/hp.owl>)
+Import(<http://semanticscience.org/ontology/sio/v1.53/sio-release.owl>)
+Import(<http://www.ebi.ac.uk/efo/releases/v3.32.0/efo.owl>)
+
+############################
+#   Object Properties
+############################
+
+# Object Property: <http://ontologies-r.us/bdp/bcr/id> (<http://ontologies-r.us/bdp/bcr/id>)
+
+ObjectPropertyRange(<http://ontologies-r.us/bdp/bcr/id> ObjectIntersectionOf(<http://semanticscience.org/resource/SIO_010052> <http://semanticscience.org/resource/SIO_010058> <http://xmlns.com/foaf/0.1/Person>))
+ObjectPropertyRange(<http://ontologies-r.us/bdp/bcr/id> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/ERO_0002100> <http://purl.obolibrary.org/obo/HP_0003002>))
+
+
+############################
+#   Data Properties
+############################
+
+# Data Property: <http://ontologies-r.us/bdp/bcr/age> (<http://ontologies-r.us/bdp/bcr/age>)
+
+SubDataPropertyOf(<http://ontologies-r.us/bdp/bcr/age> <http://purl.obolibrary.org/obo/ERO_0001971>)
+
+
+
+)

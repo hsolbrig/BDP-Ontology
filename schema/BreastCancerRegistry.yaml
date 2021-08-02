@@ -1,0 +1,29 @@
+id: http://example.org/bdpontology/bcr
+
+prefixes:
+  linkml: https://w3id.org/linkml/
+  bcr: https://example.org/bdpontology/bcr/
+  xsd: http://www.w3.org/2001/XMLSchema#
+  sio: http://semanticscience.org/resource/SIO_
+
+
+default_range: string
+default_prefix: bcr
+
+imports:
+  - linkml:types
+
+
+classes:
+  Entry:
+    description: An entry in a breast cancer registry
+    attributes:
+      id:
+        identifier: true
+        description: The identifier of the person diagnosed with breast cancer
+      entryDate:
+        range: date
+        description: The date that the person was diagnosed as having breast cancer
+      age:
+        range: integer
+        description: The age of the person at the point of diagnosis

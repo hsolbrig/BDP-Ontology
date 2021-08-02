@@ -1,0 +1,54 @@
+Prefix(:=<http://ontologies-r.us/bdp/bcr#>)
+Prefix(bcr:=<http://ontologies-r.us/bdp/bcr/>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://ontologies-r.us/bdp/bcr>
+
+Declaration(Class(bcr:Entry))
+Declaration(ObjectProperty(bcr:id))
+Declaration(DataProperty(bcr:age))
+Declaration(DataProperty(bcr:entryDate))
+
+############################
+#   Object Properties
+############################
+
+# Object Property: bcr:id (bcr:id)
+
+InverseFunctionalObjectProperty(bcr:id)
+
+
+############################
+#   Data Properties
+############################
+
+# Data Property: bcr:age (bcr:age)
+
+AnnotationAssertion(rdfs:comment bcr:age "The age of the person at the point the diagnosis was made.")
+DataPropertyRange(bcr:age xsd:nonNegativeInteger)
+
+# Data Property: bcr:entryDate (bcr:entryDate)
+
+AnnotationAssertion(rdfs:comment bcr:entryDate "The date that the stage 2 or greater diagnosis was made")
+DataPropertyRange(bcr:entryDate xsd:dateTime)
+
+
+
+############################
+#   Classes
+############################
+
+# Class: bcr:Entry (bcr:Entry)
+
+AnnotationAssertion(rdfs:comment bcr:Entry "An entry in the breast cancer registry table.  Each entry references a living, female person who has been diagnosed with Stage 2 or greater breast cancer.")
+SubClassOf(bcr:Entry ObjectExactCardinality(1 bcr:id))
+SubClassOf(bcr:Entry DataExactCardinality(1 bcr:entryDate))
+SubClassOf(bcr:Entry DataMaxCardinality(1 bcr:age))
+
+
+)
