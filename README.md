@@ -139,5 +139,11 @@ through background stuff more to familarize with concepts like equivalent class,
 through BlendingFHIRandRDF tutorial.
 
 
+----
+
+
+Stanford Existential Elimination Tutorial
+
+http://logic.stanford.edu/intrologic/notes/chapter_08.html
 
 
