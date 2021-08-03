@@ -1,8 +1,8 @@
-id: http://example.org/bdpontology/isosemantic_model
+id: http://ontologies-r.us/bdp/isosemanticmodel
 
 prefixes:
-  metatype: https://w3id.org/linkml/types/
-  isom: https://example.org/bdpontology/isosemantic_model/
+  linkml: https://w3id.org/linkml/
+  isom: http://ontologies-r.us/bdp/isosemanticmodel
   xsd: http://www.w3.org/2001/XMLSchema#
 
 
@@ -14,17 +14,36 @@ imports:
 
 
 classes:
+  Provider:
+    description: A medical care provider
+    attributes:
+      id:
+        description: A unique identifier assigned to a provider by an institution
+        identifier: true
+      name:
+        description: The name of the provider
+        required: true
+
   Patient:
     description: A patient
     attributes:
-      id:
+      mrn:
+        description: A unique identifier assigned to the patient by an institution
         identifier: true
+        range: integer
+      name:
+        description: The patient's name
+        required: true
+      primary:
+        description: The primary care provider assigned to the patient, if any
+        range: Provider
 
   DxBase:
     description: base class for various isosemantic variants
     attributes:
-      id:
-        identifier: true
+      date:
+        range: dateTime
+        required: true
       patient:
         range: Patient
         required: true
@@ -42,7 +61,7 @@ classes:
         range: DxModifierEnum
         required: true
 
-enums
+
 
 
 

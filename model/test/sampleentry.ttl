@@ -1,0 +1,10 @@
+@prefix : <http://ontologies-r.us/bdp/bcrbridge#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:i1 a :Entry ;
+   :id :117434 ;
+   :age "42"^^xsd:integer ;
+   :entryDate "2019-12-02"^^xsd:dateTime .
+<http://git/hsolbrig/BDP-Ontology/test/sampleentry.ttl> a owl:Ontology ;
+   owl:imports <http://ontologies-r.us/bdp/bcrbridge> .

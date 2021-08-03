@@ -10,6 +10,7 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 Ontology(<http://ontologies-r.us/bdp/bcr>
 
 Declaration(Class(bcr:Entry))
+Declaration(Class(bcr:Person))
 Declaration(ObjectProperty(bcr:id))
 Declaration(DataProperty(bcr:age))
 Declaration(DataProperty(bcr:entryDate))
@@ -20,6 +21,7 @@ Declaration(DataProperty(bcr:entryDate))
 
 # Object Property: bcr:id (bcr:id)
 
+AnnotationAssertion(rdfs:comment bcr:id "The identifier of the person diagnosed with breast cancer")
 InverseFunctionalObjectProperty(bcr:id)
 
 
@@ -46,9 +48,13 @@ DataPropertyRange(bcr:entryDate xsd:dateTime)
 # Class: bcr:Entry (bcr:Entry)
 
 AnnotationAssertion(rdfs:comment bcr:Entry "An entry in the breast cancer registry table.  Each entry references a living, female person who has been diagnosed with Stage 2 or greater breast cancer.")
-SubClassOf(bcr:Entry ObjectExactCardinality(1 bcr:id))
+SubClassOf(bcr:Entry ObjectExactCardinality(1 bcr:id bcr:Person))
 SubClassOf(bcr:Entry DataExactCardinality(1 bcr:entryDate))
 SubClassOf(bcr:Entry DataMaxCardinality(1 bcr:age))
+
+# Class: bcr:Person (bcr:Person)
+
+AnnotationAssertion(rdfs:comment bcr:Person "An entry in the repository person/patient table")
 
 
 )

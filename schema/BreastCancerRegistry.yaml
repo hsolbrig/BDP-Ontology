@@ -13,14 +13,20 @@ default_prefix: bcr
 imports:
   - linkml:types
 
-
 classes:
+  Person:
+    description: An entry in the repository person/patient table
+    attributes:
+      id:
+        description: The unique identifier of a person
+        identifier: True
+
   Entry:
     description: An entry in a breast cancer registry
     attributes:
       id:
-        identifier: true
         description: The identifier of the person diagnosed with breast cancer
+        range: Person
       entryDate:
         range: date
         description: The date that the person was diagnosed as having breast cancer

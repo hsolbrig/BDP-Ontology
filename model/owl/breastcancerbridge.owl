@@ -19,7 +19,9 @@ Import(<http://www.ebi.ac.uk/efo/releases/v3.32.0/efo.owl>)
 
 # Object Property: <http://ontologies-r.us/bdp/bcr/id> (<http://ontologies-r.us/bdp/bcr/id>)
 
-ObjectPropertyRange(<http://ontologies-r.us/bdp/bcr/id> ObjectIntersectionOf(<http://semanticscience.org/resource/SIO_010052> <http://semanticscience.org/resource/SIO_010058> <http://xmlns.com/foaf/0.1/Person>))
+ObjectPropertyRange(<http://ontologies-r.us/bdp/bcr/id> <http://purl.obolibrary.org/obo/PATO_0000383>)
+ObjectPropertyRange(<http://ontologies-r.us/bdp/bcr/id> <http://semanticscience.org/resource/SIO_010058>)
+ObjectPropertyRange(<http://ontologies-r.us/bdp/bcr/id> <http://xmlns.com/foaf/0.1/Person>)
 ObjectPropertyRange(<http://ontologies-r.us/bdp/bcr/id> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/ERO_0002100> <http://purl.obolibrary.org/obo/HP_0003002>))
 
 
