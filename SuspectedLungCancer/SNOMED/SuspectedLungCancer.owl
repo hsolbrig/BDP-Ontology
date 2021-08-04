@@ -1,0 +1,2142 @@
+Prefix(:=<http://ontologies-r.us/bdp/snomed/suspectedlungcancer#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://ontologies-r.us/bdp/snomed/suspectedlungcancer>
+Annotation(rdfs:comment "Copyright 2021 The International Health Terminology Standards Development Organisation (IHTSDO).
+All Rights Reserved. SNOMED CT was originally created by The College of American Pathologists. \"SNOMED\" and
+ \"SNOMED CT\" are registered trademarks of the IHTSDO.  SNOMED CT has been created by combining SNOMED RT
+and a computer based nomenclature and classification known as Clinical Terms Version 3, formerly known as 
+Read Codes Version 3, which was created on behalf of the UK Department of Health.
+
+This document forms part of the International Release of SNOMED CT distributed by the International Health
+Terminology Standards Development Organisation (IHTSDO), and is subject to the IHTSDO's SNOMED CT Affiliate
+Licence. Details of the SNOMED CT Affiliate Licence may be found at www.ihtsdo.org/our-standards/licensing/")
+Annotation(rdfs:comment "Generated as OWL RDF/XML from SNOMED CT release files")
+Annotation(rdfs:label "SNOMED Clinical Terms, International Release, GB and US English, Stated Relationships in OWL RDF")
+Annotation(owl:versionInfo "International Release, Core Module, Release Date: 20210731")
+
+Declaration(Class(<http://snomed.info/id/106028002>))
+Declaration(Class(<http://snomed.info/id/106048009>))
+Declaration(Class(<http://snomed.info/id/106232001>))
+Declaration(Class(<http://snomed.info/id/106234000>))
+Declaration(Class(<http://snomed.info/id/108369006>))
+Declaration(Class(<http://snomed.info/id/113343008>))
+Declaration(Class(<http://snomed.info/id/118222006>))
+Declaration(Class(<http://snomed.info/id/118946009>))
+Declaration(Class(<http://snomed.info/id/118956008>))
+Declaration(Class(<http://snomed.info/id/118969007>))
+Declaration(Class(<http://snomed.info/id/123037004>))
+Declaration(Class(<http://snomed.info/id/123960005>))
+Declaration(Class(<http://snomed.info/id/125676002>))
+Declaration(Class(<http://snomed.info/id/126637008>))
+Declaration(Class(<http://snomed.info/id/126638003>))
+Declaration(Class(<http://snomed.info/id/126667002>))
+Declaration(Class(<http://snomed.info/id/126713003>))
+Declaration(Class(<http://snomed.info/id/126725000>))
+Declaration(Class(<http://snomed.info/id/127947003>))
+Declaration(Class(<http://snomed.info/id/128121009>))
+Declaration(Class(<http://snomed.info/id/128262006>))
+Declaration(Class(<http://snomed.info/id/128272009>))
+Declaration(Class(<http://snomed.info/id/138875005>))
+Declaration(Class(<http://snomed.info/id/160237006>))
+Declaration(Class(<http://snomed.info/id/162572001>))
+Declaration(Class(<http://snomed.info/id/162573006>))
+Declaration(Class(<http://snomed.info/id/188361007>))
+Declaration(Class(<http://snomed.info/id/19829001>))
+Declaration(Class(<http://snomed.info/id/20139000>))
+Declaration(Class(<http://snomed.info/id/22943007>))
+Declaration(Class(<http://snomed.info/id/229761008>))
+Declaration(Class(<http://snomed.info/id/233814000>))
+Declaration(Class(<http://snomed.info/id/243796009>))
+Declaration(Class(<http://snomed.info/id/243928005>))
+Declaration(Class(<http://snomed.info/id/254618003>))
+Declaration(Class(<http://snomed.info/id/255058005>))
+Declaration(Class(<http://snomed.info/id/255203001>))
+Declaration(Class(<http://snomed.info/id/255395001>))
+Declaration(Class(<http://snomed.info/id/261060002>))
+Declaration(Class(<http://snomed.info/id/26107004>))
+Declaration(Class(<http://snomed.info/id/262225004>))
+Declaration(Class(<http://snomed.info/id/272099008>))
+Declaration(Class(<http://snomed.info/id/276438008>))
+Declaration(Class(<http://snomed.info/id/277739008>))
+Declaration(Class(<http://snomed.info/id/278195005>))
+Declaration(Class(<http://snomed.info/id/278197002>))
+Declaration(Class(<http://snomed.info/id/278264008>))
+Declaration(Class(<http://snomed.info/id/27832009>))
+Declaration(Class(<http://snomed.info/id/278441008>))
+Declaration(Class(<http://snomed.info/id/280542007>))
+Declaration(Class(<http://snomed.info/id/281483004>))
+Declaration(Class(<http://snomed.info/id/281586009>))
+Declaration(Class(<http://snomed.info/id/288529006>))
+Declaration(Class(<http://snomed.info/id/2969000>))
+Declaration(Class(<http://snomed.info/id/298705000>))
+Declaration(Class(<http://snomed.info/id/300848003>))
+Declaration(Class(<http://snomed.info/id/300851005>))
+Declaration(Class(<http://snomed.info/id/300862005>))
+Declaration(Class(<http://snomed.info/id/301226008>))
+Declaration(Class(<http://snomed.info/id/301230006>))
+Declaration(Class(<http://snomed.info/id/301232003>))
+Declaration(Class(<http://snomed.info/id/301296002>))
+Declaration(Class(<http://snomed.info/id/30217000>))
+Declaration(Class(<http://snomed.info/id/302292003>))
+Declaration(Class(<http://snomed.info/id/302551006>))
+Declaration(Class(<http://snomed.info/id/303102005>))
+Declaration(Class(<http://snomed.info/id/308489006>))
+Declaration(Class(<http://snomed.info/id/309524007>))
+Declaration(Class(<http://snomed.info/id/309529002>))
+Declaration(Class(<http://snomed.info/id/310787001>))
+Declaration(Class(<http://snomed.info/id/312419003>))
+Declaration(Class(<http://snomed.info/id/321667001>))
+Declaration(Class(<http://snomed.info/id/362873000>))
+Declaration(Class(<http://snomed.info/id/362874006>))
+Declaration(Class(<http://snomed.info/id/362889002>))
+Declaration(Class(<http://snomed.info/id/362937008>))
+Declaration(Class(<http://snomed.info/id/362965005>))
+Declaration(Class(<http://snomed.info/id/362981000>))
+Declaration(Class(<http://snomed.info/id/363346000>))
+Declaration(Class(<http://snomed.info/id/363358000>))
+Declaration(Class(<http://snomed.info/id/363536003>))
+Declaration(Class(<http://snomed.info/id/363743006>))
+Declaration(Class(<http://snomed.info/id/36692007>))
+Declaration(Class(<http://snomed.info/id/367651003>))
+Declaration(Class(<http://snomed.info/id/370115009>))
+Declaration(Class(<http://snomed.info/id/370136006>))
+Declaration(Class(<http://snomed.info/id/372087000>))
+Declaration(Class(<http://snomed.info/id/38266002>))
+Declaration(Class(<http://snomed.info/id/38866009>))
+Declaration(Class(<http://snomed.info/id/394966004>))
+Declaration(Class(<http://snomed.info/id/39607008>))
+Declaration(Class(<http://snomed.info/id/399902003>))
+Declaration(Class(<http://snomed.info/id/399981008>))
+Declaration(Class(<http://snomed.info/id/400141005>))
+Declaration(Class(<http://snomed.info/id/400177003>))
+Declaration(Class(<http://snomed.info/id/404684003>))
+Declaration(Class(<http://snomed.info/id/406123005>))
+Declaration(Class(<http://snomed.info/id/410510008>))
+Declaration(Class(<http://snomed.info/id/410511007>))
+Declaration(Class(<http://snomed.info/id/410512000>))
+Declaration(Class(<http://snomed.info/id/410514004>))
+Declaration(Class(<http://snomed.info/id/410590009>))
+Declaration(Class(<http://snomed.info/id/410604004>))
+Declaration(Class(<http://snomed.info/id/413350009>))
+Declaration(Class(<http://snomed.info/id/4147007>))
+Declaration(Class(<http://snomed.info/id/415684004>))
+Declaration(Class(<http://snomed.info/id/416152001>))
+Declaration(Class(<http://snomed.info/id/416319003>))
+Declaration(Class(<http://snomed.info/id/416550000>))
+Declaration(Class(<http://snomed.info/id/416775004>))
+Declaration(Class(<http://snomed.info/id/416939005>))
+Declaration(Class(<http://snomed.info/id/417437006>))
+Declaration(Class(<http://snomed.info/id/41769001>))
+Declaration(Class(<http://snomed.info/id/419358007>))
+Declaration(Class(<http://snomed.info/id/420473002>))
+Declaration(Class(<http://snomed.info/id/428100006>))
+Declaration(Class(<http://snomed.info/id/430621000>))
+Declaration(Class(<http://snomed.info/id/43799004>))
+Declaration(Class(<http://snomed.info/id/440299000>))
+Declaration(Class(<http://snomed.info/id/442083009>))
+Declaration(Class(<http://snomed.info/id/443859009>))
+Declaration(Class(<http://snomed.info/id/444433005>))
+Declaration(Class(<http://snomed.info/id/448708002>))
+Declaration(Class(<http://snomed.info/id/449096009>))
+Declaration(Class(<http://snomed.info/id/48176007>))
+Declaration(Class(<http://snomed.info/id/49483002>))
+Declaration(Class(<http://snomed.info/id/49755003>))
+Declaration(Class(<http://snomed.info/id/50043002>))
+Declaration(Class(<http://snomed.info/id/51185008>))
+Declaration(Class(<http://snomed.info/id/52530000>))
+Declaration(Class(<http://snomed.info/id/52988006>))
+Declaration(Class(<http://snomed.info/id/55342001>))
+Declaration(Class(<http://snomed.info/id/57697001>))
+Declaration(Class(<http://snomed.info/id/609622007>))
+Declaration(Class(<http://snomed.info/id/609623002>))
+Declaration(Class(<http://snomed.info/id/64572001>))
+Declaration(Class(<http://snomed.info/id/67734004>))
+Declaration(Class(<http://snomed.info/id/698967008>))
+Declaration(Class(<http://snomed.info/id/699589007>))
+Declaration(Class(<http://snomed.info/id/699590003>))
+Declaration(Class(<http://snomed.info/id/699593001>))
+Declaration(Class(<http://snomed.info/id/699594007>))
+Declaration(Class(<http://snomed.info/id/70104002>))
+Declaration(Class(<http://snomed.info/id/714323000>))
+Declaration(Class(<http://snomed.info/id/714488006>))
+Declaration(Class(<http://snomed.info/id/719982003>))
+Declaration(Class(<http://snomed.info/id/72410000>))
+Declaration(Class(<http://snomed.info/id/816094009>))
+Declaration(Class(<http://snomed.info/id/82094008>))
+Declaration(Class(<http://snomed.info/id/86049000>))
+Declaration(Class(<http://snomed.info/id/900000000000441003>))
+Declaration(Class(<http://snomed.info/id/900000000000442005>))
+Declaration(Class(<http://snomed.info/id/900000000000443000>))
+Declaration(Class(<http://snomed.info/id/900000000000445007>))
+Declaration(Class(<http://snomed.info/id/900000000000454005>))
+Declaration(Class(<http://snomed.info/id/900000000000457003>))
+Declaration(Class(<http://snomed.info/id/91689009>))
+Declaration(Class(<http://snomed.info/id/91690000>))
+Declaration(Class(<http://snomed.info/id/91722005>))
+Declaration(Class(<http://snomed.info/id/91723000>))
+Declaration(Class(<http://snomed.info/id/91806002>))
+Declaration(Class(<http://snomed.info/id/91807006>))
+Declaration(Class(<http://snomed.info/id/91829005>))
+Declaration(Class(<http://snomed.info/id/94111002>))
+Declaration(Class(<http://snomed.info/id/94147001>))
+Declaration(ObjectProperty(<http://snomed.info/id/1003703000>))
+Declaration(ObjectProperty(<http://snomed.info/id/1003735000>))
+Declaration(ObjectProperty(<http://snomed.info/id/1142135004>))
+Declaration(ObjectProperty(<http://snomed.info/id/1142136003>))
+Declaration(ObjectProperty(<http://snomed.info/id/1142137007>))
+Declaration(ObjectProperty(<http://snomed.info/id/1142138002>))
+Declaration(ObjectProperty(<http://snomed.info/id/1142139005>))
+Declaration(ObjectProperty(<http://snomed.info/id/1142140007>))
+Declaration(ObjectProperty(<http://snomed.info/id/1142141006>))
+Declaration(ObjectProperty(<http://snomed.info/id/1142142004>))
+Declaration(ObjectProperty(<http://snomed.info/id/1142143009>))
+Declaration(ObjectProperty(<http://snomed.info/id/1148793005>))
+Declaration(ObjectProperty(<http://snomed.info/id/1148965004>))
+Declaration(ObjectProperty(<http://snomed.info/id/1148967007>))
+Declaration(ObjectProperty(<http://snomed.info/id/1148968002>))
+Declaration(ObjectProperty(<http://snomed.info/id/1148969005>))
+Declaration(ObjectProperty(<http://snomed.info/id/1149366004>))
+Declaration(ObjectProperty(<http://snomed.info/id/1149367008>))
+Declaration(ObjectProperty(<http://snomed.info/id/116676008>))
+Declaration(ObjectProperty(<http://snomed.info/id/116686009>))
+Declaration(ObjectProperty(<http://snomed.info/id/118168003>))
+Declaration(ObjectProperty(<http://snomed.info/id/118169006>))
+Declaration(ObjectProperty(<http://snomed.info/id/118170007>))
+Declaration(ObjectProperty(<http://snomed.info/id/118171006>))
+Declaration(ObjectProperty(<http://snomed.info/id/127489000>))
+Declaration(ObjectProperty(<http://snomed.info/id/131195008>))
+Declaration(ObjectProperty(<http://snomed.info/id/246075003>))
+Declaration(ObjectProperty(<http://snomed.info/id/246090004>))
+Declaration(ObjectProperty(<http://snomed.info/id/246093002>))
+Declaration(ObjectProperty(<http://snomed.info/id/246112005>))
+Declaration(ObjectProperty(<http://snomed.info/id/246454002>))
+Declaration(ObjectProperty(<http://snomed.info/id/246456000>))
+Declaration(ObjectProperty(<http://snomed.info/id/246501002>))
+Declaration(ObjectProperty(<http://snomed.info/id/246513007>))
+Declaration(ObjectProperty(<http://snomed.info/id/246514001>))
+Declaration(ObjectProperty(<http://snomed.info/id/255234002>))
+Declaration(ObjectProperty(<http://snomed.info/id/260507000>))
+Declaration(ObjectProperty(<http://snomed.info/id/260686004>))
+Declaration(ObjectProperty(<http://snomed.info/id/260870009>))
+Declaration(ObjectProperty(<http://snomed.info/id/263502005>))
+Declaration(ObjectProperty(<http://snomed.info/id/272741003>))
+Declaration(ObjectProperty(<http://snomed.info/id/288556008>))
+Declaration(ObjectProperty(<http://snomed.info/id/320091000221107>))
+Declaration(ObjectProperty(<http://snomed.info/id/363589002>))
+Declaration(ObjectProperty(<http://snomed.info/id/363698007>))
+Declaration(ObjectProperty(<http://snomed.info/id/363699004>))
+Declaration(ObjectProperty(<http://snomed.info/id/363700003>))
+Declaration(ObjectProperty(<http://snomed.info/id/363701004>))
+Declaration(ObjectProperty(<http://snomed.info/id/363702006>))
+Declaration(ObjectProperty(<http://snomed.info/id/363703001>))
+Declaration(ObjectProperty(<http://snomed.info/id/363704007>))
+Declaration(ObjectProperty(<http://snomed.info/id/363705008>))
+Declaration(ObjectProperty(<http://snomed.info/id/363709002>))
+Declaration(ObjectProperty(<http://snomed.info/id/363710007>))
+Declaration(ObjectProperty(<http://snomed.info/id/363713009>))
+Declaration(ObjectProperty(<http://snomed.info/id/363714003>))
+Declaration(ObjectProperty(<http://snomed.info/id/370129005>))
+Declaration(ObjectProperty(<http://snomed.info/id/370130000>))
+Declaration(ObjectProperty(<http://snomed.info/id/370131001>))
+Declaration(ObjectProperty(<http://snomed.info/id/370132008>))
+Declaration(ObjectProperty(<http://snomed.info/id/370133003>))
+Declaration(ObjectProperty(<http://snomed.info/id/370134009>))
+Declaration(ObjectProperty(<http://snomed.info/id/370135005>))
+Declaration(ObjectProperty(<http://snomed.info/id/371881003>))
+Declaration(ObjectProperty(<http://snomed.info/id/405813007>))
+Declaration(ObjectProperty(<http://snomed.info/id/405814001>))
+Declaration(ObjectProperty(<http://snomed.info/id/405815000>))
+Declaration(ObjectProperty(<http://snomed.info/id/405816004>))
+Declaration(ObjectProperty(<http://snomed.info/id/408729009>))
+Declaration(ObjectProperty(<http://snomed.info/id/408730004>))
+Declaration(ObjectProperty(<http://snomed.info/id/408731000>))
+Declaration(ObjectProperty(<http://snomed.info/id/408732007>))
+Declaration(ObjectProperty(<http://snomed.info/id/410662002>))
+Declaration(ObjectProperty(<http://snomed.info/id/410675002>))
+Declaration(ObjectProperty(<http://snomed.info/id/411116001>))
+Declaration(ObjectProperty(<http://snomed.info/id/418775008>))
+Declaration(ObjectProperty(<http://snomed.info/id/419066007>))
+Declaration(ObjectProperty(<http://snomed.info/id/424226004>))
+Declaration(ObjectProperty(<http://snomed.info/id/424244007>))
+Declaration(ObjectProperty(<http://snomed.info/id/424361007>))
+Declaration(ObjectProperty(<http://snomed.info/id/424876005>))
+Declaration(ObjectProperty(<http://snomed.info/id/425391005>))
+Declaration(ObjectProperty(<http://snomed.info/id/42752001>))
+Declaration(ObjectProperty(<http://snomed.info/id/47429007>))
+Declaration(ObjectProperty(<http://snomed.info/id/609096000>))
+Declaration(ObjectProperty(<http://snomed.info/id/704319004>))
+Declaration(ObjectProperty(<http://snomed.info/id/704320005>))
+Declaration(ObjectProperty(<http://snomed.info/id/704321009>))
+Declaration(ObjectProperty(<http://snomed.info/id/704322002>))
+Declaration(ObjectProperty(<http://snomed.info/id/704323007>))
+Declaration(ObjectProperty(<http://snomed.info/id/704324001>))
+Declaration(ObjectProperty(<http://snomed.info/id/704325000>))
+Declaration(ObjectProperty(<http://snomed.info/id/704326004>))
+Declaration(ObjectProperty(<http://snomed.info/id/704327008>))
+Declaration(ObjectProperty(<http://snomed.info/id/704346009>))
+Declaration(ObjectProperty(<http://snomed.info/id/704347000>))
+Declaration(ObjectProperty(<http://snomed.info/id/704647008>))
+Declaration(ObjectProperty(<http://snomed.info/id/718497002>))
+Declaration(ObjectProperty(<http://snomed.info/id/719715003>))
+Declaration(ObjectProperty(<http://snomed.info/id/719722006>))
+Declaration(ObjectProperty(<http://snomed.info/id/726542003>))
+Declaration(ObjectProperty(<http://snomed.info/id/726633004>))
+Declaration(ObjectProperty(<http://snomed.info/id/732943007>))
+Declaration(ObjectProperty(<http://snomed.info/id/732945000>))
+Declaration(ObjectProperty(<http://snomed.info/id/732947008>))
+Declaration(ObjectProperty(<http://snomed.info/id/733722007>))
+Declaration(ObjectProperty(<http://snomed.info/id/733725009>))
+Declaration(ObjectProperty(<http://snomed.info/id/733928003>))
+Declaration(ObjectProperty(<http://snomed.info/id/733930001>))
+Declaration(ObjectProperty(<http://snomed.info/id/733931002>))
+Declaration(ObjectProperty(<http://snomed.info/id/733932009>))
+Declaration(ObjectProperty(<http://snomed.info/id/733933004>))
+Declaration(ObjectProperty(<http://snomed.info/id/734136001>))
+Declaration(ObjectProperty(<http://snomed.info/id/734137005>))
+Declaration(ObjectProperty(<http://snomed.info/id/736472000>))
+Declaration(ObjectProperty(<http://snomed.info/id/736473005>))
+Declaration(ObjectProperty(<http://snomed.info/id/736474004>))
+Declaration(ObjectProperty(<http://snomed.info/id/736475003>))
+Declaration(ObjectProperty(<http://snomed.info/id/736476002>))
+Declaration(ObjectProperty(<http://snomed.info/id/736518005>))
+Declaration(ObjectProperty(<http://snomed.info/id/738774007>))
+Declaration(ObjectProperty(<http://snomed.info/id/762705008>))
+Declaration(ObjectProperty(<http://snomed.info/id/762706009>))
+Declaration(ObjectProperty(<http://snomed.info/id/762949000>))
+Declaration(ObjectProperty(<http://snomed.info/id/762951001>))
+Declaration(ObjectProperty(<http://snomed.info/id/763032000>))
+Declaration(ObjectProperty(<http://snomed.info/id/766939001>))
+Declaration(ObjectProperty(<http://snomed.info/id/774081006>))
+Declaration(ObjectProperty(<http://snomed.info/id/774158006>))
+Declaration(ObjectProperty(<http://snomed.info/id/774159003>))
+Declaration(ObjectProperty(<http://snomed.info/id/774160008>))
+Declaration(ObjectProperty(<http://snomed.info/id/774163005>))
+Declaration(ObjectProperty(<http://snomed.info/id/827081001>))
+Declaration(ObjectProperty(<http://snomed.info/id/836358009>))
+Declaration(ObjectProperty(<http://snomed.info/id/840560000>))
+Declaration(ObjectProperty(<http://snomed.info/id/860779006>))
+Declaration(ObjectProperty(<http://snomed.info/id/860781008>))
+Declaration(AnnotationProperty(<http://www.w3.org/2004/02/skos/core#prefLabel>))
+
+############################
+#   Object Properties
+############################
+
+# Object Property: <http://snomed.info/id/1003703000> (Process extends to (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/1003703000> "Process extends to (attribute)"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/1003703000> "Process extends to"@en-gb)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/1003703000> "Process extends to"@en-us)
+SubObjectPropertyOf(<http://snomed.info/id/1003703000> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/1003735000> (Process acts on (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/1003735000> "Process acts on (attribute)"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/1003735000> "Process acts on"@en-gb)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/1003735000> "Process acts on"@en-us)
+SubObjectPropertyOf(<http://snomed.info/id/1003735000> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/1142135004> (Has presentation strength numerator value (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/1142135004> "Has presentation strength numerator value (attribute)"@en)
+SubObjectPropertyOf(<http://snomed.info/id/1142135004> <http://snomed.info/id/762706009>)
+
+# Object Property: <http://snomed.info/id/1142136003> (Has presentation strength denominator value (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/1142136003> "Has presentation strength denominator value (attribute)"@en)
+SubObjectPropertyOf(<http://snomed.info/id/1142136003> <http://snomed.info/id/762706009>)
+
+# Object Property: <http://snomed.info/id/1142137007> (Has concentration strength denominator value (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/1142137007> "Has concentration strength denominator value (attribute)"@en)
+SubObjectPropertyOf(<http://snomed.info/id/1142137007> <http://snomed.info/id/762706009>)
+
+# Object Property: <http://snomed.info/id/1142138002> (Has concentration strength numerator value (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/1142138002> "Has concentration strength numerator value (attribute)"@en)
+SubObjectPropertyOf(<http://snomed.info/id/1142138002> <http://snomed.info/id/762706009>)
+
+# Object Property: <http://snomed.info/id/1142139005> (Count of base of active ingredient (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/1142139005> "Count of base of active ingredient (attribute)"@en)
+SubObjectPropertyOf(<http://snomed.info/id/1142139005> <http://snomed.info/id/762706009>)
+
+# Object Property: <http://snomed.info/id/1142140007> (Count of active ingredient (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/1142140007> "Count of active ingredient (attribute)"@en)
+SubObjectPropertyOf(<http://snomed.info/id/1142140007> <http://snomed.info/id/762706009>)
+
+# Object Property: <http://snomed.info/id/1142141006> (Count of base and modification pair (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/1142141006> "Count of base and modification pair (attribute)"@en)
+SubObjectPropertyOf(<http://snomed.info/id/1142141006> <http://snomed.info/id/762706009>)
+
+# Object Property: <http://snomed.info/id/1142142004> (Has pack size (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/1142142004> "Has pack size (attribute)"@en)
+SubObjectPropertyOf(<http://snomed.info/id/1142142004> <http://snomed.info/id/762706009>)
+
+# Object Property: <http://snomed.info/id/1142143009> (Count of clinical drug type (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/1142143009> "Count of clinical drug type (attribute)"@en)
+SubObjectPropertyOf(<http://snomed.info/id/1142143009> <http://snomed.info/id/762706009>)
+
+# Object Property: <http://snomed.info/id/1148793005> (Unit of presentation size quantity (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/1148793005> "Unit of presentation size quantity (attribute)"@en)
+SubObjectPropertyOf(<http://snomed.info/id/1148793005> <http://snomed.info/id/762706009>)
+
+# Object Property: <http://snomed.info/id/1148965004> (Is sterile (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/1148965004> "Is sterile (attribute)"@en)
+SubObjectPropertyOf(<http://snomed.info/id/1148965004> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/1148967007> (Has coating material (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/1148967007> "Has coating material (attribute)"@en)
+SubObjectPropertyOf(<http://snomed.info/id/1148967007> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/1148968002> (Has surface texture (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/1148968002> "Has surface texture (attribute)"@en)
+SubObjectPropertyOf(<http://snomed.info/id/1148968002> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/1148969005> (Has absorbability (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/1148969005> "Has absorbability (attribute)"@en)
+SubObjectPropertyOf(<http://snomed.info/id/1148969005> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/1149366004> (Has ingredient qualitative strength (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/1149366004> "Has ingredient qualitative strength (attribute)"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/1149366004> "Has ingredient qualitative strength"@en-gb)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/1149366004> "Has ingredient qualitative strength"@en-us)
+SubObjectPropertyOf(<http://snomed.info/id/1149366004> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/1149367008> (Has target population (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/1149367008> "Has target population (attribute)"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/1149367008> "Has target population"@en-gb)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/1149367008> "Has target population"@en-us)
+SubObjectPropertyOf(<http://snomed.info/id/1149367008> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/116676008> (Associated morphology (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/116676008> "Associated morphology (attribute)"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/116676008> "Associated morphology"@en-gb)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/116676008> "Associated morphology"@en-us)
+SubObjectPropertyOf(<http://snomed.info/id/116676008> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/116686009> (Has specimen (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/116686009> "Has specimen (attribute)"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/116686009> "Has specimen"@en-gb)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/116686009> "Has specimen"@en-us)
+SubObjectPropertyOf(<http://snomed.info/id/116686009> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/118168003> (Specimen source morphology (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/118168003> "Specimen source morphology (attribute)"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/118168003> "Specimen source morphology"@en-gb)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/118168003> "Specimen source morphology"@en-us)
+SubObjectPropertyOf(<http://snomed.info/id/118168003> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/118169006> (Specimen source topography (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/118169006> "Specimen source topography (attribute)"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/118169006> "Specimen source topography"@en-gb)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/118169006> "Specimen source topography"@en-us)
+SubObjectPropertyOf(<http://snomed.info/id/118169006> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/118170007> (Specimen source identity (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/118170007> "Specimen source identity (attribute)"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/118170007> "Specimen source identity"@en-gb)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/118170007> "Specimen source identity"@en-us)
+SubObjectPropertyOf(<http://snomed.info/id/118170007> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/118171006> (Specimen procedure (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/118171006> "Specimen procedure (attribute)"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/118171006> "Specimen procedure"@en-gb)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/118171006> "Specimen procedure"@en-us)
+SubObjectPropertyOf(<http://snomed.info/id/118171006> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/127489000> (Has active ingredient (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/127489000> "Has active ingredient (attribute)"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/127489000> "Has active ingredient"@en-gb)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/127489000> "Has active ingredient"@en-us)
+SubObjectPropertyOf(<http://snomed.info/id/127489000> <http://snomed.info/id/762951001>)
+
+# Object Property: <http://snomed.info/id/131195008> (Subject of information (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/131195008> "Subject of information (attribute)"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/131195008> "Subject of information"@en-gb)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/131195008> "Subject of information"@en-us)
+SubObjectPropertyOf(<http://snomed.info/id/131195008> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/246075003> (Causative agent (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/246075003> "Causative agent (attribute)"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/246075003> "Causative agent"@en-gb)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/246075003> "Causative agent"@en-us)
+SubObjectPropertyOf(<http://snomed.info/id/246075003> <http://snomed.info/id/47429007>)
+
+# Object Property: <http://snomed.info/id/246090004> (Associated finding (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/246090004> "Associated finding (attribute)"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/246090004> "Associated finding"@en-gb)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/246090004> "Associated finding"@en-us)
+SubObjectPropertyOf(<http://snomed.info/id/246090004> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/246093002> (Component (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/246093002> "Component (attribute)"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/246093002> "Component"@en-gb)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/246093002> "Component"@en-us)
+SubObjectPropertyOf(<http://snomed.info/id/246093002> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/246112005> (Severity (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/246112005> "Severity (attribute)"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/246112005> "Severity"@en-gb)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/246112005> "Severity"@en-us)
+SubObjectPropertyOf(<http://snomed.info/id/246112005> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/246454002> (Occurrence (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/246454002> "Occurrence (attribute)"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/246454002> "Occurrence"@en-gb)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/246454002> "Occurrence"@en-us)
+SubObjectPropertyOf(<http://snomed.info/id/246454002> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/246456000> (Episodicity (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/246456000> "Episodicity (attribute)"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/246456000> "Episodicity"@en-gb)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/246456000> "Episodicity"@en-us)
+SubObjectPropertyOf(<http://snomed.info/id/246456000> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/246501002> (Technique (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/246501002> "Technique (attribute)"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/246501002> "Technique"@en-gb)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/246501002> "Technique"@en-us)
+SubObjectPropertyOf(<http://snomed.info/id/246501002> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/246513007> (Revision status (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/246513007> "Revision status (attribute)"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/246513007> "Revision status"@en-gb)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/246513007> "Revision status"@en-us)
+SubObjectPropertyOf(<http://snomed.info/id/246513007> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/246514001> (Units (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/246514001> "Units (attribute)"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/246514001> "Units"@en-gb)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/246514001> "Units"@en-us)
+SubObjectPropertyOf(<http://snomed.info/id/246514001> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/255234002> (After (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/255234002> "After (attribute)"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/255234002> "After"@en-gb)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/255234002> "After"@en-us)
+SubObjectPropertyOf(<http://snomed.info/id/255234002> <http://snomed.info/id/726633004>)
+
+# Object Property: <http://snomed.info/id/260507000> (Access (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/260507000> "Access (attribute)"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/260507000> "Access"@en-gb)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/260507000> "Access"@en-us)
+SubObjectPropertyOf(<http://snomed.info/id/260507000> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/260686004> (Method (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/260686004> "Method (attribute)"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/260686004> "Method"@en-gb)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/260686004> "Method"@en-us)
+SubObjectPropertyOf(<http://snomed.info/id/260686004> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/260870009> (Priority (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/260870009> "Priority (attribute)"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/260870009> "Priority"@en-gb)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/260870009> "Priority"@en-us)
+SubObjectPropertyOf(<http://snomed.info/id/260870009> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/263502005> (Clinical course (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/263502005> "Clinical course (attribute)"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/263502005> "Clinical course"@en-gb)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/263502005> "Clinical course"@en-us)
+SubObjectPropertyOf(<http://snomed.info/id/263502005> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/272741003> (Laterality (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/272741003> "Laterality (attribute)"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/272741003> "Laterality"@en-gb)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/272741003> "Laterality"@en-us)
+SubObjectPropertyOf(<http://snomed.info/id/272741003> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/288556008> (Before (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/288556008> "Before (attribute)"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/288556008> "Before"@en-gb)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/288556008> "Before"@en-us)
+SubObjectPropertyOf(<http://snomed.info/id/288556008> <http://snomed.info/id/726633004>)
+
+# Object Property: <http://snomed.info/id/320091000221107> (Unit of presentation size unit (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/320091000221107> "Unit of presentation size unit (attribute)"@en)
+SubObjectPropertyOf(<http://snomed.info/id/320091000221107> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/363589002> (Associated procedure (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/363589002> "Associated procedure (attribute)"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/363589002> "Associated procedure"@en-gb)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/363589002> "Associated procedure"@en-us)
+SubObjectPropertyOf(<http://snomed.info/id/363589002> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/363698007> (Finding site (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/363698007> "Finding site (attribute)"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/363698007> "Finding site"@en-gb)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/363698007> "Finding site"@en-us)
+SubObjectPropertyOf(<http://snomed.info/id/363698007> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/363699004> (Direct device (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/363699004> "Direct device (attribute)"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/363699004> "Direct device"@en-gb)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/363699004> "Direct device"@en-us)
+SubObjectPropertyOf(<http://snomed.info/id/363699004> <http://snomed.info/id/405815000>)
+
+# Object Property: <http://snomed.info/id/363700003> (Direct morphology (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/363700003> "Direct morphology (attribute)"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/363700003> "Direct morphology"@en-gb)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/363700003> "Direct morphology"@en-us)
+SubObjectPropertyOf(<http://snomed.info/id/363700003> <http://snomed.info/id/405816004>)
+
+# Object Property: <http://snomed.info/id/363701004> (Direct substance (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/363701004> "Direct substance (attribute)"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/363701004> "Direct substance"@en-gb)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/363701004> "Direct substance"@en-us)
+SubObjectPropertyOf(<http://snomed.info/id/363701004> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/363702006> (Has focus (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/363702006> "Has focus (attribute)"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/363702006> "Has focus"@en-gb)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/363702006> "Has focus"@en-us)
+SubObjectPropertyOf(<http://snomed.info/id/363702006> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/363703001> (Has intent (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/363703001> "Has intent (attribute)"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/363703001> "Has intent"@en-gb)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/363703001> "Has intent"@en-us)
+SubObjectPropertyOf(<http://snomed.info/id/363703001> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/363704007> (Procedure site (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/363704007> "Procedure site (attribute)"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/363704007> "Procedure site"@en-gb)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/363704007> "Procedure site"@en-us)
+SubObjectPropertyOf(<http://snomed.info/id/363704007> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/363705008> (Has definitional manifestation (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/363705008> "Has definitional manifestation (attribute)"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/363705008> "Has definitional manifestation"@en-gb)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/363705008> "Has definitional manifestation"@en-us)
+SubObjectPropertyOf(<http://snomed.info/id/363705008> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/363709002> (Indirect morphology (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/363709002> "Indirect morphology (attribute)"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/363709002> "Indirect morphology"@en-gb)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/363709002> "Indirect morphology"@en-us)
+SubObjectPropertyOf(<http://snomed.info/id/363709002> <http://snomed.info/id/405816004>)
+
+# Object Property: <http://snomed.info/id/363710007> (Indirect device (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/363710007> "Indirect device (attribute)"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/363710007> "Indirect device"@en-gb)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/363710007> "Indirect device"@en-us)
+SubObjectPropertyOf(<http://snomed.info/id/363710007> <http://snomed.info/id/405815000>)
+
+# Object Property: <http://snomed.info/id/363713009> (Has interpretation (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/363713009> "Has interpretation (attribute)"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/363713009> "Has interpretation"@en-gb)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/363713009> "Has interpretation"@en-us)
+SubObjectPropertyOf(<http://snomed.info/id/363713009> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/363714003> (Interprets (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/363714003> "Interprets (attribute)"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/363714003> "Interprets"@en-gb)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/363714003> "Interprets"@en-us)
+SubObjectPropertyOf(<http://snomed.info/id/363714003> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/370129005> (Measurement method (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/370129005> "Measurement method (attribute)"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/370129005> "Measurement method"@en-gb)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/370129005> "Measurement method"@en-us)
+SubObjectPropertyOf(<http://snomed.info/id/370129005> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/370130000> (Property (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/370130000> "Property (attribute)"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/370130000> "Property"@en-gb)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/370130000> "Property"@en-us)
+SubObjectPropertyOf(<http://snomed.info/id/370130000> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/370131001> (Recipient category (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/370131001> "Recipient category (attribute)"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/370131001> "Recipient category"@en-gb)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/370131001> "Recipient category"@en-us)
+SubObjectPropertyOf(<http://snomed.info/id/370131001> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/370132008> (Scale type (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/370132008> "Scale type (attribute)"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/370132008> "Scale type"@en-gb)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/370132008> "Scale type"@en-us)
+SubObjectPropertyOf(<http://snomed.info/id/370132008> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/370133003> (Specimen substance (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/370133003> "Specimen substance (attribute)"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/370133003> "Specimen substance"@en-gb)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/370133003> "Specimen substance"@en-us)
+SubObjectPropertyOf(<http://snomed.info/id/370133003> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/370134009> (Time aspect (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/370134009> "Time aspect (attribute)"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/370134009> "Time aspect"@en-gb)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/370134009> "Time aspect"@en-us)
+SubObjectPropertyOf(<http://snomed.info/id/370134009> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/370135005> (Pathological process (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/370135005> "Pathological process (attribute)"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/370135005> "Pathological process"@en-gb)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/370135005> "Pathological process"@en-us)
+SubObjectPropertyOf(<http://snomed.info/id/370135005> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/371881003> (During (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/371881003> "During (attribute)"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/371881003> "During"@en-gb)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/371881003> "During"@en-us)
+SubObjectPropertyOf(<http://snomed.info/id/371881003> <http://snomed.info/id/726633004>)
+
+# Object Property: <http://snomed.info/id/405813007> (Procedure site - Direct (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/405813007> "Procedure site - Direct (attribute)"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/405813007> "Procedure site - Direct"@en-gb)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/405813007> "Procedure site - Direct"@en-us)
+SubObjectPropertyOf(<http://snomed.info/id/405813007> <http://snomed.info/id/363704007>)
+
+# Object Property: <http://snomed.info/id/405814001> (Procedure site - Indirect (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/405814001> "Procedure site - Indirect (attribute)"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/405814001> "Procedure site - Indirect"@en-gb)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/405814001> "Procedure site - Indirect"@en-us)
+SubObjectPropertyOf(<http://snomed.info/id/405814001> <http://snomed.info/id/363704007>)
+
+# Object Property: <http://snomed.info/id/405815000> (Procedure device (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/405815000> "Procedure device (attribute)"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/405815000> "Procedure device"@en-gb)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/405815000> "Procedure device"@en-us)
+SubObjectPropertyOf(<http://snomed.info/id/405815000> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/405816004> (Procedure morphology (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/405816004> "Procedure morphology (attribute)"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/405816004> "Procedure morphology"@en-gb)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/405816004> "Procedure morphology"@en-us)
+SubObjectPropertyOf(<http://snomed.info/id/405816004> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/408729009> (Finding context (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/408729009> "Finding context (attribute)"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/408729009> "Finding context"@en-gb)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/408729009> "Finding context"@en-us)
+SubObjectPropertyOf(<http://snomed.info/id/408729009> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/408730004> (Procedure context (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/408730004> "Procedure context (attribute)"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/408730004> "Procedure context"@en-gb)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/408730004> "Procedure context"@en-us)
+SubObjectPropertyOf(<http://snomed.info/id/408730004> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/408731000> (Temporal context (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/408731000> "Temporal context (attribute)"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/408731000> "Temporal context"@en-gb)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/408731000> "Temporal context"@en-us)
+SubObjectPropertyOf(<http://snomed.info/id/408731000> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/408732007> (Subject relationship context (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/408732007> "Subject relationship context (attribute)"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/408732007> "Subject relationship context"@en-gb)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/408732007> "Subject relationship context"@en-us)
+SubObjectPropertyOf(<http://snomed.info/id/408732007> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/410675002> (Route of administration (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/410675002> "Route of administration (attribute)"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/410675002> "Route of administration"@en-gb)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/410675002> "Route of administration"@en-us)
+SubObjectPropertyOf(<http://snomed.info/id/410675002> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/411116001> (Has manufactured dose form (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/411116001> "Has manufactured dose form (attribute)"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/411116001> "Has manufactured dose form"@en-gb)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/411116001> "Has manufactured dose form"@en-us)
+SubObjectPropertyOf(<http://snomed.info/id/411116001> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/418775008> (Finding method (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/418775008> "Finding method (attribute)"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/418775008> "Finding method"@en-gb)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/418775008> "Finding method"@en-us)
+SubObjectPropertyOf(<http://snomed.info/id/418775008> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/419066007> (Finding informer (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/419066007> "Finding informer (attribute)"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/419066007> "Finding informer"@en-gb)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/419066007> "Finding informer"@en-us)
+SubObjectPropertyOf(<http://snomed.info/id/419066007> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/424226004> (Using device (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/424226004> "Using device (attribute)"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/424226004> "Using device"@en-gb)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/424226004> "Using device"@en-us)
+SubObjectPropertyOf(<http://snomed.info/id/424226004> <http://snomed.info/id/405815000>)
+
+# Object Property: <http://snomed.info/id/424244007> (Using energy (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/424244007> "Using energy (attribute)"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/424244007> "Using energy"@en-gb)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/424244007> "Using energy"@en-us)
+SubObjectPropertyOf(<http://snomed.info/id/424244007> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/424361007> (Using substance (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/424361007> "Using substance (attribute)"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/424361007> "Using substance"@en-gb)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/424361007> "Using substance"@en-us)
+SubObjectPropertyOf(<http://snomed.info/id/424361007> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/424876005> (Surgical approach (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/424876005> "Surgical approach (attribute)"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/424876005> "Surgical approach"@en-gb)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/424876005> "Surgical approach"@en-us)
+SubObjectPropertyOf(<http://snomed.info/id/424876005> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/425391005> (Using access device (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/425391005> "Using access device (attribute)"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/425391005> "Using access device"@en-gb)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/425391005> "Using access device"@en-us)
+SubObjectPropertyOf(<http://snomed.info/id/425391005> <http://snomed.info/id/424226004>)
+
+# Object Property: <http://snomed.info/id/42752001> (Due to (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/42752001> "Due to (attribute)"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/42752001> "Due to"@en-gb)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/42752001> "Due to"@en-us)
+SubObjectPropertyOf(<http://snomed.info/id/42752001> <http://snomed.info/id/47429007>)
+
+# Object Property: <http://snomed.info/id/47429007> (Associated with (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/47429007> "Associated with (attribute)"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/47429007> "Associated with"@en-gb)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/47429007> "Associated with"@en-us)
+SubObjectPropertyOf(<http://snomed.info/id/47429007> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/609096000> (Role group (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/609096000> "Role group (attribute)"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/609096000> "Role group"@en-gb)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/609096000> "Role group"@en-us)
+SubObjectPropertyOf(<http://snomed.info/id/609096000> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/704319004> (Inheres in (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/704319004> "Inheres in (attribute)"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/704319004> "Inheres in"@en-gb)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/704319004> "Inheres in"@en-us)
+SubObjectPropertyOf(<http://snomed.info/id/704319004> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/704320005> (Towards (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/704320005> "Towards (attribute)"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/704320005> "Towards"@en-gb)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/704320005> "Towards"@en-us)
+SubObjectPropertyOf(<http://snomed.info/id/704320005> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/704321009> (Characterizes (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/704321009> "Characterizes (attribute)"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/704321009> "Characterizes"@en-gb)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/704321009> "Characterizes"@en-us)
+SubObjectPropertyOf(<http://snomed.info/id/704321009> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/704322002> (Process agent (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/704322002> "Process agent (attribute)"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/704322002> "Process agent"@en-gb)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/704322002> "Process agent"@en-us)
+SubObjectPropertyOf(<http://snomed.info/id/704322002> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/704323007> (Process duration (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/704323007> "Process duration (attribute)"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/704323007> "Process duration"@en-gb)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/704323007> "Process duration"@en-us)
+SubObjectPropertyOf(<http://snomed.info/id/704323007> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/704324001> (Process output (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/704324001> "Process output (attribute)"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/704324001> "Process output"@en-gb)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/704324001> "Process output"@en-us)
+SubObjectPropertyOf(<http://snomed.info/id/704324001> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/704325000> (Relative to (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/704325000> "Relative to (attribute)"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/704325000> "Relative to"@en-gb)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/704325000> "Relative to"@en-us)
+SubObjectPropertyOf(<http://snomed.info/id/704325000> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/704326004> (Precondition (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/704326004> "Precondition (attribute)"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/704326004> "Precondition"@en-gb)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/704326004> "Precondition"@en-us)
+SubObjectPropertyOf(<http://snomed.info/id/704326004> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/704327008> (Direct site (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/704327008> "Direct site (attribute)"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/704327008> "Direct site"@en-gb)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/704327008> "Direct site"@en-us)
+SubObjectPropertyOf(<http://snomed.info/id/704327008> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/704346009> (Specified by (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/704346009> "Specified by (attribute)"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/704346009> "Specified by"@en-gb)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/704346009> "Specified by"@en-us)
+SubObjectPropertyOf(<http://snomed.info/id/704346009> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/704347000> (Observes (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/704347000> "Observes (attribute)"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/704347000> "Observes"@en-gb)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/704347000> "Observes"@en-us)
+SubObjectPropertyOf(<http://snomed.info/id/704347000> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/704647008> (Is about (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/704647008> "Is about (attribute)"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/704647008> "Is about"@en-gb)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/704647008> "Is about"@en-us)
+SubObjectPropertyOf(<http://snomed.info/id/704647008> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/718497002> (Inherent location (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/718497002> "Inherent location (attribute)"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/718497002> "Inherent location"@en-gb)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/718497002> "Inherent location"@en-us)
+SubObjectPropertyOf(<http://snomed.info/id/718497002> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/719715003> (Relative to part of (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/719715003> "Relative to part of (attribute)"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/719715003> "Relative to part of"@en-gb)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/719715003> "Relative to part of"@en-us)
+SubObjectPropertyOf(<http://snomed.info/id/719715003> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/719722006> (Has realization (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/719722006> "Has realization (attribute)"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/719722006> "Has realization"@en-gb)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/719722006> "Has realization"@en-us)
+SubObjectPropertyOf(<http://snomed.info/id/719722006> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/726542003> (Has disposition (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/726542003> "Has disposition (attribute)"@en)
+SubObjectPropertyOf(<http://snomed.info/id/726542003> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/726633004> (Temporally related to (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/726633004> "Temporally related to (attribute)"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/726633004> "Temporally related to"@en-gb)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/726633004> "Temporally related to"@en-us)
+SubObjectPropertyOf(<http://snomed.info/id/726633004> <http://snomed.info/id/47429007>)
+
+# Object Property: <http://snomed.info/id/732943007> (Has basis of strength substance (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/732943007> "Has basis of strength substance (attribute)"@en)
+SubObjectPropertyOf(<http://snomed.info/id/732943007> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/732945000> (Has presentation strength numerator unit (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/732945000> "Has presentation strength numerator unit (attribute)"@en)
+SubObjectPropertyOf(<http://snomed.info/id/732945000> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/732947008> (Has presentation strength denominator unit (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/732947008> "Has presentation strength denominator unit (attribute)"@en)
+SubObjectPropertyOf(<http://snomed.info/id/732947008> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/733722007> (Has concentration strength denominator unit (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/733722007> "Has concentration strength denominator unit (attribute)"@en)
+SubObjectPropertyOf(<http://snomed.info/id/733722007> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/733725009> (Has concentration strength numerator unit (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/733725009> "Has concentration strength numerator unit (attribute)"@en)
+SubObjectPropertyOf(<http://snomed.info/id/733725009> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/733928003> (All or part of (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/733928003> "All or part of (attribute)"@en)
+SubObjectPropertyOf(<http://snomed.info/id/733928003> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/733930001> (Regional part of (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/733930001> "Regional part of (attribute)"@en)
+SubObjectPropertyOf(<http://snomed.info/id/733930001> <http://snomed.info/id/774081006>)
+
+# Object Property: <http://snomed.info/id/733931002> (Constitutional part of (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/733931002> "Constitutional part of (attribute)"@en)
+SubObjectPropertyOf(<http://snomed.info/id/733931002> <http://snomed.info/id/774081006>)
+
+# Object Property: <http://snomed.info/id/733932009> (Systemic part of (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/733932009> "Systemic part of (attribute)"@en)
+SubObjectPropertyOf(<http://snomed.info/id/733932009> <http://snomed.info/id/774081006>)
+
+# Object Property: <http://snomed.info/id/733933004> (Lateral half of (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/733933004> "Lateral half of (attribute)"@en)
+SubObjectPropertyOf(<http://snomed.info/id/733933004> <http://snomed.info/id/733930001>)
+
+# Object Property: <http://snomed.info/id/734136001> (Contained in (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/734136001> "Contained in (attribute)"@en)
+SubObjectPropertyOf(<http://snomed.info/id/734136001> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/734137005> (Tributary of (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/734137005> "Tributary of (attribute)"@en)
+SubObjectPropertyOf(<http://snomed.info/id/734137005> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/736472000> (Has dose form administration method (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/736472000> "Has dose form administration method (attribute)"@en)
+SubObjectPropertyOf(<http://snomed.info/id/736472000> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/736473005> (Has dose form transformation (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/736473005> "Has dose form transformation (attribute)"@en)
+SubObjectPropertyOf(<http://snomed.info/id/736473005> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/736474004> (Has dose form intended site (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/736474004> "Has dose form intended site (attribute)"@en)
+SubObjectPropertyOf(<http://snomed.info/id/736474004> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/736475003> (Has dose form release characteristic (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/736475003> "Has dose form release characteristic (attribute)"@en)
+SubObjectPropertyOf(<http://snomed.info/id/736475003> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/736476002> (Has basic dose form (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/736476002> "Has basic dose form (attribute)"@en)
+SubObjectPropertyOf(<http://snomed.info/id/736476002> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/736518005> (Has state of matter (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/736518005> "Has state of matter (attribute)"@en)
+SubObjectPropertyOf(<http://snomed.info/id/736518005> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/738774007> (Is modification of (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/738774007> "Is modification of (attribute)"@en)
+SubObjectPropertyOf(<http://snomed.info/id/738774007> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/762705008> (Concept model object attribute (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/762705008> "Concept model object attribute (attribute)"@en)
+SubObjectPropertyOf(<http://snomed.info/id/762705008> <http://snomed.info/id/410662002>)
+
+# Object Property: <http://snomed.info/id/762706009> (Concept model data attribute (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/762706009> "Concept model data attribute (attribute)"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/762706009> "Concept model data attribute"@en-gb)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/762706009> "Concept model data attribute"@en-us)
+SubObjectPropertyOf(<http://snomed.info/id/762706009> <http://snomed.info/id/410662002>)
+
+# Object Property: <http://snomed.info/id/762949000> (Has precise active ingredient (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/762949000> "Has precise active ingredient (attribute)"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/762949000> "Has precise active ingredient"@en-gb)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/762949000> "Has precise active ingredient"@en-us)
+SubObjectPropertyOf(<http://snomed.info/id/762949000> <http://snomed.info/id/127489000>)
+
+# Object Property: <http://snomed.info/id/762951001> (Has ingredient (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/762951001> "Has ingredient (attribute)"@en)
+SubObjectPropertyOf(<http://snomed.info/id/762951001> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/763032000> (Has unit of presentation (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/763032000> "Has unit of presentation (attribute)"@en)
+SubObjectPropertyOf(<http://snomed.info/id/763032000> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/766939001> (Plays role (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/766939001> "Plays role (attribute)"@en)
+SubObjectPropertyOf(<http://snomed.info/id/766939001> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/774081006> (Proper part of (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/774081006> "Proper part of (attribute)"@en)
+SubObjectPropertyOf(<http://snomed.info/id/774081006> <http://snomed.info/id/733928003>)
+
+# Object Property: <http://snomed.info/id/774158006> (Has product name (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/774158006> "Has product name (attribute)"@en)
+SubObjectPropertyOf(<http://snomed.info/id/774158006> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/774159003> (Has supplier (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/774159003> "Has supplier (attribute)"@en)
+SubObjectPropertyOf(<http://snomed.info/id/774159003> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/774160008> (Contains clinical drug (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/774160008> "Contains clinical drug (attribute)"@en)
+SubObjectPropertyOf(<http://snomed.info/id/774160008> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/774163005> (Has pack size unit (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/774163005> "Has pack size unit (attribute)"@en)
+SubObjectPropertyOf(<http://snomed.info/id/774163005> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/827081001> (Has filling (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/827081001> "Has filling (attribute)"@en)
+SubObjectPropertyOf(<http://snomed.info/id/827081001> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/836358009> (Has device intended site (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/836358009> "Has device intended site (attribute)"@en)
+SubObjectPropertyOf(<http://snomed.info/id/836358009> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/840560000> (Has compositional material (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/840560000> "Has compositional material (attribute)"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/840560000> "Has compositional material"@en-gb)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/840560000> "Has compositional material"@en-us)
+SubObjectPropertyOf(<http://snomed.info/id/840560000> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/860779006> (Has ingredient characteristic (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/860779006> "Has ingredient characteristic (attribute)"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/860779006> "Has ingredient characteristic"@en-gb)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/860779006> "Has ingredient characteristic"@en-us)
+SubObjectPropertyOf(<http://snomed.info/id/860779006> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/860781008> (Has product characteristic (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/860781008> "Has product characteristic (attribute)"@en)
+SubObjectPropertyOf(<http://snomed.info/id/860781008> <http://snomed.info/id/762705008>)
+
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://snomed.info/id/106028002> (Musculoskeletal finding (finding))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/106028002> "Musculoskeletal finding (finding)"@en)
+EquivalentClasses(<http://snomed.info/id/106028002> ObjectIntersectionOf(<http://snomed.info/id/404684003> ObjectSomeValuesFrom(<http://snomed.info/id/363698007> <http://snomed.info/id/26107004>)))
+SubClassOf(<http://snomed.info/id/106028002> <http://snomed.info/id/404684003>)
+
+# Class: <http://snomed.info/id/106048009> (Respiratory finding (finding))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/106048009> "Respiratory finding (finding)"@en)
+EquivalentClasses(<http://snomed.info/id/106048009> ObjectIntersectionOf(<http://snomed.info/id/404684003> ObjectSomeValuesFrom(<http://snomed.info/id/363698007> <http://snomed.info/id/20139000>)))
+SubClassOf(<http://snomed.info/id/106048009> <http://snomed.info/id/404684003>)
+
+# Class: <http://snomed.info/id/106232001> (Adjectival modifier (qualifier value))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/106232001> "Adjectival modifier (qualifier value)"@en)
+SubClassOf(<http://snomed.info/id/106232001> <http://snomed.info/id/272099008>)
+
+# Class: <http://snomed.info/id/106234000> (General adjectival modifier (qualifier value))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/106234000> "General adjectival modifier (qualifier value)"@en)
+SubClassOf(<http://snomed.info/id/106234000> <http://snomed.info/id/106232001>)
+
+# Class: <http://snomed.info/id/108369006> (Neoplasm (morphologic abnormality))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/108369006> "Neoplasm (morphologic abnormality)"@en)
+SubClassOf(<http://snomed.info/id/108369006> <http://snomed.info/id/400177003>)
+
+# Class: <http://snomed.info/id/113343008> (Body organ structure (body structure))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/113343008> "Body organ structure (body structure)"@en)
+SubClassOf(<http://snomed.info/id/113343008> <http://snomed.info/id/91723000>)
+
+# Class: <http://snomed.info/id/118222006> (General finding of observation of patient (finding))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/118222006> "General finding of observation of patient (finding)"@en)
+SubClassOf(<http://snomed.info/id/118222006> <http://snomed.info/id/404684003>)
+
+# Class: <http://snomed.info/id/118946009> (Disorder of thorax (disorder))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/118946009> "Disorder of thorax (disorder)"@en)
+EquivalentClasses(<http://snomed.info/id/118946009> ObjectIntersectionOf(<http://snomed.info/id/298705000> <http://snomed.info/id/609622007> ObjectSomeValuesFrom(<http://snomed.info/id/363698007> <http://snomed.info/id/51185008>)))
+SubClassOf(<http://snomed.info/id/118946009> <http://snomed.info/id/298705000>)
+SubClassOf(<http://snomed.info/id/118946009> <http://snomed.info/id/609622007>)
+
+# Class: <http://snomed.info/id/118956008> (Body structure, altered from its original anatomical structure (morphologic abnormality))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/118956008> "Body structure, altered from its original anatomical structure (morphologic abnormality)"@en)
+SubClassOf(<http://snomed.info/id/118956008> <http://snomed.info/id/123037004>)
+
+# Class: <http://snomed.info/id/118969007> (Respiratory system subdivision (body structure))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/118969007> "Respiratory system subdivision (body structure)"@en)
+SubClassOf(<http://snomed.info/id/118969007> <http://snomed.info/id/20139000>)
+SubClassOf(<http://snomed.info/id/118969007> <http://snomed.info/id/91690000>)
+
+# Class: <http://snomed.info/id/123037004> (Body structure (body structure))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/123037004> "Body structure (body structure)"@en)
+SubClassOf(<http://snomed.info/id/123037004> <http://snomed.info/id/138875005>)
+
+# Class: <http://snomed.info/id/123960005> (Entire subregion of trunk (body structure))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/123960005> "Entire subregion of trunk (body structure)"@en)
+SubClassOf(<http://snomed.info/id/123960005> <http://snomed.info/id/243928005>)
+SubClassOf(<http://snomed.info/id/123960005> <http://snomed.info/id/420473002>)
+
+# Class: <http://snomed.info/id/125676002> (Person (person))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/125676002> "Person (person)"@en)
+SubClassOf(<http://snomed.info/id/125676002> <http://snomed.info/id/48176007>)
+
+# Class: <http://snomed.info/id/126637008> (Neoplasm of trunk (disorder))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/126637008> "Neoplasm of trunk (disorder)"@en)
+EquivalentClasses(<http://snomed.info/id/126637008> ObjectIntersectionOf(<http://snomed.info/id/128121009> <http://snomed.info/id/309524007> <http://snomed.info/id/55342001> ObjectSomeValuesFrom(<http://snomed.info/id/609096000> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://snomed.info/id/116676008> <http://snomed.info/id/108369006>) ObjectSomeValuesFrom(<http://snomed.info/id/363698007> <http://snomed.info/id/22943007>)))))
+SubClassOf(<http://snomed.info/id/126637008> <http://snomed.info/id/128121009>)
+SubClassOf(<http://snomed.info/id/126637008> <http://snomed.info/id/309524007>)
+SubClassOf(<http://snomed.info/id/126637008> <http://snomed.info/id/55342001>)
+
+# Class: <http://snomed.info/id/126638003> (Neoplasm of intrathoracic organs (disorder))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/126638003> "Neoplasm of intrathoracic organs (disorder)"@en)
+EquivalentClasses(<http://snomed.info/id/126638003> ObjectIntersectionOf(<http://snomed.info/id/255058005> <http://snomed.info/id/406123005> ObjectSomeValuesFrom(<http://snomed.info/id/609096000> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://snomed.info/id/116676008> <http://snomed.info/id/108369006>) ObjectSomeValuesFrom(<http://snomed.info/id/363698007> <http://snomed.info/id/27832009>)))))
+SubClassOf(<http://snomed.info/id/126638003> <http://snomed.info/id/255058005>)
+SubClassOf(<http://snomed.info/id/126638003> <http://snomed.info/id/406123005>)
+
+# Class: <http://snomed.info/id/126667002> (Neoplasm of respiratory tract (disorder))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/126667002> "Neoplasm of respiratory tract (disorder)"@en)
+EquivalentClasses(<http://snomed.info/id/126667002> ObjectIntersectionOf(<http://snomed.info/id/448708002> ObjectSomeValuesFrom(<http://snomed.info/id/609096000> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://snomed.info/id/116676008> <http://snomed.info/id/108369006>) ObjectSomeValuesFrom(<http://snomed.info/id/363698007> <http://snomed.info/id/321667001>)))))
+SubClassOf(<http://snomed.info/id/126667002> <http://snomed.info/id/448708002>)
+
+# Class: <http://snomed.info/id/126713003> (Neoplasm of lung (disorder))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/126713003> "Neoplasm of lung (disorder)"@en)
+EquivalentClasses(<http://snomed.info/id/126713003> ObjectIntersectionOf(<http://snomed.info/id/126638003> <http://snomed.info/id/19829001> <http://snomed.info/id/254618003> <http://snomed.info/id/309529002> ObjectSomeValuesFrom(<http://snomed.info/id/609096000> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://snomed.info/id/116676008> <http://snomed.info/id/108369006>) ObjectSomeValuesFrom(<http://snomed.info/id/363698007> <http://snomed.info/id/39607008>)))))
+SubClassOf(<http://snomed.info/id/126713003> <http://snomed.info/id/126638003>)
+SubClassOf(<http://snomed.info/id/126713003> <http://snomed.info/id/19829001>)
+SubClassOf(<http://snomed.info/id/126713003> <http://snomed.info/id/254618003>)
+SubClassOf(<http://snomed.info/id/126713003> <http://snomed.info/id/309529002>)
+
+# Class: <http://snomed.info/id/126725000> (Neoplasm of mediastinum (disorder))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/126725000> "Neoplasm of mediastinum (disorder)"@en)
+EquivalentClasses(<http://snomed.info/id/126725000> ObjectIntersectionOf(<http://snomed.info/id/255058005> <http://snomed.info/id/49483002> <http://snomed.info/id/94147001> ObjectSomeValuesFrom(<http://snomed.info/id/609096000> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://snomed.info/id/116676008> <http://snomed.info/id/108369006>) ObjectSomeValuesFrom(<http://snomed.info/id/363698007> <http://snomed.info/id/72410000>)))))
+SubClassOf(<http://snomed.info/id/126725000> <http://snomed.info/id/255058005>)
+SubClassOf(<http://snomed.info/id/126725000> <http://snomed.info/id/49483002>)
+SubClassOf(<http://snomed.info/id/126725000> <http://snomed.info/id/94147001>)
+
+# Class: <http://snomed.info/id/127947003> (Structure of body surface region (body structure))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/127947003> "Structure of body surface region (body structure)"@en)
+SubClassOf(<http://snomed.info/id/127947003> <http://snomed.info/id/52530000>)
+
+# Class: <http://snomed.info/id/128121009> (Disorder of trunk (disorder))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/128121009> "Disorder of trunk (disorder)"@en)
+EquivalentClasses(<http://snomed.info/id/128121009> ObjectIntersectionOf(<http://snomed.info/id/302292003> <http://snomed.info/id/64572001> ObjectSomeValuesFrom(<http://snomed.info/id/363698007> <http://snomed.info/id/22943007>)))
+SubClassOf(<http://snomed.info/id/128121009> <http://snomed.info/id/302292003>)
+SubClassOf(<http://snomed.info/id/128121009> <http://snomed.info/id/64572001>)
+
+# Class: <http://snomed.info/id/128262006> (Upper body structure (body structure))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/128262006> "Upper body structure (body structure)"@en)
+SubClassOf(<http://snomed.info/id/128262006> <http://snomed.info/id/38866009>)
+
+# Class: <http://snomed.info/id/128272009> (Disorder of lower respiratory system (disorder))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/128272009> "Disorder of lower respiratory system (disorder)"@en)
+EquivalentClasses(<http://snomed.info/id/128272009> ObjectIntersectionOf(<http://snomed.info/id/50043002> ObjectSomeValuesFrom(<http://snomed.info/id/363698007> <http://snomed.info/id/400141005>)))
+SubClassOf(<http://snomed.info/id/128272009> <http://snomed.info/id/50043002>)
+
+# Class: <http://snomed.info/id/138875005> (SNOMED CT Concept (SNOMED RT+CTV3))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/138875005> "SNOMED CT Concept (SNOMED RT+CTV3)"@en)
+
+# Class: <http://snomed.info/id/160237006> (History/symptoms (navigational concept))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/160237006> "History/symptoms (navigational concept)"@en)
+SubClassOf(<http://snomed.info/id/160237006> <http://snomed.info/id/363743006>)
+
+# Class: <http://snomed.info/id/162572001> (Suspected malignancy (situation))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/162572001> "Suspected malignancy (situation)"@en)
+EquivalentClasses(<http://snomed.info/id/162572001> ObjectIntersectionOf(<http://snomed.info/id/41769001> ObjectSomeValuesFrom(<http://snomed.info/id/609096000> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://snomed.info/id/246090004> <http://snomed.info/id/363346000>) ObjectSomeValuesFrom(<http://snomed.info/id/408729009> <http://snomed.info/id/415684004>) ObjectSomeValuesFrom(<http://snomed.info/id/408731000> <http://snomed.info/id/410512000>) ObjectSomeValuesFrom(<http://snomed.info/id/408732007> <http://snomed.info/id/410604004>)))))
+SubClassOf(<http://snomed.info/id/162572001> <http://snomed.info/id/41769001>)
+
+# Class: <http://snomed.info/id/162573006> (Suspected lung cancer (situation))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/162573006> "Suspected lung cancer (situation)"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/162573006> "Suspected lung cancer"@en-gb)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/162573006> "Suspected lung cancer"@en-us)
+EquivalentClasses(<http://snomed.info/id/162573006> ObjectIntersectionOf(<http://snomed.info/id/162572001> <http://snomed.info/id/394966004> ObjectSomeValuesFrom(<http://snomed.info/id/609096000> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://snomed.info/id/246090004> <http://snomed.info/id/363358000>) ObjectSomeValuesFrom(<http://snomed.info/id/408729009> <http://snomed.info/id/415684004>) ObjectSomeValuesFrom(<http://snomed.info/id/408731000> <http://snomed.info/id/410512000>) ObjectSomeValuesFrom(<http://snomed.info/id/408732007> <http://snomed.info/id/410604004>)))))
+SubClassOf(<http://snomed.info/id/162573006> <http://snomed.info/id/162572001>)
+SubClassOf(<http://snomed.info/id/162573006> <http://snomed.info/id/394966004>)
+
+# Class: <http://snomed.info/id/188361007> (Malignant neoplasm of thorax (disorder))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/188361007> "Malignant neoplasm of thorax (disorder)"@en)
+EquivalentClasses(<http://snomed.info/id/188361007> ObjectIntersectionOf(<http://snomed.info/id/255058005> <http://snomed.info/id/363346000> ObjectSomeValuesFrom(<http://snomed.info/id/609096000> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://snomed.info/id/116676008> <http://snomed.info/id/367651003>) ObjectSomeValuesFrom(<http://snomed.info/id/363698007> <http://snomed.info/id/51185008>)))))
+SubClassOf(<http://snomed.info/id/188361007> <http://snomed.info/id/255058005>)
+SubClassOf(<http://snomed.info/id/188361007> <http://snomed.info/id/363346000>)
+
+# Class: <http://snomed.info/id/19829001> (Disorder of lung (disorder))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/19829001> "Disorder of lung (disorder)"@en)
+EquivalentClasses(<http://snomed.info/id/19829001> ObjectIntersectionOf(<http://snomed.info/id/118946009> <http://snomed.info/id/128272009> <http://snomed.info/id/301230006> ObjectSomeValuesFrom(<http://snomed.info/id/363698007> <http://snomed.info/id/39607008>)))
+SubClassOf(<http://snomed.info/id/19829001> <http://snomed.info/id/118946009>)
+SubClassOf(<http://snomed.info/id/19829001> <http://snomed.info/id/128272009>)
+SubClassOf(<http://snomed.info/id/19829001> <http://snomed.info/id/301230006>)
+
+# Class: <http://snomed.info/id/20139000> (Structure of respiratory system (body structure))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/20139000> "Structure of respiratory system (body structure)"@en)
+SubClassOf(<http://snomed.info/id/20139000> <http://snomed.info/id/312419003>)
+
+# Class: <http://snomed.info/id/22943007> (Trunk structure (body structure))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/22943007> "Trunk structure (body structure)"@en)
+SubClassOf(<http://snomed.info/id/22943007> <http://snomed.info/id/38866009>)
+
+# Class: <http://snomed.info/id/229761008> (Upper trunk (surface region) (body structure))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/229761008> "Upper trunk (surface region) (body structure)"@en)
+SubClassOf(<http://snomed.info/id/229761008> <http://snomed.info/id/278264008>)
+SubClassOf(<http://snomed.info/id/229761008> <http://snomed.info/id/67734004>)
+
+# Class: <http://snomed.info/id/233814000> (Neoplasm of lower respiratory tract and mediastinum (disorder))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/233814000> "Neoplasm of lower respiratory tract and mediastinum (disorder)"@en)
+EquivalentClasses(<http://snomed.info/id/233814000> ObjectIntersectionOf(<http://snomed.info/id/126725000> <http://snomed.info/id/254618003> ObjectSomeValuesFrom(<http://snomed.info/id/609096000> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://snomed.info/id/116676008> <http://snomed.info/id/108369006>) ObjectSomeValuesFrom(<http://snomed.info/id/363698007> <http://snomed.info/id/72410000>))) ObjectSomeValuesFrom(<http://snomed.info/id/609096000> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://snomed.info/id/116676008> <http://snomed.info/id/108369006>) ObjectSomeValuesFrom(<http://snomed.info/id/363698007> <http://snomed.info/id/82094008>)))))
+SubClassOf(<http://snomed.info/id/233814000> <http://snomed.info/id/126725000>)
+SubClassOf(<http://snomed.info/id/233814000> <http://snomed.info/id/254618003>)
+
+# Class: <http://snomed.info/id/243796009> (Situation with explicit context (situation))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/243796009> "Situation with explicit context (situation)"@en)
+SubClassOf(<http://snomed.info/id/243796009> <http://snomed.info/id/138875005>)
+
+# Class: <http://snomed.info/id/243928005> (Entire body region (body structure))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/243928005> "Entire body region (body structure)"@en)
+SubClassOf(<http://snomed.info/id/243928005> <http://snomed.info/id/52530000>)
+
+# Class: <http://snomed.info/id/254618003> (Neoplasm of lower respiratory tract (disorder))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/254618003> "Neoplasm of lower respiratory tract (disorder)"@en)
+EquivalentClasses(<http://snomed.info/id/254618003> ObjectIntersectionOf(<http://snomed.info/id/126667002> <http://snomed.info/id/128272009> <http://snomed.info/id/301226008> ObjectSomeValuesFrom(<http://snomed.info/id/609096000> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://snomed.info/id/116676008> <http://snomed.info/id/108369006>) ObjectSomeValuesFrom(<http://snomed.info/id/363698007> <http://snomed.info/id/82094008>)))))
+SubClassOf(<http://snomed.info/id/254618003> <http://snomed.info/id/126667002>)
+SubClassOf(<http://snomed.info/id/254618003> <http://snomed.info/id/128272009>)
+SubClassOf(<http://snomed.info/id/254618003> <http://snomed.info/id/301226008>)
+
+# Class: <http://snomed.info/id/255058005> (Neoplasm of thorax (disorder))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/255058005> "Neoplasm of thorax (disorder)"@en)
+EquivalentClasses(<http://snomed.info/id/255058005> ObjectIntersectionOf(<http://snomed.info/id/118946009> <http://snomed.info/id/126637008> <http://snomed.info/id/440299000> ObjectSomeValuesFrom(<http://snomed.info/id/609096000> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://snomed.info/id/116676008> <http://snomed.info/id/108369006>) ObjectSomeValuesFrom(<http://snomed.info/id/363698007> <http://snomed.info/id/51185008>)))))
+SubClassOf(<http://snomed.info/id/255058005> <http://snomed.info/id/118946009>)
+SubClassOf(<http://snomed.info/id/255058005> <http://snomed.info/id/126637008>)
+SubClassOf(<http://snomed.info/id/255058005> <http://snomed.info/id/440299000>)
+
+# Class: <http://snomed.info/id/255203001> (Additional values (qualifier value))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/255203001> "Additional values (qualifier value)"@en)
+SubClassOf(<http://snomed.info/id/255203001> <http://snomed.info/id/362981000>)
+
+# Class: <http://snomed.info/id/255395001> (Origins (qualifier value))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/255395001> "Origins (qualifier value)"@en)
+SubClassOf(<http://snomed.info/id/255395001> <http://snomed.info/id/272099008>)
+
+# Class: <http://snomed.info/id/261060002> (Entire body surface region (body structure))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/261060002> "Entire body surface region (body structure)"@en)
+SubClassOf(<http://snomed.info/id/261060002> <http://snomed.info/id/127947003>)
+
+# Class: <http://snomed.info/id/26107004> (Structure of musculoskeletal system (body structure))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/26107004> "Structure of musculoskeletal system (body structure)"@en)
+SubClassOf(<http://snomed.info/id/26107004> <http://snomed.info/id/91689009>)
+
+# Class: <http://snomed.info/id/262225004> (Entire trunk (body structure))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/262225004> "Entire trunk (body structure)"@en)
+SubClassOf(<http://snomed.info/id/262225004> <http://snomed.info/id/22943007>)
+SubClassOf(<http://snomed.info/id/262225004> <http://snomed.info/id/362873000>)
+
+# Class: <http://snomed.info/id/272099008> (Descriptor (qualifier value))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/272099008> "Descriptor (qualifier value)"@en)
+SubClassOf(<http://snomed.info/id/272099008> <http://snomed.info/id/362981000>)
+
+# Class: <http://snomed.info/id/276438008> (Swelling / lump finding (finding))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/276438008> "Swelling / lump finding (finding)"@en)
+SubClassOf(<http://snomed.info/id/276438008> <http://snomed.info/id/118222006>)
+
+# Class: <http://snomed.info/id/277739008> (Morphological descriptors (qualifier value))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/277739008> "Morphological descriptors (qualifier value)"@en)
+SubClassOf(<http://snomed.info/id/277739008> <http://snomed.info/id/272099008>)
+
+# Class: <http://snomed.info/id/278195005> (Entire body system (body structure))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/278195005> "Entire body system (body structure)"@en)
+SubClassOf(<http://snomed.info/id/278195005> <http://snomed.info/id/362889002>)
+SubClassOf(<http://snomed.info/id/278195005> <http://snomed.info/id/91689009>)
+
+# Class: <http://snomed.info/id/278197002> (Entire respiratory system (body structure))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/278197002> "Entire respiratory system (body structure)"@en)
+SubClassOf(<http://snomed.info/id/278197002> <http://snomed.info/id/20139000>)
+SubClassOf(<http://snomed.info/id/278197002> <http://snomed.info/id/278195005>)
+
+# Class: <http://snomed.info/id/278264008> (Surface region of trunk (body structure))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/278264008> "Surface region of trunk (body structure)"@en)
+SubClassOf(<http://snomed.info/id/278264008> <http://snomed.info/id/22943007>)
+SubClassOf(<http://snomed.info/id/278264008> <http://snomed.info/id/261060002>)
+
+# Class: <http://snomed.info/id/27832009> (Structure of thoracic viscus (body structure))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/27832009> "Structure of thoracic viscus (body structure)"@en)
+SubClassOf(<http://snomed.info/id/27832009> <http://snomed.info/id/362937008>)
+SubClassOf(<http://snomed.info/id/27832009> <http://snomed.info/id/699593001>)
+
+# Class: <http://snomed.info/id/278441008> (Disorder of body wall and cavities (navigational concept))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/278441008> "Disorder of body wall and cavities (navigational concept)"@en)
+SubClassOf(<http://snomed.info/id/278441008> <http://snomed.info/id/363743006>)
+
+# Class: <http://snomed.info/id/280542007> (Body wall structure (body structure))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/280542007> "Body wall structure (body structure)"@en)
+SubClassOf(<http://snomed.info/id/280542007> <http://snomed.info/id/91723000>)
+
+# Class: <http://snomed.info/id/281483004> (Entire body wall (body structure))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/281483004> "Entire body wall (body structure)"@en)
+SubClassOf(<http://snomed.info/id/281483004> <http://snomed.info/id/280542007>)
+
+# Class: <http://snomed.info/id/281586009> (Special atomic mapping values (qualifier value))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/281586009> "Special atomic mapping values (qualifier value)"@en)
+SubClassOf(<http://snomed.info/id/281586009> <http://snomed.info/id/362981000>)
+
+# Class: <http://snomed.info/id/288529006> (Context values (qualifier value))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/288529006> "Context values (qualifier value)"@en)
+SubClassOf(<http://snomed.info/id/288529006> <http://snomed.info/id/362981000>)
+
+# Class: <http://snomed.info/id/2969000> (Anatomical space structure (body structure))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/2969000> "Anatomical space structure (body structure)"@en)
+SubClassOf(<http://snomed.info/id/2969000> <http://snomed.info/id/91723000>)
+
+# Class: <http://snomed.info/id/298705000> (Finding of region of thorax (finding))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/298705000> "Finding of region of thorax (finding)"@en)
+EquivalentClasses(<http://snomed.info/id/298705000> ObjectIntersectionOf(<http://snomed.info/id/609623002> ObjectSomeValuesFrom(<http://snomed.info/id/363698007> <http://snomed.info/id/51185008>)))
+SubClassOf(<http://snomed.info/id/298705000> <http://snomed.info/id/609623002>)
+
+# Class: <http://snomed.info/id/300848003> (Mass of body structure (finding))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/300848003> "Mass of body structure (finding)"@en)
+EquivalentClasses(<http://snomed.info/id/300848003> ObjectIntersectionOf(<http://snomed.info/id/404684003> ObjectSomeValuesFrom(<http://snomed.info/id/609096000> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://snomed.info/id/116676008> <http://snomed.info/id/4147007>) ObjectSomeValuesFrom(<http://snomed.info/id/363698007> <http://snomed.info/id/442083009>)))))
+SubClassOf(<http://snomed.info/id/300848003> <http://snomed.info/id/404684003>)
+
+# Class: <http://snomed.info/id/300851005> (Mass of respiratory structure (finding))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/300851005> "Mass of respiratory structure (finding)"@en)
+EquivalentClasses(<http://snomed.info/id/300851005> ObjectIntersectionOf(<http://snomed.info/id/106048009> <http://snomed.info/id/300848003> ObjectSomeValuesFrom(<http://snomed.info/id/609096000> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://snomed.info/id/116676008> <http://snomed.info/id/4147007>) ObjectSomeValuesFrom(<http://snomed.info/id/363698007> <http://snomed.info/id/20139000>)))))
+SubClassOf(<http://snomed.info/id/300851005> <http://snomed.info/id/106048009>)
+SubClassOf(<http://snomed.info/id/300851005> <http://snomed.info/id/300848003>)
+
+# Class: <http://snomed.info/id/300862005> (Mass of body region (finding))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/300862005> "Mass of body region (finding)"@en)
+EquivalentClasses(<http://snomed.info/id/300862005> ObjectIntersectionOf(<http://snomed.info/id/300848003> ObjectSomeValuesFrom(<http://snomed.info/id/609096000> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://snomed.info/id/116676008> <http://snomed.info/id/4147007>) ObjectSomeValuesFrom(<http://snomed.info/id/363698007> <http://snomed.info/id/52530000>)))))
+SubClassOf(<http://snomed.info/id/300862005> <http://snomed.info/id/300848003>)
+
+# Class: <http://snomed.info/id/301226008> (Lower respiratory tract finding (finding))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/301226008> "Lower respiratory tract finding (finding)"@en)
+EquivalentClasses(<http://snomed.info/id/301226008> ObjectIntersectionOf(<http://snomed.info/id/106048009> ObjectSomeValuesFrom(<http://snomed.info/id/363698007> <http://snomed.info/id/82094008>)))
+SubClassOf(<http://snomed.info/id/301226008> <http://snomed.info/id/106048009>)
+
+# Class: <http://snomed.info/id/301230006> (Lung finding (finding))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/301230006> "Lung finding (finding)"@en)
+EquivalentClasses(<http://snomed.info/id/301230006> ObjectIntersectionOf(<http://snomed.info/id/298705000> <http://snomed.info/id/301226008> <http://snomed.info/id/406123005> ObjectSomeValuesFrom(<http://snomed.info/id/363698007> <http://snomed.info/id/39607008>)))
+SubClassOf(<http://snomed.info/id/301230006> <http://snomed.info/id/298705000>)
+SubClassOf(<http://snomed.info/id/301230006> <http://snomed.info/id/301226008>)
+SubClassOf(<http://snomed.info/id/301230006> <http://snomed.info/id/406123005>)
+
+# Class: <http://snomed.info/id/301232003> (Lesion of lung (finding))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/301232003> "Lesion of lung (finding)"@en)
+EquivalentClasses(<http://snomed.info/id/301232003> ObjectIntersectionOf(<http://snomed.info/id/301230006> ObjectSomeValuesFrom(<http://snomed.info/id/609096000> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://snomed.info/id/116676008> <http://snomed.info/id/52988006>) ObjectSomeValuesFrom(<http://snomed.info/id/363698007> <http://snomed.info/id/39607008>)))))
+SubClassOf(<http://snomed.info/id/301232003> <http://snomed.info/id/301230006>)
+
+# Class: <http://snomed.info/id/301296002> (Mediastinal finding (finding))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/301296002> "Mediastinal finding (finding)"@en)
+EquivalentClasses(<http://snomed.info/id/301296002> ObjectIntersectionOf(<http://snomed.info/id/298705000> ObjectSomeValuesFrom(<http://snomed.info/id/363698007> <http://snomed.info/id/72410000>)))
+SubClassOf(<http://snomed.info/id/301296002> <http://snomed.info/id/298705000>)
+
+# Class: <http://snomed.info/id/30217000> (Proliferation (morphologic abnormality))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/30217000> "Proliferation (morphologic abnormality)"@en)
+SubClassOf(<http://snomed.info/id/30217000> <http://snomed.info/id/57697001>)
+
+# Class: <http://snomed.info/id/302292003> (Finding of trunk structure (finding))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/302292003> "Finding of trunk structure (finding)"@en)
+EquivalentClasses(<http://snomed.info/id/302292003> ObjectIntersectionOf(<http://snomed.info/id/404684003> ObjectSomeValuesFrom(<http://snomed.info/id/363698007> <http://snomed.info/id/22943007>)))
+SubClassOf(<http://snomed.info/id/302292003> <http://snomed.info/id/404684003>)
+
+# Class: <http://snomed.info/id/302551006> (Entire thorax (body structure))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/302551006> "Entire thorax (body structure)"@en)
+SubClassOf(<http://snomed.info/id/302551006> <http://snomed.info/id/362873000>)
+SubClassOf(<http://snomed.info/id/302551006> <http://snomed.info/id/51185008>)
+
+# Class: <http://snomed.info/id/303102005> (Special disorder atoms (qualifier value))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/303102005> "Special disorder atoms (qualifier value)"@en)
+SubClassOf(<http://snomed.info/id/303102005> <http://snomed.info/id/281586009>)
+
+# Class: <http://snomed.info/id/308489006> (Pathological process (qualifier value))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/308489006> "Pathological process (qualifier value)"@en)
+SubClassOf(<http://snomed.info/id/308489006> <http://snomed.info/id/303102005>)
+SubClassOf(<http://snomed.info/id/308489006> <http://snomed.info/id/719982003>)
+
+# Class: <http://snomed.info/id/309524007> (Mass of trunk (finding))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/309524007> "Mass of trunk (finding)"@en)
+EquivalentClasses(<http://snomed.info/id/309524007> ObjectIntersectionOf(<http://snomed.info/id/300862005> <http://snomed.info/id/302292003> ObjectSomeValuesFrom(<http://snomed.info/id/609096000> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://snomed.info/id/116676008> <http://snomed.info/id/4147007>) ObjectSomeValuesFrom(<http://snomed.info/id/363698007> <http://snomed.info/id/22943007>)))))
+SubClassOf(<http://snomed.info/id/309524007> <http://snomed.info/id/300862005>)
+SubClassOf(<http://snomed.info/id/309524007> <http://snomed.info/id/302292003>)
+
+# Class: <http://snomed.info/id/309529002> (Lung mass (finding))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/309529002> "Lung mass (finding)"@en)
+EquivalentClasses(<http://snomed.info/id/309529002> ObjectIntersectionOf(<http://snomed.info/id/300851005> <http://snomed.info/id/301232003> <http://snomed.info/id/440299000> ObjectSomeValuesFrom(<http://snomed.info/id/609096000> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://snomed.info/id/116676008> <http://snomed.info/id/4147007>) ObjectSomeValuesFrom(<http://snomed.info/id/363698007> <http://snomed.info/id/39607008>)))))
+SubClassOf(<http://snomed.info/id/309529002> <http://snomed.info/id/300851005>)
+SubClassOf(<http://snomed.info/id/309529002> <http://snomed.info/id/301232003>)
+SubClassOf(<http://snomed.info/id/309529002> <http://snomed.info/id/440299000>)
+
+# Class: <http://snomed.info/id/310787001> (Structure of lung and/or mediastinum (body structure))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/310787001> "Structure of lung and/or mediastinum (body structure)"@en)
+SubClassOf(<http://snomed.info/id/310787001> <http://snomed.info/id/91689009>)
+
+# Class: <http://snomed.info/id/312419003> (Structure of respiratory system and/or intrathoracic structure (body structure))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/312419003> "Structure of respiratory system and/or intrathoracic structure (body structure)"@en)
+SubClassOf(<http://snomed.info/id/312419003> <http://snomed.info/id/91689009>)
+
+# Class: <http://snomed.info/id/321667001> (Respiratory tract structure (body structure))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/321667001> "Respiratory tract structure (body structure)"@en)
+SubClassOf(<http://snomed.info/id/321667001> <http://snomed.info/id/20139000>)
+
+# Class: <http://snomed.info/id/362873000> (Entire body part (body structure))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/362873000> "Entire body part (body structure)"@en)
+SubClassOf(<http://snomed.info/id/362873000> <http://snomed.info/id/362889002>)
+SubClassOf(<http://snomed.info/id/362873000> <http://snomed.info/id/38866009>)
+
+# Class: <http://snomed.info/id/362874006> (Entire upper body (body structure))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/362874006> "Entire upper body (body structure)"@en)
+SubClassOf(<http://snomed.info/id/362874006> <http://snomed.info/id/128262006>)
+
+# Class: <http://snomed.info/id/362889002> (Entire anatomical structure (body structure))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/362889002> "Entire anatomical structure (body structure)"@en)
+SubClassOf(<http://snomed.info/id/362889002> <http://snomed.info/id/698967008>)
+
+# Class: <http://snomed.info/id/362937008> (Structure of viscus (body structure))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/362937008> "Structure of viscus (body structure)"@en)
+SubClassOf(<http://snomed.info/id/362937008> <http://snomed.info/id/113343008>)
+
+# Class: <http://snomed.info/id/362965005> (Disorder of body system (disorder))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/362965005> "Disorder of body system (disorder)"@en)
+EquivalentClasses(<http://snomed.info/id/362965005> ObjectIntersectionOf(<http://snomed.info/id/64572001> ObjectSomeValuesFrom(<http://snomed.info/id/363698007> <http://snomed.info/id/91689009>)))
+SubClassOf(<http://snomed.info/id/362965005> <http://snomed.info/id/64572001>)
+
+# Class: <http://snomed.info/id/362981000> (Qualifier value (qualifier value))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/362981000> "Qualifier value (qualifier value)"@en)
+SubClassOf(<http://snomed.info/id/362981000> <http://snomed.info/id/138875005>)
+
+# Class: <http://snomed.info/id/363346000> (Malignant neoplastic disease (disorder))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/363346000> "Malignant neoplastic disease (disorder)"@en)
+EquivalentClasses(<http://snomed.info/id/363346000> ObjectIntersectionOf(<http://snomed.info/id/55342001> ObjectSomeValuesFrom(<http://snomed.info/id/116676008> <http://snomed.info/id/367651003>)))
+SubClassOf(<http://snomed.info/id/363346000> <http://snomed.info/id/55342001>)
+
+# Class: <http://snomed.info/id/363358000> (Malignant tumor of lung (disorder))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/363358000> "Malignant tumor of lung (disorder)"@en)
+EquivalentClasses(<http://snomed.info/id/363358000> ObjectIntersectionOf(<http://snomed.info/id/126713003> <http://snomed.info/id/188361007> <http://snomed.info/id/430621000> ObjectSomeValuesFrom(<http://snomed.info/id/609096000> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://snomed.info/id/116676008> <http://snomed.info/id/367651003>) ObjectSomeValuesFrom(<http://snomed.info/id/363698007> <http://snomed.info/id/39607008>)))))
+SubClassOf(<http://snomed.info/id/363358000> <http://snomed.info/id/126713003>)
+SubClassOf(<http://snomed.info/id/363358000> <http://snomed.info/id/188361007>)
+SubClassOf(<http://snomed.info/id/363358000> <http://snomed.info/id/430621000>)
+
+# Class: <http://snomed.info/id/363536003> (Pulmonary structure including vessels and lymphoid tissue (body structure))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/363536003> "Pulmonary structure including vessels and lymphoid tissue (body structure)"@en)
+SubClassOf(<http://snomed.info/id/363536003> <http://snomed.info/id/310787001>)
+
+# Class: <http://snomed.info/id/363743006> (Navigational concept (navigational concept))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/363743006> "Navigational concept (navigational concept)"@en)
+SubClassOf(<http://snomed.info/id/363743006> <http://snomed.info/id/370115009>)
+
+# Class: <http://snomed.info/id/36692007> (Known (qualifier value))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/36692007> "Known (qualifier value)"@en)
+SubClassOf(<http://snomed.info/id/36692007> <http://snomed.info/id/410514004>)
+
+# Class: <http://snomed.info/id/367651003> (Malignant neoplasm of primary, secondary, or uncertain origin (morphologic abnormality))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/367651003> "Malignant neoplasm of primary, secondary, or uncertain origin (morphologic abnormality)"@en)
+SubClassOf(<http://snomed.info/id/367651003> <http://snomed.info/id/108369006>)
+
+# Class: <http://snomed.info/id/370115009> (Special concept (special concept))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/370115009> "Special concept (special concept)"@en)
+SubClassOf(<http://snomed.info/id/370115009> <http://snomed.info/id/138875005>)
+
+# Class: <http://snomed.info/id/370136006> (Namespace concept (namespace concept))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/370136006> "Namespace concept (namespace concept)"@en)
+SubClassOf(<http://snomed.info/id/370136006> <http://snomed.info/id/900000000000441003>)
+
+# Class: <http://snomed.info/id/372087000> (Primary malignant neoplasm (disorder))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/372087000> "Primary malignant neoplasm (disorder)"@en)
+EquivalentClasses(<http://snomed.info/id/372087000> ObjectIntersectionOf(<http://snomed.info/id/363346000> ObjectSomeValuesFrom(<http://snomed.info/id/116676008> <http://snomed.info/id/86049000>)))
+SubClassOf(<http://snomed.info/id/372087000> <http://snomed.info/id/363346000>)
+
+# Class: <http://snomed.info/id/38266002> (Entire body as a whole (body structure))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/38266002> "Entire body as a whole (body structure)"@en)
+SubClassOf(<http://snomed.info/id/38266002> <http://snomed.info/id/362889002>)
+
+# Class: <http://snomed.info/id/38866009> (Body part structure (body structure))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/38866009> "Body part structure (body structure)"@en)
+SubClassOf(<http://snomed.info/id/38866009> <http://snomed.info/id/52530000>)
+
+# Class: <http://snomed.info/id/394966004> (Suspected respiratory disease (situation))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/394966004> "Suspected respiratory disease (situation)"@en)
+EquivalentClasses(<http://snomed.info/id/394966004> ObjectIntersectionOf(<http://snomed.info/id/41769001> ObjectSomeValuesFrom(<http://snomed.info/id/609096000> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://snomed.info/id/246090004> <http://snomed.info/id/50043002>) ObjectSomeValuesFrom(<http://snomed.info/id/408729009> <http://snomed.info/id/415684004>) ObjectSomeValuesFrom(<http://snomed.info/id/408731000> <http://snomed.info/id/410512000>) ObjectSomeValuesFrom(<http://snomed.info/id/408732007> <http://snomed.info/id/410604004>)))))
+SubClassOf(<http://snomed.info/id/394966004> <http://snomed.info/id/41769001>)
+
+# Class: <http://snomed.info/id/39607008> (Lung structure (body structure))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/39607008> "Lung structure (body structure)"@en)
+SubClassOf(<http://snomed.info/id/39607008> <http://snomed.info/id/27832009>)
+SubClassOf(<http://snomed.info/id/39607008> <http://snomed.info/id/363536003>)
+SubClassOf(<http://snomed.info/id/39607008> <http://snomed.info/id/699594007>)
+SubClassOf(<http://snomed.info/id/39607008> <http://snomed.info/id/714323000>)
+SubClassOf(<http://snomed.info/id/39607008> <http://snomed.info/id/82094008>)
+
+# Class: <http://snomed.info/id/399902003> (Disorder of body cavity (disorder))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/399902003> "Disorder of body cavity (disorder)"@en)
+EquivalentClasses(<http://snomed.info/id/399902003> ObjectIntersectionOf(<http://snomed.info/id/64572001> ObjectSomeValuesFrom(<http://snomed.info/id/363698007> <http://snomed.info/id/91806002>)))
+SubClassOf(<http://snomed.info/id/399902003> <http://snomed.info/id/64572001>)
+
+# Class: <http://snomed.info/id/399981008> (Neoplasm and/or hamartoma (disorder))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/399981008> "Neoplasm and/or hamartoma (disorder)"@en)
+EquivalentClasses(<http://snomed.info/id/399981008> ObjectIntersectionOf(<http://snomed.info/id/64572001> ObjectSomeValuesFrom(<http://snomed.info/id/116676008> <http://snomed.info/id/400177003>)))
+SubClassOf(<http://snomed.info/id/399981008> <http://snomed.info/id/64572001>)
+
+# Class: <http://snomed.info/id/400141005> (Lower respiratory system structure (body structure))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/400141005> "Lower respiratory system structure (body structure)"@en)
+SubClassOf(<http://snomed.info/id/400141005> <http://snomed.info/id/20139000>)
+
+# Class: <http://snomed.info/id/400177003> (Neoplasm and/or hamartoma (morphologic abnormality))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/400177003> "Neoplasm and/or hamartoma (morphologic abnormality)"@en)
+SubClassOf(<http://snomed.info/id/400177003> <http://snomed.info/id/416939005>)
+
+# Class: <http://snomed.info/id/404684003> (Clinical finding (finding))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/404684003> "Clinical finding (finding)"@en)
+SubClassOf(<http://snomed.info/id/404684003> <http://snomed.info/id/138875005>)
+
+# Class: <http://snomed.info/id/406123005> (Viscus structure finding (finding))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/406123005> "Viscus structure finding (finding)"@en)
+EquivalentClasses(<http://snomed.info/id/406123005> ObjectIntersectionOf(<http://snomed.info/id/404684003> ObjectSomeValuesFrom(<http://snomed.info/id/363698007> <http://snomed.info/id/362937008>)))
+SubClassOf(<http://snomed.info/id/406123005> <http://snomed.info/id/404684003>)
+
+# Class: <http://snomed.info/id/410510008> (Temporal context value (qualifier value))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/410510008> "Temporal context value (qualifier value)"@en)
+SubClassOf(<http://snomed.info/id/410510008> <http://snomed.info/id/288529006>)
+
+# Class: <http://snomed.info/id/410511007> (Current or past (actual) (qualifier value))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/410511007> "Current or past (actual) (qualifier value)"@en)
+SubClassOf(<http://snomed.info/id/410511007> <http://snomed.info/id/410510008>)
+
+# Class: <http://snomed.info/id/410512000> (Current or specified time (qualifier value))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/410512000> "Current or specified time (qualifier value)"@en)
+SubClassOf(<http://snomed.info/id/410512000> <http://snomed.info/id/410511007>)
+
+# Class: <http://snomed.info/id/410514004> (Finding context value (qualifier value))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/410514004> "Finding context value (qualifier value)"@en)
+SubClassOf(<http://snomed.info/id/410514004> <http://snomed.info/id/288529006>)
+
+# Class: <http://snomed.info/id/410590009> (Known possible (qualifier value))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/410590009> "Known possible (qualifier value)"@en)
+SubClassOf(<http://snomed.info/id/410590009> <http://snomed.info/id/36692007>)
+
+# Class: <http://snomed.info/id/410604004> (Subject of record (person))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/410604004> "Subject of record (person)"@en)
+SubClassOf(<http://snomed.info/id/410604004> <http://snomed.info/id/419358007>)
+
+# Class: <http://snomed.info/id/413350009> (Finding with explicit context (situation))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/413350009> "Finding with explicit context (situation)"@en)
+EquivalentClasses(<http://snomed.info/id/413350009> ObjectIntersectionOf(<http://snomed.info/id/243796009> ObjectSomeValuesFrom(<http://snomed.info/id/408729009> <http://snomed.info/id/410514004>) ObjectSomeValuesFrom(<http://snomed.info/id/408731000> <http://snomed.info/id/410510008>)))
+SubClassOf(<http://snomed.info/id/413350009> <http://snomed.info/id/243796009>)
+
+# Class: <http://snomed.info/id/4147007> (Mass (morphologic abnormality))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/4147007> "Mass (morphologic abnormality)"@en)
+SubClassOf(<http://snomed.info/id/4147007> <http://snomed.info/id/52988006>)
+
+# Class: <http://snomed.info/id/415684004> (Suspected (qualifier value))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/415684004> "Suspected (qualifier value)"@en)
+SubClassOf(<http://snomed.info/id/415684004> <http://snomed.info/id/410590009>)
+
+# Class: <http://snomed.info/id/416152001> (Neck and/or chest and/or abdomen structure (body structure))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/416152001> "Neck and/or chest and/or abdomen structure (body structure)"@en)
+SubClassOf(<http://snomed.info/id/416152001> <http://snomed.info/id/416319003>)
+
+# Class: <http://snomed.info/id/416319003> (Neck and/or chest and/or abdomen and/or pelvis (body structure))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/416319003> "Neck and/or chest and/or abdomen and/or pelvis (body structure)"@en)
+SubClassOf(<http://snomed.info/id/416319003> <http://snomed.info/id/52530000>)
+
+# Class: <http://snomed.info/id/416550000> (Chest and/or abdomen structure (body structure))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/416550000> "Chest and/or abdomen structure (body structure)"@en)
+SubClassOf(<http://snomed.info/id/416550000> <http://snomed.info/id/416152001>)
+SubClassOf(<http://snomed.info/id/416550000> <http://snomed.info/id/416775004>)
+
+# Class: <http://snomed.info/id/416775004> (Chest and/or abdomen and/or pelvis structure (body structure))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/416775004> "Chest and/or abdomen and/or pelvis structure (body structure)"@en)
+SubClassOf(<http://snomed.info/id/416775004> <http://snomed.info/id/52530000>)
+
+# Class: <http://snomed.info/id/416939005> (Proliferative mass (morphologic abnormality))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/416939005> "Proliferative mass (morphologic abnormality)"@en)
+SubClassOf(<http://snomed.info/id/416939005> <http://snomed.info/id/30217000>)
+SubClassOf(<http://snomed.info/id/416939005> <http://snomed.info/id/4147007>)
+
+# Class: <http://snomed.info/id/417437006> (Neck and/or chest structure (body structure))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/417437006> "Neck and/or chest structure (body structure)"@en)
+SubClassOf(<http://snomed.info/id/417437006> <http://snomed.info/id/416152001>)
+
+# Class: <http://snomed.info/id/41769001> (Disease suspected (situation))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/41769001> "Disease suspected (situation)"@en)
+EquivalentClasses(<http://snomed.info/id/41769001> ObjectIntersectionOf(<http://snomed.info/id/444433005> ObjectSomeValuesFrom(<http://snomed.info/id/609096000> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://snomed.info/id/246090004> <http://snomed.info/id/64572001>) ObjectSomeValuesFrom(<http://snomed.info/id/408729009> <http://snomed.info/id/415684004>) ObjectSomeValuesFrom(<http://snomed.info/id/408731000> <http://snomed.info/id/410512000>) ObjectSomeValuesFrom(<http://snomed.info/id/408732007> <http://snomed.info/id/410604004>)))))
+SubClassOf(<http://snomed.info/id/41769001> <http://snomed.info/id/444433005>)
+
+# Class: <http://snomed.info/id/419358007> (Subject of record or other provider of history (person))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/419358007> "Subject of record or other provider of history (person)"@en)
+SubClassOf(<http://snomed.info/id/419358007> <http://snomed.info/id/125676002>)
+
+# Class: <http://snomed.info/id/420473002> (Structure of subregion of trunk (body structure))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/420473002> "Structure of subregion of trunk (body structure)"@en)
+SubClassOf(<http://snomed.info/id/420473002> <http://snomed.info/id/22943007>)
+
+# Class: <http://snomed.info/id/428100006> (Malignant neoplasm of thoracic cavity structure (disorder))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/428100006> "Malignant neoplasm of thoracic cavity structure (disorder)"@en)
+EquivalentClasses(<http://snomed.info/id/428100006> ObjectIntersectionOf(<http://snomed.info/id/188361007> <http://snomed.info/id/362965005> <http://snomed.info/id/399902003> ObjectSomeValuesFrom(<http://snomed.info/id/609096000> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://snomed.info/id/116676008> <http://snomed.info/id/367651003>) ObjectSomeValuesFrom(<http://snomed.info/id/363698007> <http://snomed.info/id/43799004>)))))
+SubClassOf(<http://snomed.info/id/428100006> <http://snomed.info/id/188361007>)
+SubClassOf(<http://snomed.info/id/428100006> <http://snomed.info/id/362965005>)
+SubClassOf(<http://snomed.info/id/428100006> <http://snomed.info/id/399902003>)
+
+# Class: <http://snomed.info/id/430621000> (Malignant neoplasm of lower respiratory tract (disorder))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/430621000> "Malignant neoplasm of lower respiratory tract (disorder)"@en)
+EquivalentClasses(<http://snomed.info/id/430621000> ObjectIntersectionOf(<http://snomed.info/id/254618003> <http://snomed.info/id/449096009> ObjectSomeValuesFrom(<http://snomed.info/id/609096000> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://snomed.info/id/116676008> <http://snomed.info/id/367651003>) ObjectSomeValuesFrom(<http://snomed.info/id/363698007> <http://snomed.info/id/82094008>)))))
+SubClassOf(<http://snomed.info/id/430621000> <http://snomed.info/id/254618003>)
+SubClassOf(<http://snomed.info/id/430621000> <http://snomed.info/id/449096009>)
+
+# Class: <http://snomed.info/id/43799004> (Thoracic cavity structure (body structure))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/43799004> "Thoracic cavity structure (body structure)"@en)
+SubClassOf(<http://snomed.info/id/43799004> <http://snomed.info/id/312419003>)
+SubClassOf(<http://snomed.info/id/43799004> <http://snomed.info/id/699593001>)
+SubClassOf(<http://snomed.info/id/43799004> <http://snomed.info/id/91807006>)
+
+# Class: <http://snomed.info/id/440299000> (Mass of thoracic structure (finding))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/440299000> "Mass of thoracic structure (finding)"@en)
+EquivalentClasses(<http://snomed.info/id/440299000> ObjectIntersectionOf(<http://snomed.info/id/298705000> <http://snomed.info/id/309524007> ObjectSomeValuesFrom(<http://snomed.info/id/609096000> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://snomed.info/id/116676008> <http://snomed.info/id/4147007>) ObjectSomeValuesFrom(<http://snomed.info/id/363698007> <http://snomed.info/id/51185008>)))))
+SubClassOf(<http://snomed.info/id/440299000> <http://snomed.info/id/298705000>)
+SubClassOf(<http://snomed.info/id/440299000> <http://snomed.info/id/309524007>)
+
+# Class: <http://snomed.info/id/442083009> (Anatomical or acquired body structure (body structure))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/442083009> "Anatomical or acquired body structure (body structure)"@en)
+SubClassOf(<http://snomed.info/id/442083009> <http://snomed.info/id/123037004>)
+
+# Class: <http://snomed.info/id/443859009> (Possible clinical finding (situation))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/443859009> "Possible clinical finding (situation)"@en)
+EquivalentClasses(<http://snomed.info/id/443859009> ObjectIntersectionOf(<http://snomed.info/id/413350009> ObjectSomeValuesFrom(<http://snomed.info/id/609096000> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://snomed.info/id/408729009> <http://snomed.info/id/410590009>) ObjectSomeValuesFrom(<http://snomed.info/id/408731000> <http://snomed.info/id/410512000>) ObjectSomeValuesFrom(<http://snomed.info/id/408732007> <http://snomed.info/id/410604004>)))))
+SubClassOf(<http://snomed.info/id/443859009> <http://snomed.info/id/413350009>)
+
+# Class: <http://snomed.info/id/444433005> (Suspected clinical finding (situation))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/444433005> "Suspected clinical finding (situation)"@en)
+EquivalentClasses(<http://snomed.info/id/444433005> ObjectIntersectionOf(<http://snomed.info/id/443859009> ObjectSomeValuesFrom(<http://snomed.info/id/609096000> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://snomed.info/id/408729009> <http://snomed.info/id/415684004>) ObjectSomeValuesFrom(<http://snomed.info/id/408731000> <http://snomed.info/id/410512000>) ObjectSomeValuesFrom(<http://snomed.info/id/408732007> <http://snomed.info/id/410604004>)))))
+SubClassOf(<http://snomed.info/id/444433005> <http://snomed.info/id/443859009>)
+
+# Class: <http://snomed.info/id/448708002> (Neoplasm of respiratory system (disorder))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/448708002> "Neoplasm of respiratory system (disorder)"@en)
+EquivalentClasses(<http://snomed.info/id/448708002> ObjectIntersectionOf(<http://snomed.info/id/300851005> <http://snomed.info/id/50043002> <http://snomed.info/id/55342001> ObjectSomeValuesFrom(<http://snomed.info/id/609096000> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://snomed.info/id/116676008> <http://snomed.info/id/108369006>) ObjectSomeValuesFrom(<http://snomed.info/id/363698007> <http://snomed.info/id/20139000>)))))
+SubClassOf(<http://snomed.info/id/448708002> <http://snomed.info/id/300851005>)
+SubClassOf(<http://snomed.info/id/448708002> <http://snomed.info/id/50043002>)
+SubClassOf(<http://snomed.info/id/448708002> <http://snomed.info/id/55342001>)
+
+# Class: <http://snomed.info/id/449096009> (Malignant neoplasm of respiratory system (disorder))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/449096009> "Malignant neoplasm of respiratory system (disorder)"@en)
+EquivalentClasses(<http://snomed.info/id/449096009> ObjectIntersectionOf(<http://snomed.info/id/363346000> <http://snomed.info/id/448708002> ObjectSomeValuesFrom(<http://snomed.info/id/609096000> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://snomed.info/id/116676008> <http://snomed.info/id/367651003>) ObjectSomeValuesFrom(<http://snomed.info/id/363698007> <http://snomed.info/id/20139000>)))))
+SubClassOf(<http://snomed.info/id/449096009> <http://snomed.info/id/363346000>)
+SubClassOf(<http://snomed.info/id/449096009> <http://snomed.info/id/448708002>)
+
+# Class: <http://snomed.info/id/48176007> (Social context (social concept))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/48176007> "Social context (social concept)"@en)
+SubClassOf(<http://snomed.info/id/48176007> <http://snomed.info/id/138875005>)
+
+# Class: <http://snomed.info/id/49483002> (Disorder of mediastinum (disorder))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/49483002> "Disorder of mediastinum (disorder)"@en)
+EquivalentClasses(<http://snomed.info/id/49483002> ObjectIntersectionOf(<http://snomed.info/id/118946009> <http://snomed.info/id/301296002> <http://snomed.info/id/362965005> ObjectSomeValuesFrom(<http://snomed.info/id/363698007> <http://snomed.info/id/72410000>)))
+SubClassOf(<http://snomed.info/id/49483002> <http://snomed.info/id/118946009>)
+SubClassOf(<http://snomed.info/id/49483002> <http://snomed.info/id/301296002>)
+SubClassOf(<http://snomed.info/id/49483002> <http://snomed.info/id/362965005>)
+
+# Class: <http://snomed.info/id/49755003> (Morphologically abnormal structure (morphologic abnormality))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/49755003> "Morphologically abnormal structure (morphologic abnormality)"@en)
+SubClassOf(<http://snomed.info/id/49755003> <http://snomed.info/id/118956008>)
+
+# Class: <http://snomed.info/id/50043002> (Disorder of respiratory system (disorder))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/50043002> "Disorder of respiratory system (disorder)"@en)
+EquivalentClasses(<http://snomed.info/id/50043002> ObjectIntersectionOf(<http://snomed.info/id/106048009> <http://snomed.info/id/362965005> ObjectSomeValuesFrom(<http://snomed.info/id/363698007> <http://snomed.info/id/20139000>)))
+SubClassOf(<http://snomed.info/id/50043002> <http://snomed.info/id/106048009>)
+SubClassOf(<http://snomed.info/id/50043002> <http://snomed.info/id/362965005>)
+
+# Class: <http://snomed.info/id/51185008> (Thoracic structure (body structure))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/51185008> "Thoracic structure (body structure)"@en)
+SubClassOf(<http://snomed.info/id/51185008> <http://snomed.info/id/416550000>)
+SubClassOf(<http://snomed.info/id/51185008> <http://snomed.info/id/417437006>)
+SubClassOf(<http://snomed.info/id/51185008> <http://snomed.info/id/67734004>)
+
+# Class: <http://snomed.info/id/52530000> (Body region structure (body structure))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/52530000> "Body region structure (body structure)"@en)
+SubClassOf(<http://snomed.info/id/52530000> <http://snomed.info/id/91723000>)
+
+# Class: <http://snomed.info/id/52988006> (Lesion (morphologic abnormality))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/52988006> "Lesion (morphologic abnormality)"@en)
+SubClassOf(<http://snomed.info/id/52988006> <http://snomed.info/id/49755003>)
+
+# Class: <http://snomed.info/id/55342001> (Neoplastic disease (disorder))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/55342001> "Neoplastic disease (disorder)"@en)
+EquivalentClasses(<http://snomed.info/id/55342001> ObjectIntersectionOf(<http://snomed.info/id/399981008> ObjectSomeValuesFrom(<http://snomed.info/id/116676008> <http://snomed.info/id/108369006>)))
+SubClassOf(<http://snomed.info/id/55342001> <http://snomed.info/id/399981008>)
+
+# Class: <http://snomed.info/id/57697001> (Growth alteration (morphologic abnormality))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/57697001> "Growth alteration (morphologic abnormality)"@en)
+SubClassOf(<http://snomed.info/id/57697001> <http://snomed.info/id/49755003>)
+
+# Class: <http://snomed.info/id/609622007> (Disorder of thoracic segment of trunk (disorder))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/609622007> "Disorder of thoracic segment of trunk (disorder)"@en)
+EquivalentClasses(<http://snomed.info/id/609622007> ObjectIntersectionOf(<http://snomed.info/id/128121009> <http://snomed.info/id/609623002> ObjectSomeValuesFrom(<http://snomed.info/id/363698007> <http://snomed.info/id/67734004>)))
+SubClassOf(<http://snomed.info/id/609622007> <http://snomed.info/id/128121009>)
+SubClassOf(<http://snomed.info/id/609622007> <http://snomed.info/id/609623002>)
+
+# Class: <http://snomed.info/id/609623002> (Finding of upper trunk (finding))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/609623002> "Finding of upper trunk (finding)"@en)
+EquivalentClasses(<http://snomed.info/id/609623002> ObjectIntersectionOf(<http://snomed.info/id/302292003> ObjectSomeValuesFrom(<http://snomed.info/id/363698007> <http://snomed.info/id/67734004>)))
+SubClassOf(<http://snomed.info/id/609623002> <http://snomed.info/id/302292003>)
+
+# Class: <http://snomed.info/id/64572001> (Disease (disorder))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/64572001> "Disease (disorder)"@en)
+SubClassOf(<http://snomed.info/id/64572001> <http://snomed.info/id/404684003>)
+
+# Class: <http://snomed.info/id/67734004> (Structure of thoracic segment of trunk (body structure))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/67734004> "Structure of thoracic segment of trunk (body structure)"@en)
+SubClassOf(<http://snomed.info/id/67734004> <http://snomed.info/id/70104002>)
+SubClassOf(<http://snomed.info/id/67734004> <http://snomed.info/id/816094009>)
+
+# Class: <http://snomed.info/id/698967008> (Material anatomical entity (body structure))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/698967008> "Material anatomical entity (body structure)"@en)
+SubClassOf(<http://snomed.info/id/698967008> <http://snomed.info/id/91722005>)
+
+# Class: <http://snomed.info/id/699589007> (Structure of anatomical cluster (body structure))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/699589007> "Structure of anatomical cluster (body structure)"@en)
+SubClassOf(<http://snomed.info/id/699589007> <http://snomed.info/id/91723000>)
+
+# Class: <http://snomed.info/id/699590003> (Structure of anatomical compartment (body structure))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/699590003> "Structure of anatomical compartment (body structure)"@en)
+SubClassOf(<http://snomed.info/id/699590003> <http://snomed.info/id/699589007>)
+
+# Class: <http://snomed.info/id/699593001> (Structure of thoracic cavity and/or content (body structure))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/699593001> "Structure of thoracic cavity and/or content (body structure)"@en)
+SubClassOf(<http://snomed.info/id/699593001> <http://snomed.info/id/51185008>)
+SubClassOf(<http://snomed.info/id/699593001> <http://snomed.info/id/91829005>)
+
+# Class: <http://snomed.info/id/699594007> (Structure of pulmopleural compartment (body structure))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/699594007> "Structure of pulmopleural compartment (body structure)"@en)
+SubClassOf(<http://snomed.info/id/699594007> <http://snomed.info/id/699593001>)
+
+# Class: <http://snomed.info/id/70104002> (Upper body part structure (body structure))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/70104002> "Upper body part structure (body structure)"@en)
+SubClassOf(<http://snomed.info/id/70104002> <http://snomed.info/id/128262006>)
+
+# Class: <http://snomed.info/id/714323000> (Structure of organ in respiratory system (body structure))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/714323000> "Structure of organ in respiratory system (body structure)"@en)
+SubClassOf(<http://snomed.info/id/714323000> <http://snomed.info/id/113343008>)
+SubClassOf(<http://snomed.info/id/714323000> <http://snomed.info/id/118969007>)
+
+# Class: <http://snomed.info/id/714488006> (Structure of subdivision of organ system (body structure))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/714488006> "Structure of subdivision of organ system (body structure)"@en)
+SubClassOf(<http://snomed.info/id/714488006> <http://snomed.info/id/91689009>)
+
+# Class: <http://snomed.info/id/719982003> (Process (qualifier value))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/719982003> "Process (qualifier value)"@en)
+SubClassOf(<http://snomed.info/id/719982003> <http://snomed.info/id/362981000>)
+
+# Class: <http://snomed.info/id/72410000> (Mediastinal structure (body structure))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/72410000> "Mediastinal structure (body structure)"@en)
+SubClassOf(<http://snomed.info/id/72410000> <http://snomed.info/id/310787001>)
+SubClassOf(<http://snomed.info/id/72410000> <http://snomed.info/id/699593001>)
+
+# Class: <http://snomed.info/id/816094009> (Structure of thoracic cross-sectional segment of trunk (body structure))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/816094009> "Structure of thoracic cross-sectional segment of trunk (body structure)"@en)
+SubClassOf(<http://snomed.info/id/816094009> <http://snomed.info/id/420473002>)
+
+# Class: <http://snomed.info/id/82094008> (Lower respiratory tract structure (body structure))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/82094008> "Lower respiratory tract structure (body structure)"@en)
+SubClassOf(<http://snomed.info/id/82094008> <http://snomed.info/id/321667001>)
+SubClassOf(<http://snomed.info/id/82094008> <http://snomed.info/id/400141005>)
+
+# Class: <http://snomed.info/id/86049000> (Malignant neoplasm, primary (morphologic abnormality))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/86049000> "Malignant neoplasm, primary (morphologic abnormality)"@en)
+SubClassOf(<http://snomed.info/id/86049000> <http://snomed.info/id/367651003>)
+
+# Class: <http://snomed.info/id/900000000000441003> (SNOMED CT Model Component (metadata))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/900000000000441003> "SNOMED CT Model Component (metadata)"@en)
+SubClassOf(<http://snomed.info/id/900000000000441003> <http://snomed.info/id/138875005>)
+
+# Class: <http://snomed.info/id/900000000000442005> (Core metadata concept (core metadata concept))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/900000000000442005> "Core metadata concept (core metadata concept)"@en)
+SubClassOf(<http://snomed.info/id/900000000000442005> <http://snomed.info/id/900000000000441003>)
+
+# Class: <http://snomed.info/id/900000000000443000> (Module (core metadata concept))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/900000000000443000> "Module (core metadata concept)"@en)
+SubClassOf(<http://snomed.info/id/900000000000443000> <http://snomed.info/id/900000000000442005>)
+
+# Class: <http://snomed.info/id/900000000000445007> (International Health Terminology Standards Development Organisation maintained module (core metadata concept))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/900000000000445007> "International Health Terminology Standards Development Organisation maintained module (core metadata concept)"@en)
+SubClassOf(<http://snomed.info/id/900000000000445007> <http://snomed.info/id/900000000000443000>)
+
+# Class: <http://snomed.info/id/900000000000454005> (Foundation metadata concept (foundation metadata concept))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/900000000000454005> "Foundation metadata concept (foundation metadata concept)"@en)
+SubClassOf(<http://snomed.info/id/900000000000454005> <http://snomed.info/id/900000000000441003>)
+
+# Class: <http://snomed.info/id/900000000000457003> (Reference set attribute (foundation metadata concept))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/900000000000457003> "Reference set attribute (foundation metadata concept)"@en)
+SubClassOf(<http://snomed.info/id/900000000000457003> <http://snomed.info/id/900000000000454005>)
+
+# Class: <http://snomed.info/id/91689009> (Body system structure (body structure))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/91689009> "Body system structure (body structure)"@en)
+SubClassOf(<http://snomed.info/id/91689009> <http://snomed.info/id/91723000>)
+
+# Class: <http://snomed.info/id/91690000> (Entire subdivision of organ system (body structure))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/91690000> "Entire subdivision of organ system (body structure)"@en)
+SubClassOf(<http://snomed.info/id/91690000> <http://snomed.info/id/714488006>)
+
+# Class: <http://snomed.info/id/91722005> (Entire physical anatomical entity (body structure))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/91722005> "Entire physical anatomical entity (body structure)"@en)
+SubClassOf(<http://snomed.info/id/91722005> <http://snomed.info/id/91723000>)
+
+# Class: <http://snomed.info/id/91723000> (Anatomical structure (body structure))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/91723000> "Anatomical structure (body structure)"@en)
+SubClassOf(<http://snomed.info/id/91723000> <http://snomed.info/id/442083009>)
+
+# Class: <http://snomed.info/id/91806002> (Body cavity structure (body structure))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/91806002> "Body cavity structure (body structure)"@en)
+SubClassOf(<http://snomed.info/id/91806002> <http://snomed.info/id/2969000>)
+
+# Class: <http://snomed.info/id/91807006> (Structure of body cavity subdivision (body structure))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/91807006> "Structure of body cavity subdivision (body structure)"@en)
+SubClassOf(<http://snomed.info/id/91807006> <http://snomed.info/id/91806002>)
+
+# Class: <http://snomed.info/id/91829005> (Structure of body cavity and/or content (body structure))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/91829005> "Structure of body cavity and/or content (body structure)"@en)
+SubClassOf(<http://snomed.info/id/91829005> <http://snomed.info/id/22943007>)
+SubClassOf(<http://snomed.info/id/91829005> <http://snomed.info/id/699590003>)
+
+# Class: <http://snomed.info/id/94111002> (Primary malignant neoplasm of trunk (disorder))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/94111002> "Primary malignant neoplasm of trunk (disorder)"@en)
+EquivalentClasses(<http://snomed.info/id/94111002> ObjectIntersectionOf(<http://snomed.info/id/126637008> <http://snomed.info/id/372087000> ObjectSomeValuesFrom(<http://snomed.info/id/609096000> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://snomed.info/id/116676008> <http://snomed.info/id/86049000>) ObjectSomeValuesFrom(<http://snomed.info/id/363698007> <http://snomed.info/id/22943007>)))))
+SubClassOf(<http://snomed.info/id/94111002> <http://snomed.info/id/126637008>)
+SubClassOf(<http://snomed.info/id/94111002> <http://snomed.info/id/372087000>)
+
+# Class: <http://snomed.info/id/94147001> (Mass of mediastinum (finding))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/94147001> "Mass of mediastinum (finding)"@en)
+EquivalentClasses(<http://snomed.info/id/94147001> ObjectIntersectionOf(<http://snomed.info/id/301296002> <http://snomed.info/id/440299000> ObjectSomeValuesFrom(<http://snomed.info/id/609096000> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://snomed.info/id/116676008> <http://snomed.info/id/4147007>) ObjectSomeValuesFrom(<http://snomed.info/id/363698007> <http://snomed.info/id/72410000>)))))
+SubClassOf(<http://snomed.info/id/94147001> <http://snomed.info/id/301296002>)
+SubClassOf(<http://snomed.info/id/94147001> <http://snomed.info/id/440299000>)
+
+
+SubObjectPropertyOf(ObjectPropertyChain(<http://snomed.info/id/363701004> <http://snomed.info/id/127489000>) <http://snomed.info/id/363701004>)
+)
