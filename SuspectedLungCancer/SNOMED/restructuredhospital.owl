@@ -85,9 +85,11 @@ ObjectPropertyAssertion(<http://snomed.info/id/408732007> p:609096000_1 p:410604
 #                           ObjectSomeValuesFrom(<http://snomed.info/id/408729009> <http://snomed.info/id/415684004>)
 #                           ObjectSomeValuesFrom(<http://snomed.info/id/408731000> <http://snomed.info/id/410512000>)
 #                           ObjectSomeValuesFrom(<http://snomed.info/id/408732007> <http://snomed.info/id/410604004>)))))
-Declaration(Annotation(rdfs:label "A role group") NamedIndividual(p:609096000_2))
+Declaration(NamedIndividual(p:609096000_2))
+AnnotationAssertion(rdfs:label p:609096000_2 "Instance 2 of role group (attribute)"@en)
 ObjectPropertyAssertion(rsh:includes p:162573006 p:609096000_2)
 ClassAssertion(<http://snomed.info/id/609096000> p:609096000_2)
+
 ClassAssertion(<http://snomed.info/id/363346000> p:363346000_1)
 Declaration(NamedIndividual(p:363346000_1))
 ObjectPropertyAssertion(<http://snomed.info/id/246090004> p:609096000_2 p:363346000_1)
