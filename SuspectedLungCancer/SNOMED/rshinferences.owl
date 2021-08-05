@@ -1,0 +1,1614 @@
+Prefix(:=<http://ontologies-r.us/bdp/diabetes/suspectedlungcancer/rshinferences#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://ontologies-r.us/bdp/diabetes/suspectedlungcancer/rshinferences>
+
+Declaration(Class(<http://snomed.info/id/106028002>))
+Declaration(Class(<http://snomed.info/id/106048009>))
+Declaration(Class(<http://snomed.info/id/106232001>))
+Declaration(Class(<http://snomed.info/id/106234000>))
+Declaration(Class(<http://snomed.info/id/108369006>))
+Declaration(Class(<http://snomed.info/id/113343008>))
+Declaration(Class(<http://snomed.info/id/118222006>))
+Declaration(Class(<http://snomed.info/id/118946009>))
+Declaration(Class(<http://snomed.info/id/118956008>))
+Declaration(Class(<http://snomed.info/id/118969007>))
+Declaration(Class(<http://snomed.info/id/123037004>))
+Declaration(Class(<http://snomed.info/id/123960005>))
+Declaration(Class(<http://snomed.info/id/125676002>))
+Declaration(Class(<http://snomed.info/id/126637008>))
+Declaration(Class(<http://snomed.info/id/126638003>))
+Declaration(Class(<http://snomed.info/id/126667002>))
+Declaration(Class(<http://snomed.info/id/126713003>))
+Declaration(Class(<http://snomed.info/id/126725000>))
+Declaration(Class(<http://snomed.info/id/127947003>))
+Declaration(Class(<http://snomed.info/id/128121009>))
+Declaration(Class(<http://snomed.info/id/128262006>))
+Declaration(Class(<http://snomed.info/id/128272009>))
+Declaration(Class(<http://snomed.info/id/138875005>))
+Declaration(Class(<http://snomed.info/id/160237006>))
+Declaration(Class(<http://snomed.info/id/162572001>))
+Declaration(Class(<http://snomed.info/id/162573006>))
+Declaration(Class(<http://snomed.info/id/188361007>))
+Declaration(Class(<http://snomed.info/id/19829001>))
+Declaration(Class(<http://snomed.info/id/20139000>))
+Declaration(Class(<http://snomed.info/id/22943007>))
+Declaration(Class(<http://snomed.info/id/229761008>))
+Declaration(Class(<http://snomed.info/id/233814000>))
+Declaration(Class(<http://snomed.info/id/243796009>))
+Declaration(Class(<http://snomed.info/id/243928005>))
+Declaration(Class(<http://snomed.info/id/254618003>))
+Declaration(Class(<http://snomed.info/id/255058005>))
+Declaration(Class(<http://snomed.info/id/255203001>))
+Declaration(Class(<http://snomed.info/id/255395001>))
+Declaration(Class(<http://snomed.info/id/261060002>))
+Declaration(Class(<http://snomed.info/id/26107004>))
+Declaration(Class(<http://snomed.info/id/262225004>))
+Declaration(Class(<http://snomed.info/id/272099008>))
+Declaration(Class(<http://snomed.info/id/276438008>))
+Declaration(Class(<http://snomed.info/id/277739008>))
+Declaration(Class(<http://snomed.info/id/278195005>))
+Declaration(Class(<http://snomed.info/id/278197002>))
+Declaration(Class(<http://snomed.info/id/278264008>))
+Declaration(Class(<http://snomed.info/id/27832009>))
+Declaration(Class(<http://snomed.info/id/278441008>))
+Declaration(Class(<http://snomed.info/id/280542007>))
+Declaration(Class(<http://snomed.info/id/281483004>))
+Declaration(Class(<http://snomed.info/id/281586009>))
+Declaration(Class(<http://snomed.info/id/288529006>))
+Declaration(Class(<http://snomed.info/id/2969000>))
+Declaration(Class(<http://snomed.info/id/298705000>))
+Declaration(Class(<http://snomed.info/id/300848003>))
+Declaration(Class(<http://snomed.info/id/300851005>))
+Declaration(Class(<http://snomed.info/id/300862005>))
+Declaration(Class(<http://snomed.info/id/301226008>))
+Declaration(Class(<http://snomed.info/id/301230006>))
+Declaration(Class(<http://snomed.info/id/301232003>))
+Declaration(Class(<http://snomed.info/id/301296002>))
+Declaration(Class(<http://snomed.info/id/30217000>))
+Declaration(Class(<http://snomed.info/id/302292003>))
+Declaration(Class(<http://snomed.info/id/302551006>))
+Declaration(Class(<http://snomed.info/id/303102005>))
+Declaration(Class(<http://snomed.info/id/308489006>))
+Declaration(Class(<http://snomed.info/id/309524007>))
+Declaration(Class(<http://snomed.info/id/309529002>))
+Declaration(Class(<http://snomed.info/id/310787001>))
+Declaration(Class(<http://snomed.info/id/312419003>))
+Declaration(Class(<http://snomed.info/id/321667001>))
+Declaration(Class(<http://snomed.info/id/362873000>))
+Declaration(Class(<http://snomed.info/id/362874006>))
+Declaration(Class(<http://snomed.info/id/362889002>))
+Declaration(Class(<http://snomed.info/id/362937008>))
+Declaration(Class(<http://snomed.info/id/362965005>))
+Declaration(Class(<http://snomed.info/id/362981000>))
+Declaration(Class(<http://snomed.info/id/363346000>))
+Declaration(Class(<http://snomed.info/id/363358000>))
+Declaration(Class(<http://snomed.info/id/363536003>))
+Declaration(Class(<http://snomed.info/id/363743006>))
+Declaration(Class(<http://snomed.info/id/36692007>))
+Declaration(Class(<http://snomed.info/id/367651003>))
+Declaration(Class(<http://snomed.info/id/370115009>))
+Declaration(Class(<http://snomed.info/id/370136006>))
+Declaration(Class(<http://snomed.info/id/372087000>))
+Declaration(Class(<http://snomed.info/id/38266002>))
+Declaration(Class(<http://snomed.info/id/38866009>))
+Declaration(Class(<http://snomed.info/id/394966004>))
+Declaration(Class(<http://snomed.info/id/39607008>))
+Declaration(Class(<http://snomed.info/id/399902003>))
+Declaration(Class(<http://snomed.info/id/399981008>))
+Declaration(Class(<http://snomed.info/id/400141005>))
+Declaration(Class(<http://snomed.info/id/400177003>))
+Declaration(Class(<http://snomed.info/id/404684003>))
+Declaration(Class(<http://snomed.info/id/406123005>))
+Declaration(Class(<http://snomed.info/id/410510008>))
+Declaration(Class(<http://snomed.info/id/410511007>))
+Declaration(Class(<http://snomed.info/id/410512000>))
+Declaration(Class(<http://snomed.info/id/410514004>))
+Declaration(Class(<http://snomed.info/id/410590009>))
+Declaration(Class(<http://snomed.info/id/410604004>))
+Declaration(Class(<http://snomed.info/id/413350009>))
+Declaration(Class(<http://snomed.info/id/4147007>))
+Declaration(Class(<http://snomed.info/id/415684004>))
+Declaration(Class(<http://snomed.info/id/416152001>))
+Declaration(Class(<http://snomed.info/id/416319003>))
+Declaration(Class(<http://snomed.info/id/416550000>))
+Declaration(Class(<http://snomed.info/id/416775004>))
+Declaration(Class(<http://snomed.info/id/416939005>))
+Declaration(Class(<http://snomed.info/id/417437006>))
+Declaration(Class(<http://snomed.info/id/41769001>))
+Declaration(Class(<http://snomed.info/id/419358007>))
+Declaration(Class(<http://snomed.info/id/420473002>))
+Declaration(Class(<http://snomed.info/id/428100006>))
+Declaration(Class(<http://snomed.info/id/430621000>))
+Declaration(Class(<http://snomed.info/id/43799004>))
+Declaration(Class(<http://snomed.info/id/440299000>))
+Declaration(Class(<http://snomed.info/id/442083009>))
+Declaration(Class(<http://snomed.info/id/443859009>))
+Declaration(Class(<http://snomed.info/id/444433005>))
+Declaration(Class(<http://snomed.info/id/448708002>))
+Declaration(Class(<http://snomed.info/id/449096009>))
+Declaration(Class(<http://snomed.info/id/48176007>))
+Declaration(Class(<http://snomed.info/id/49483002>))
+Declaration(Class(<http://snomed.info/id/49755003>))
+Declaration(Class(<http://snomed.info/id/50043002>))
+Declaration(Class(<http://snomed.info/id/51185008>))
+Declaration(Class(<http://snomed.info/id/52530000>))
+Declaration(Class(<http://snomed.info/id/52988006>))
+Declaration(Class(<http://snomed.info/id/55342001>))
+Declaration(Class(<http://snomed.info/id/57697001>))
+Declaration(Class(<http://snomed.info/id/609622007>))
+Declaration(Class(<http://snomed.info/id/609623002>))
+Declaration(Class(<http://snomed.info/id/64572001>))
+Declaration(Class(<http://snomed.info/id/67734004>))
+Declaration(Class(<http://snomed.info/id/698967008>))
+Declaration(Class(<http://snomed.info/id/699589007>))
+Declaration(Class(<http://snomed.info/id/699590003>))
+Declaration(Class(<http://snomed.info/id/699593001>))
+Declaration(Class(<http://snomed.info/id/699594007>))
+Declaration(Class(<http://snomed.info/id/70104002>))
+Declaration(Class(<http://snomed.info/id/714323000>))
+Declaration(Class(<http://snomed.info/id/714488006>))
+Declaration(Class(<http://snomed.info/id/719982003>))
+Declaration(Class(<http://snomed.info/id/72410000>))
+Declaration(Class(<http://snomed.info/id/816094009>))
+Declaration(Class(<http://snomed.info/id/82094008>))
+Declaration(Class(<http://snomed.info/id/86049000>))
+Declaration(Class(<http://snomed.info/id/900000000000441003>))
+Declaration(Class(<http://snomed.info/id/900000000000442005>))
+Declaration(Class(<http://snomed.info/id/900000000000443000>))
+Declaration(Class(<http://snomed.info/id/900000000000445007>))
+Declaration(Class(<http://snomed.info/id/900000000000454005>))
+Declaration(Class(<http://snomed.info/id/900000000000457003>))
+Declaration(Class(<http://snomed.info/id/91689009>))
+Declaration(Class(<http://snomed.info/id/91690000>))
+Declaration(Class(<http://snomed.info/id/91722005>))
+Declaration(Class(<http://snomed.info/id/91723000>))
+Declaration(Class(<http://snomed.info/id/91806002>))
+Declaration(Class(<http://snomed.info/id/91807006>))
+Declaration(Class(<http://snomed.info/id/91829005>))
+Declaration(Class(<http://snomed.info/id/94111002>))
+Declaration(Class(<http://snomed.info/id/94147001>))
+Declaration(ObjectProperty(<http://ontologies-r.us/bdp/suspectedlungcancer/restructuredhospital#hasDiagnosis>))
+Declaration(ObjectProperty(<http://snomed.info/id/1003703000>))
+Declaration(ObjectProperty(<http://snomed.info/id/1003735000>))
+Declaration(ObjectProperty(<http://snomed.info/id/1142135004>))
+Declaration(ObjectProperty(<http://snomed.info/id/1142136003>))
+Declaration(ObjectProperty(<http://snomed.info/id/1142137007>))
+Declaration(ObjectProperty(<http://snomed.info/id/1142138002>))
+Declaration(ObjectProperty(<http://snomed.info/id/1142139005>))
+Declaration(ObjectProperty(<http://snomed.info/id/1142140007>))
+Declaration(ObjectProperty(<http://snomed.info/id/1142141006>))
+Declaration(ObjectProperty(<http://snomed.info/id/1142142004>))
+Declaration(ObjectProperty(<http://snomed.info/id/1142143009>))
+Declaration(ObjectProperty(<http://snomed.info/id/1148793005>))
+Declaration(ObjectProperty(<http://snomed.info/id/1148965004>))
+Declaration(ObjectProperty(<http://snomed.info/id/1148967007>))
+Declaration(ObjectProperty(<http://snomed.info/id/1148968002>))
+Declaration(ObjectProperty(<http://snomed.info/id/1148969005>))
+Declaration(ObjectProperty(<http://snomed.info/id/1149366004>))
+Declaration(ObjectProperty(<http://snomed.info/id/1149367008>))
+Declaration(ObjectProperty(<http://snomed.info/id/116676008>))
+Declaration(ObjectProperty(<http://snomed.info/id/116686009>))
+Declaration(ObjectProperty(<http://snomed.info/id/118168003>))
+Declaration(ObjectProperty(<http://snomed.info/id/118169006>))
+Declaration(ObjectProperty(<http://snomed.info/id/118170007>))
+Declaration(ObjectProperty(<http://snomed.info/id/118171006>))
+Declaration(ObjectProperty(<http://snomed.info/id/127489000>))
+Declaration(ObjectProperty(<http://snomed.info/id/131195008>))
+Declaration(ObjectProperty(<http://snomed.info/id/246075003>))
+Declaration(ObjectProperty(<http://snomed.info/id/246090004>))
+Declaration(ObjectProperty(<http://snomed.info/id/246093002>))
+Declaration(ObjectProperty(<http://snomed.info/id/246112005>))
+Declaration(ObjectProperty(<http://snomed.info/id/246454002>))
+Declaration(ObjectProperty(<http://snomed.info/id/246456000>))
+Declaration(ObjectProperty(<http://snomed.info/id/246501002>))
+Declaration(ObjectProperty(<http://snomed.info/id/246513007>))
+Declaration(ObjectProperty(<http://snomed.info/id/246514001>))
+Declaration(ObjectProperty(<http://snomed.info/id/255234002>))
+Declaration(ObjectProperty(<http://snomed.info/id/260507000>))
+Declaration(ObjectProperty(<http://snomed.info/id/260686004>))
+Declaration(ObjectProperty(<http://snomed.info/id/260870009>))
+Declaration(ObjectProperty(<http://snomed.info/id/263502005>))
+Declaration(ObjectProperty(<http://snomed.info/id/272741003>))
+Declaration(ObjectProperty(<http://snomed.info/id/288556008>))
+Declaration(ObjectProperty(<http://snomed.info/id/320091000221107>))
+Declaration(ObjectProperty(<http://snomed.info/id/363589002>))
+Declaration(ObjectProperty(<http://snomed.info/id/363698007>))
+Declaration(ObjectProperty(<http://snomed.info/id/363699004>))
+Declaration(ObjectProperty(<http://snomed.info/id/363700003>))
+Declaration(ObjectProperty(<http://snomed.info/id/363701004>))
+Declaration(ObjectProperty(<http://snomed.info/id/363702006>))
+Declaration(ObjectProperty(<http://snomed.info/id/363703001>))
+Declaration(ObjectProperty(<http://snomed.info/id/363704007>))
+Declaration(ObjectProperty(<http://snomed.info/id/363705008>))
+Declaration(ObjectProperty(<http://snomed.info/id/363709002>))
+Declaration(ObjectProperty(<http://snomed.info/id/363710007>))
+Declaration(ObjectProperty(<http://snomed.info/id/363713009>))
+Declaration(ObjectProperty(<http://snomed.info/id/363714003>))
+Declaration(ObjectProperty(<http://snomed.info/id/370129005>))
+Declaration(ObjectProperty(<http://snomed.info/id/370130000>))
+Declaration(ObjectProperty(<http://snomed.info/id/370131001>))
+Declaration(ObjectProperty(<http://snomed.info/id/370132008>))
+Declaration(ObjectProperty(<http://snomed.info/id/370133003>))
+Declaration(ObjectProperty(<http://snomed.info/id/370134009>))
+Declaration(ObjectProperty(<http://snomed.info/id/370135005>))
+Declaration(ObjectProperty(<http://snomed.info/id/371881003>))
+Declaration(ObjectProperty(<http://snomed.info/id/405813007>))
+Declaration(ObjectProperty(<http://snomed.info/id/405814001>))
+Declaration(ObjectProperty(<http://snomed.info/id/405815000>))
+Declaration(ObjectProperty(<http://snomed.info/id/405816004>))
+Declaration(ObjectProperty(<http://snomed.info/id/408729009>))
+Declaration(ObjectProperty(<http://snomed.info/id/408730004>))
+Declaration(ObjectProperty(<http://snomed.info/id/408731000>))
+Declaration(ObjectProperty(<http://snomed.info/id/408732007>))
+Declaration(ObjectProperty(<http://snomed.info/id/410662002>))
+Declaration(ObjectProperty(<http://snomed.info/id/410675002>))
+Declaration(ObjectProperty(<http://snomed.info/id/411116001>))
+Declaration(ObjectProperty(<http://snomed.info/id/418775008>))
+Declaration(ObjectProperty(<http://snomed.info/id/419066007>))
+Declaration(ObjectProperty(<http://snomed.info/id/424226004>))
+Declaration(ObjectProperty(<http://snomed.info/id/424244007>))
+Declaration(ObjectProperty(<http://snomed.info/id/424361007>))
+Declaration(ObjectProperty(<http://snomed.info/id/424876005>))
+Declaration(ObjectProperty(<http://snomed.info/id/425391005>))
+Declaration(ObjectProperty(<http://snomed.info/id/42752001>))
+Declaration(ObjectProperty(<http://snomed.info/id/47429007>))
+Declaration(ObjectProperty(<http://snomed.info/id/609096000>))
+Declaration(ObjectProperty(<http://snomed.info/id/704319004>))
+Declaration(ObjectProperty(<http://snomed.info/id/704320005>))
+Declaration(ObjectProperty(<http://snomed.info/id/704321009>))
+Declaration(ObjectProperty(<http://snomed.info/id/704322002>))
+Declaration(ObjectProperty(<http://snomed.info/id/704323007>))
+Declaration(ObjectProperty(<http://snomed.info/id/704324001>))
+Declaration(ObjectProperty(<http://snomed.info/id/704325000>))
+Declaration(ObjectProperty(<http://snomed.info/id/704326004>))
+Declaration(ObjectProperty(<http://snomed.info/id/704327008>))
+Declaration(ObjectProperty(<http://snomed.info/id/704346009>))
+Declaration(ObjectProperty(<http://snomed.info/id/704347000>))
+Declaration(ObjectProperty(<http://snomed.info/id/704647008>))
+Declaration(ObjectProperty(<http://snomed.info/id/718497002>))
+Declaration(ObjectProperty(<http://snomed.info/id/719715003>))
+Declaration(ObjectProperty(<http://snomed.info/id/719722006>))
+Declaration(ObjectProperty(<http://snomed.info/id/726542003>))
+Declaration(ObjectProperty(<http://snomed.info/id/726633004>))
+Declaration(ObjectProperty(<http://snomed.info/id/732943007>))
+Declaration(ObjectProperty(<http://snomed.info/id/732945000>))
+Declaration(ObjectProperty(<http://snomed.info/id/732947008>))
+Declaration(ObjectProperty(<http://snomed.info/id/733722007>))
+Declaration(ObjectProperty(<http://snomed.info/id/733725009>))
+Declaration(ObjectProperty(<http://snomed.info/id/733928003>))
+Declaration(ObjectProperty(<http://snomed.info/id/733930001>))
+Declaration(ObjectProperty(<http://snomed.info/id/733931002>))
+Declaration(ObjectProperty(<http://snomed.info/id/733932009>))
+Declaration(ObjectProperty(<http://snomed.info/id/733933004>))
+Declaration(ObjectProperty(<http://snomed.info/id/734136001>))
+Declaration(ObjectProperty(<http://snomed.info/id/734137005>))
+Declaration(ObjectProperty(<http://snomed.info/id/736472000>))
+Declaration(ObjectProperty(<http://snomed.info/id/736473005>))
+Declaration(ObjectProperty(<http://snomed.info/id/736474004>))
+Declaration(ObjectProperty(<http://snomed.info/id/736475003>))
+Declaration(ObjectProperty(<http://snomed.info/id/736476002>))
+Declaration(ObjectProperty(<http://snomed.info/id/736518005>))
+Declaration(ObjectProperty(<http://snomed.info/id/738774007>))
+Declaration(ObjectProperty(<http://snomed.info/id/762705008>))
+Declaration(ObjectProperty(<http://snomed.info/id/762706009>))
+Declaration(ObjectProperty(<http://snomed.info/id/762949000>))
+Declaration(ObjectProperty(<http://snomed.info/id/762951001>))
+Declaration(ObjectProperty(<http://snomed.info/id/763032000>))
+Declaration(ObjectProperty(<http://snomed.info/id/766939001>))
+Declaration(ObjectProperty(<http://snomed.info/id/774081006>))
+Declaration(ObjectProperty(<http://snomed.info/id/774158006>))
+Declaration(ObjectProperty(<http://snomed.info/id/774159003>))
+Declaration(ObjectProperty(<http://snomed.info/id/774160008>))
+Declaration(ObjectProperty(<http://snomed.info/id/774163005>))
+Declaration(ObjectProperty(<http://snomed.info/id/827081001>))
+Declaration(ObjectProperty(<http://snomed.info/id/836358009>))
+Declaration(ObjectProperty(<http://snomed.info/id/840560000>))
+Declaration(ObjectProperty(<http://snomed.info/id/860779006>))
+Declaration(ObjectProperty(<http://snomed.info/id/860781008>))
+Declaration(NamedIndividual(<http://ontologies-r.us/bdp/suspectedlungcancer/restructuredhospital#Shelly>))
+Declaration(NamedIndividual(<http://ontologies-r.us/bdp/suspectedlungcancer/restructuredhospital/w>))
+############################
+#   Object Properties
+############################
+
+# Object Property: <http://snomed.info/id/1003703000> (<http://snomed.info/id/1003703000>)
+
+SubObjectPropertyOf(<http://snomed.info/id/1003703000> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/1003735000> (<http://snomed.info/id/1003735000>)
+
+SubObjectPropertyOf(<http://snomed.info/id/1003735000> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/1142135004> (<http://snomed.info/id/1142135004>)
+
+SubObjectPropertyOf(<http://snomed.info/id/1142135004> <http://snomed.info/id/762706009>)
+
+# Object Property: <http://snomed.info/id/1142136003> (<http://snomed.info/id/1142136003>)
+
+SubObjectPropertyOf(<http://snomed.info/id/1142136003> <http://snomed.info/id/762706009>)
+
+# Object Property: <http://snomed.info/id/1142137007> (<http://snomed.info/id/1142137007>)
+
+SubObjectPropertyOf(<http://snomed.info/id/1142137007> <http://snomed.info/id/762706009>)
+
+# Object Property: <http://snomed.info/id/1142138002> (<http://snomed.info/id/1142138002>)
+
+SubObjectPropertyOf(<http://snomed.info/id/1142138002> <http://snomed.info/id/762706009>)
+
+# Object Property: <http://snomed.info/id/1142139005> (<http://snomed.info/id/1142139005>)
+
+SubObjectPropertyOf(<http://snomed.info/id/1142139005> <http://snomed.info/id/762706009>)
+
+# Object Property: <http://snomed.info/id/1142140007> (<http://snomed.info/id/1142140007>)
+
+SubObjectPropertyOf(<http://snomed.info/id/1142140007> <http://snomed.info/id/762706009>)
+
+# Object Property: <http://snomed.info/id/1142141006> (<http://snomed.info/id/1142141006>)
+
+SubObjectPropertyOf(<http://snomed.info/id/1142141006> <http://snomed.info/id/762706009>)
+
+# Object Property: <http://snomed.info/id/1142142004> (<http://snomed.info/id/1142142004>)
+
+SubObjectPropertyOf(<http://snomed.info/id/1142142004> <http://snomed.info/id/762706009>)
+
+# Object Property: <http://snomed.info/id/1142143009> (<http://snomed.info/id/1142143009>)
+
+SubObjectPropertyOf(<http://snomed.info/id/1142143009> <http://snomed.info/id/762706009>)
+
+# Object Property: <http://snomed.info/id/1148793005> (<http://snomed.info/id/1148793005>)
+
+SubObjectPropertyOf(<http://snomed.info/id/1148793005> <http://snomed.info/id/762706009>)
+
+# Object Property: <http://snomed.info/id/1148965004> (<http://snomed.info/id/1148965004>)
+
+SubObjectPropertyOf(<http://snomed.info/id/1148965004> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/1148967007> (<http://snomed.info/id/1148967007>)
+
+SubObjectPropertyOf(<http://snomed.info/id/1148967007> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/1148968002> (<http://snomed.info/id/1148968002>)
+
+SubObjectPropertyOf(<http://snomed.info/id/1148968002> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/1148969005> (<http://snomed.info/id/1148969005>)
+
+SubObjectPropertyOf(<http://snomed.info/id/1148969005> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/1149366004> (<http://snomed.info/id/1149366004>)
+
+SubObjectPropertyOf(<http://snomed.info/id/1149366004> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/1149367008> (<http://snomed.info/id/1149367008>)
+
+SubObjectPropertyOf(<http://snomed.info/id/1149367008> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/116676008> (<http://snomed.info/id/116676008>)
+
+SubObjectPropertyOf(<http://snomed.info/id/116676008> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/116686009> (<http://snomed.info/id/116686009>)
+
+SubObjectPropertyOf(<http://snomed.info/id/116686009> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/118168003> (<http://snomed.info/id/118168003>)
+
+SubObjectPropertyOf(<http://snomed.info/id/118168003> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/118169006> (<http://snomed.info/id/118169006>)
+
+SubObjectPropertyOf(<http://snomed.info/id/118169006> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/118170007> (<http://snomed.info/id/118170007>)
+
+SubObjectPropertyOf(<http://snomed.info/id/118170007> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/118171006> (<http://snomed.info/id/118171006>)
+
+SubObjectPropertyOf(<http://snomed.info/id/118171006> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/127489000> (<http://snomed.info/id/127489000>)
+
+SubObjectPropertyOf(<http://snomed.info/id/127489000> <http://snomed.info/id/762951001>)
+
+# Object Property: <http://snomed.info/id/131195008> (<http://snomed.info/id/131195008>)
+
+SubObjectPropertyOf(<http://snomed.info/id/131195008> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/246075003> (<http://snomed.info/id/246075003>)
+
+SubObjectPropertyOf(<http://snomed.info/id/246075003> <http://snomed.info/id/47429007>)
+
+# Object Property: <http://snomed.info/id/246090004> (<http://snomed.info/id/246090004>)
+
+SubObjectPropertyOf(<http://snomed.info/id/246090004> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/246093002> (<http://snomed.info/id/246093002>)
+
+SubObjectPropertyOf(<http://snomed.info/id/246093002> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/246112005> (<http://snomed.info/id/246112005>)
+
+SubObjectPropertyOf(<http://snomed.info/id/246112005> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/246454002> (<http://snomed.info/id/246454002>)
+
+SubObjectPropertyOf(<http://snomed.info/id/246454002> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/246456000> (<http://snomed.info/id/246456000>)
+
+SubObjectPropertyOf(<http://snomed.info/id/246456000> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/246501002> (<http://snomed.info/id/246501002>)
+
+SubObjectPropertyOf(<http://snomed.info/id/246501002> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/246513007> (<http://snomed.info/id/246513007>)
+
+SubObjectPropertyOf(<http://snomed.info/id/246513007> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/246514001> (<http://snomed.info/id/246514001>)
+
+SubObjectPropertyOf(<http://snomed.info/id/246514001> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/255234002> (<http://snomed.info/id/255234002>)
+
+SubObjectPropertyOf(<http://snomed.info/id/255234002> <http://snomed.info/id/726633004>)
+
+# Object Property: <http://snomed.info/id/260507000> (<http://snomed.info/id/260507000>)
+
+SubObjectPropertyOf(<http://snomed.info/id/260507000> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/260686004> (<http://snomed.info/id/260686004>)
+
+SubObjectPropertyOf(<http://snomed.info/id/260686004> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/260870009> (<http://snomed.info/id/260870009>)
+
+SubObjectPropertyOf(<http://snomed.info/id/260870009> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/263502005> (<http://snomed.info/id/263502005>)
+
+SubObjectPropertyOf(<http://snomed.info/id/263502005> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/272741003> (<http://snomed.info/id/272741003>)
+
+SubObjectPropertyOf(<http://snomed.info/id/272741003> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/288556008> (<http://snomed.info/id/288556008>)
+
+SubObjectPropertyOf(<http://snomed.info/id/288556008> <http://snomed.info/id/726633004>)
+
+# Object Property: <http://snomed.info/id/320091000221107> (<http://snomed.info/id/320091000221107>)
+
+SubObjectPropertyOf(<http://snomed.info/id/320091000221107> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/363589002> (<http://snomed.info/id/363589002>)
+
+SubObjectPropertyOf(<http://snomed.info/id/363589002> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/363698007> (<http://snomed.info/id/363698007>)
+
+SubObjectPropertyOf(<http://snomed.info/id/363698007> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/363699004> (<http://snomed.info/id/363699004>)
+
+SubObjectPropertyOf(<http://snomed.info/id/363699004> <http://snomed.info/id/405815000>)
+
+# Object Property: <http://snomed.info/id/363700003> (<http://snomed.info/id/363700003>)
+
+SubObjectPropertyOf(<http://snomed.info/id/363700003> <http://snomed.info/id/405816004>)
+
+# Object Property: <http://snomed.info/id/363701004> (<http://snomed.info/id/363701004>)
+
+SubObjectPropertyOf(<http://snomed.info/id/363701004> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/363702006> (<http://snomed.info/id/363702006>)
+
+SubObjectPropertyOf(<http://snomed.info/id/363702006> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/363703001> (<http://snomed.info/id/363703001>)
+
+SubObjectPropertyOf(<http://snomed.info/id/363703001> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/363704007> (<http://snomed.info/id/363704007>)
+
+SubObjectPropertyOf(<http://snomed.info/id/363704007> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/363705008> (<http://snomed.info/id/363705008>)
+
+SubObjectPropertyOf(<http://snomed.info/id/363705008> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/363709002> (<http://snomed.info/id/363709002>)
+
+SubObjectPropertyOf(<http://snomed.info/id/363709002> <http://snomed.info/id/405816004>)
+
+# Object Property: <http://snomed.info/id/363710007> (<http://snomed.info/id/363710007>)
+
+SubObjectPropertyOf(<http://snomed.info/id/363710007> <http://snomed.info/id/405815000>)
+
+# Object Property: <http://snomed.info/id/363713009> (<http://snomed.info/id/363713009>)
+
+SubObjectPropertyOf(<http://snomed.info/id/363713009> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/363714003> (<http://snomed.info/id/363714003>)
+
+SubObjectPropertyOf(<http://snomed.info/id/363714003> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/370129005> (<http://snomed.info/id/370129005>)
+
+SubObjectPropertyOf(<http://snomed.info/id/370129005> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/370130000> (<http://snomed.info/id/370130000>)
+
+SubObjectPropertyOf(<http://snomed.info/id/370130000> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/370131001> (<http://snomed.info/id/370131001>)
+
+SubObjectPropertyOf(<http://snomed.info/id/370131001> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/370132008> (<http://snomed.info/id/370132008>)
+
+SubObjectPropertyOf(<http://snomed.info/id/370132008> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/370133003> (<http://snomed.info/id/370133003>)
+
+SubObjectPropertyOf(<http://snomed.info/id/370133003> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/370134009> (<http://snomed.info/id/370134009>)
+
+SubObjectPropertyOf(<http://snomed.info/id/370134009> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/370135005> (<http://snomed.info/id/370135005>)
+
+SubObjectPropertyOf(<http://snomed.info/id/370135005> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/371881003> (<http://snomed.info/id/371881003>)
+
+SubObjectPropertyOf(<http://snomed.info/id/371881003> <http://snomed.info/id/726633004>)
+
+# Object Property: <http://snomed.info/id/405813007> (<http://snomed.info/id/405813007>)
+
+SubObjectPropertyOf(<http://snomed.info/id/405813007> <http://snomed.info/id/363704007>)
+
+# Object Property: <http://snomed.info/id/405814001> (<http://snomed.info/id/405814001>)
+
+SubObjectPropertyOf(<http://snomed.info/id/405814001> <http://snomed.info/id/363704007>)
+
+# Object Property: <http://snomed.info/id/405815000> (<http://snomed.info/id/405815000>)
+
+SubObjectPropertyOf(<http://snomed.info/id/405815000> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/405816004> (<http://snomed.info/id/405816004>)
+
+SubObjectPropertyOf(<http://snomed.info/id/405816004> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/408729009> (<http://snomed.info/id/408729009>)
+
+SubObjectPropertyOf(<http://snomed.info/id/408729009> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/408730004> (<http://snomed.info/id/408730004>)
+
+SubObjectPropertyOf(<http://snomed.info/id/408730004> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/408731000> (<http://snomed.info/id/408731000>)
+
+SubObjectPropertyOf(<http://snomed.info/id/408731000> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/408732007> (<http://snomed.info/id/408732007>)
+
+SubObjectPropertyOf(<http://snomed.info/id/408732007> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/410675002> (<http://snomed.info/id/410675002>)
+
+SubObjectPropertyOf(<http://snomed.info/id/410675002> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/411116001> (<http://snomed.info/id/411116001>)
+
+SubObjectPropertyOf(<http://snomed.info/id/411116001> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/418775008> (<http://snomed.info/id/418775008>)
+
+SubObjectPropertyOf(<http://snomed.info/id/418775008> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/419066007> (<http://snomed.info/id/419066007>)
+
+SubObjectPropertyOf(<http://snomed.info/id/419066007> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/424226004> (<http://snomed.info/id/424226004>)
+
+SubObjectPropertyOf(<http://snomed.info/id/424226004> <http://snomed.info/id/405815000>)
+
+# Object Property: <http://snomed.info/id/424244007> (<http://snomed.info/id/424244007>)
+
+SubObjectPropertyOf(<http://snomed.info/id/424244007> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/424361007> (<http://snomed.info/id/424361007>)
+
+SubObjectPropertyOf(<http://snomed.info/id/424361007> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/424876005> (<http://snomed.info/id/424876005>)
+
+SubObjectPropertyOf(<http://snomed.info/id/424876005> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/425391005> (<http://snomed.info/id/425391005>)
+
+SubObjectPropertyOf(<http://snomed.info/id/425391005> <http://snomed.info/id/424226004>)
+
+# Object Property: <http://snomed.info/id/42752001> (<http://snomed.info/id/42752001>)
+
+SubObjectPropertyOf(<http://snomed.info/id/42752001> <http://snomed.info/id/47429007>)
+
+# Object Property: <http://snomed.info/id/47429007> (<http://snomed.info/id/47429007>)
+
+SubObjectPropertyOf(<http://snomed.info/id/47429007> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/609096000> (<http://snomed.info/id/609096000>)
+
+SubObjectPropertyOf(<http://snomed.info/id/609096000> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/704319004> (<http://snomed.info/id/704319004>)
+
+SubObjectPropertyOf(<http://snomed.info/id/704319004> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/704320005> (<http://snomed.info/id/704320005>)
+
+SubObjectPropertyOf(<http://snomed.info/id/704320005> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/704321009> (<http://snomed.info/id/704321009>)
+
+SubObjectPropertyOf(<http://snomed.info/id/704321009> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/704322002> (<http://snomed.info/id/704322002>)
+
+SubObjectPropertyOf(<http://snomed.info/id/704322002> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/704323007> (<http://snomed.info/id/704323007>)
+
+SubObjectPropertyOf(<http://snomed.info/id/704323007> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/704324001> (<http://snomed.info/id/704324001>)
+
+SubObjectPropertyOf(<http://snomed.info/id/704324001> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/704325000> (<http://snomed.info/id/704325000>)
+
+SubObjectPropertyOf(<http://snomed.info/id/704325000> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/704326004> (<http://snomed.info/id/704326004>)
+
+SubObjectPropertyOf(<http://snomed.info/id/704326004> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/704327008> (<http://snomed.info/id/704327008>)
+
+SubObjectPropertyOf(<http://snomed.info/id/704327008> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/704346009> (<http://snomed.info/id/704346009>)
+
+SubObjectPropertyOf(<http://snomed.info/id/704346009> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/704347000> (<http://snomed.info/id/704347000>)
+
+SubObjectPropertyOf(<http://snomed.info/id/704347000> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/704647008> (<http://snomed.info/id/704647008>)
+
+SubObjectPropertyOf(<http://snomed.info/id/704647008> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/718497002> (<http://snomed.info/id/718497002>)
+
+SubObjectPropertyOf(<http://snomed.info/id/718497002> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/719715003> (<http://snomed.info/id/719715003>)
+
+SubObjectPropertyOf(<http://snomed.info/id/719715003> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/719722006> (<http://snomed.info/id/719722006>)
+
+SubObjectPropertyOf(<http://snomed.info/id/719722006> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/726542003> (<http://snomed.info/id/726542003>)
+
+SubObjectPropertyOf(<http://snomed.info/id/726542003> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/726633004> (<http://snomed.info/id/726633004>)
+
+SubObjectPropertyOf(<http://snomed.info/id/726633004> <http://snomed.info/id/47429007>)
+
+# Object Property: <http://snomed.info/id/732943007> (<http://snomed.info/id/732943007>)
+
+SubObjectPropertyOf(<http://snomed.info/id/732943007> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/732945000> (<http://snomed.info/id/732945000>)
+
+SubObjectPropertyOf(<http://snomed.info/id/732945000> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/732947008> (<http://snomed.info/id/732947008>)
+
+SubObjectPropertyOf(<http://snomed.info/id/732947008> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/733722007> (<http://snomed.info/id/733722007>)
+
+SubObjectPropertyOf(<http://snomed.info/id/733722007> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/733725009> (<http://snomed.info/id/733725009>)
+
+SubObjectPropertyOf(<http://snomed.info/id/733725009> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/733928003> (<http://snomed.info/id/733928003>)
+
+SubObjectPropertyOf(<http://snomed.info/id/733928003> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/733930001> (<http://snomed.info/id/733930001>)
+
+SubObjectPropertyOf(<http://snomed.info/id/733930001> <http://snomed.info/id/774081006>)
+
+# Object Property: <http://snomed.info/id/733931002> (<http://snomed.info/id/733931002>)
+
+SubObjectPropertyOf(<http://snomed.info/id/733931002> <http://snomed.info/id/774081006>)
+
+# Object Property: <http://snomed.info/id/733932009> (<http://snomed.info/id/733932009>)
+
+SubObjectPropertyOf(<http://snomed.info/id/733932009> <http://snomed.info/id/774081006>)
+
+# Object Property: <http://snomed.info/id/733933004> (<http://snomed.info/id/733933004>)
+
+SubObjectPropertyOf(<http://snomed.info/id/733933004> <http://snomed.info/id/733930001>)
+
+# Object Property: <http://snomed.info/id/734136001> (<http://snomed.info/id/734136001>)
+
+SubObjectPropertyOf(<http://snomed.info/id/734136001> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/734137005> (<http://snomed.info/id/734137005>)
+
+SubObjectPropertyOf(<http://snomed.info/id/734137005> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/736472000> (<http://snomed.info/id/736472000>)
+
+SubObjectPropertyOf(<http://snomed.info/id/736472000> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/736473005> (<http://snomed.info/id/736473005>)
+
+SubObjectPropertyOf(<http://snomed.info/id/736473005> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/736474004> (<http://snomed.info/id/736474004>)
+
+SubObjectPropertyOf(<http://snomed.info/id/736474004> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/736475003> (<http://snomed.info/id/736475003>)
+
+SubObjectPropertyOf(<http://snomed.info/id/736475003> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/736476002> (<http://snomed.info/id/736476002>)
+
+SubObjectPropertyOf(<http://snomed.info/id/736476002> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/736518005> (<http://snomed.info/id/736518005>)
+
+SubObjectPropertyOf(<http://snomed.info/id/736518005> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/738774007> (<http://snomed.info/id/738774007>)
+
+SubObjectPropertyOf(<http://snomed.info/id/738774007> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/762705008> (<http://snomed.info/id/762705008>)
+
+SubObjectPropertyOf(<http://snomed.info/id/762705008> <http://snomed.info/id/410662002>)
+
+# Object Property: <http://snomed.info/id/762706009> (<http://snomed.info/id/762706009>)
+
+SubObjectPropertyOf(<http://snomed.info/id/762706009> <http://snomed.info/id/410662002>)
+
+# Object Property: <http://snomed.info/id/762949000> (<http://snomed.info/id/762949000>)
+
+SubObjectPropertyOf(<http://snomed.info/id/762949000> <http://snomed.info/id/127489000>)
+
+# Object Property: <http://snomed.info/id/762951001> (<http://snomed.info/id/762951001>)
+
+SubObjectPropertyOf(<http://snomed.info/id/762951001> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/763032000> (<http://snomed.info/id/763032000>)
+
+SubObjectPropertyOf(<http://snomed.info/id/763032000> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/766939001> (<http://snomed.info/id/766939001>)
+
+SubObjectPropertyOf(<http://snomed.info/id/766939001> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/774081006> (<http://snomed.info/id/774081006>)
+
+SubObjectPropertyOf(<http://snomed.info/id/774081006> <http://snomed.info/id/733928003>)
+
+# Object Property: <http://snomed.info/id/774158006> (<http://snomed.info/id/774158006>)
+
+SubObjectPropertyOf(<http://snomed.info/id/774158006> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/774159003> (<http://snomed.info/id/774159003>)
+
+SubObjectPropertyOf(<http://snomed.info/id/774159003> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/774160008> (<http://snomed.info/id/774160008>)
+
+SubObjectPropertyOf(<http://snomed.info/id/774160008> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/774163005> (<http://snomed.info/id/774163005>)
+
+SubObjectPropertyOf(<http://snomed.info/id/774163005> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/827081001> (<http://snomed.info/id/827081001>)
+
+SubObjectPropertyOf(<http://snomed.info/id/827081001> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/836358009> (<http://snomed.info/id/836358009>)
+
+SubObjectPropertyOf(<http://snomed.info/id/836358009> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/840560000> (<http://snomed.info/id/840560000>)
+
+SubObjectPropertyOf(<http://snomed.info/id/840560000> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/860779006> (<http://snomed.info/id/860779006>)
+
+SubObjectPropertyOf(<http://snomed.info/id/860779006> <http://snomed.info/id/762705008>)
+
+# Object Property: <http://snomed.info/id/860781008> (<http://snomed.info/id/860781008>)
+
+SubObjectPropertyOf(<http://snomed.info/id/860781008> <http://snomed.info/id/762705008>)
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://snomed.info/id/106028002> (<http://snomed.info/id/106028002>)
+
+SubClassOf(<http://snomed.info/id/106028002> <http://snomed.info/id/404684003>)
+
+# Class: <http://snomed.info/id/106048009> (<http://snomed.info/id/106048009>)
+
+SubClassOf(<http://snomed.info/id/106048009> <http://snomed.info/id/404684003>)
+
+# Class: <http://snomed.info/id/106232001> (<http://snomed.info/id/106232001>)
+
+SubClassOf(<http://snomed.info/id/106232001> <http://snomed.info/id/272099008>)
+
+# Class: <http://snomed.info/id/106234000> (<http://snomed.info/id/106234000>)
+
+SubClassOf(<http://snomed.info/id/106234000> <http://snomed.info/id/106232001>)
+
+# Class: <http://snomed.info/id/108369006> (<http://snomed.info/id/108369006>)
+
+SubClassOf(<http://snomed.info/id/108369006> <http://snomed.info/id/400177003>)
+
+# Class: <http://snomed.info/id/113343008> (<http://snomed.info/id/113343008>)
+
+SubClassOf(<http://snomed.info/id/113343008> <http://snomed.info/id/91723000>)
+
+# Class: <http://snomed.info/id/118222006> (<http://snomed.info/id/118222006>)
+
+SubClassOf(<http://snomed.info/id/118222006> <http://snomed.info/id/404684003>)
+
+# Class: <http://snomed.info/id/118946009> (<http://snomed.info/id/118946009>)
+
+SubClassOf(<http://snomed.info/id/118946009> <http://snomed.info/id/298705000>)
+SubClassOf(<http://snomed.info/id/118946009> <http://snomed.info/id/609622007>)
+
+# Class: <http://snomed.info/id/118956008> (<http://snomed.info/id/118956008>)
+
+SubClassOf(<http://snomed.info/id/118956008> <http://snomed.info/id/123037004>)
+
+# Class: <http://snomed.info/id/118969007> (<http://snomed.info/id/118969007>)
+
+SubClassOf(<http://snomed.info/id/118969007> <http://snomed.info/id/20139000>)
+SubClassOf(<http://snomed.info/id/118969007> <http://snomed.info/id/91690000>)
+
+# Class: <http://snomed.info/id/123037004> (<http://snomed.info/id/123037004>)
+
+SubClassOf(<http://snomed.info/id/123037004> <http://snomed.info/id/138875005>)
+
+# Class: <http://snomed.info/id/123960005> (<http://snomed.info/id/123960005>)
+
+SubClassOf(<http://snomed.info/id/123960005> <http://snomed.info/id/243928005>)
+SubClassOf(<http://snomed.info/id/123960005> <http://snomed.info/id/420473002>)
+
+# Class: <http://snomed.info/id/125676002> (<http://snomed.info/id/125676002>)
+
+SubClassOf(<http://snomed.info/id/125676002> <http://snomed.info/id/48176007>)
+
+# Class: <http://snomed.info/id/126637008> (<http://snomed.info/id/126637008>)
+
+SubClassOf(<http://snomed.info/id/126637008> <http://snomed.info/id/128121009>)
+SubClassOf(<http://snomed.info/id/126637008> <http://snomed.info/id/309524007>)
+SubClassOf(<http://snomed.info/id/126637008> <http://snomed.info/id/55342001>)
+
+# Class: <http://snomed.info/id/126638003> (<http://snomed.info/id/126638003>)
+
+SubClassOf(<http://snomed.info/id/126638003> <http://snomed.info/id/255058005>)
+SubClassOf(<http://snomed.info/id/126638003> <http://snomed.info/id/406123005>)
+
+# Class: <http://snomed.info/id/126667002> (<http://snomed.info/id/126667002>)
+
+SubClassOf(<http://snomed.info/id/126667002> <http://snomed.info/id/448708002>)
+
+# Class: <http://snomed.info/id/126713003> (<http://snomed.info/id/126713003>)
+
+SubClassOf(<http://snomed.info/id/126713003> <http://snomed.info/id/126638003>)
+SubClassOf(<http://snomed.info/id/126713003> <http://snomed.info/id/19829001>)
+SubClassOf(<http://snomed.info/id/126713003> <http://snomed.info/id/254618003>)
+SubClassOf(<http://snomed.info/id/126713003> <http://snomed.info/id/309529002>)
+
+# Class: <http://snomed.info/id/126725000> (<http://snomed.info/id/126725000>)
+
+SubClassOf(<http://snomed.info/id/126725000> <http://snomed.info/id/255058005>)
+SubClassOf(<http://snomed.info/id/126725000> <http://snomed.info/id/49483002>)
+SubClassOf(<http://snomed.info/id/126725000> <http://snomed.info/id/94147001>)
+
+# Class: <http://snomed.info/id/127947003> (<http://snomed.info/id/127947003>)
+
+SubClassOf(<http://snomed.info/id/127947003> <http://snomed.info/id/52530000>)
+
+# Class: <http://snomed.info/id/128121009> (<http://snomed.info/id/128121009>)
+
+SubClassOf(<http://snomed.info/id/128121009> <http://snomed.info/id/302292003>)
+SubClassOf(<http://snomed.info/id/128121009> <http://snomed.info/id/64572001>)
+
+# Class: <http://snomed.info/id/128262006> (<http://snomed.info/id/128262006>)
+
+SubClassOf(<http://snomed.info/id/128262006> <http://snomed.info/id/38866009>)
+
+# Class: <http://snomed.info/id/128272009> (<http://snomed.info/id/128272009>)
+
+SubClassOf(<http://snomed.info/id/128272009> <http://snomed.info/id/50043002>)
+
+# Class: <http://snomed.info/id/160237006> (<http://snomed.info/id/160237006>)
+
+SubClassOf(<http://snomed.info/id/160237006> <http://snomed.info/id/363743006>)
+
+# Class: <http://snomed.info/id/162572001> (<http://snomed.info/id/162572001>)
+
+SubClassOf(<http://snomed.info/id/162572001> <http://snomed.info/id/41769001>)
+
+# Class: <http://snomed.info/id/162573006> (<http://snomed.info/id/162573006>)
+
+SubClassOf(<http://snomed.info/id/162573006> <http://snomed.info/id/162572001>)
+SubClassOf(<http://snomed.info/id/162573006> <http://snomed.info/id/394966004>)
+
+# Class: <http://snomed.info/id/188361007> (<http://snomed.info/id/188361007>)
+
+SubClassOf(<http://snomed.info/id/188361007> <http://snomed.info/id/255058005>)
+SubClassOf(<http://snomed.info/id/188361007> <http://snomed.info/id/363346000>)
+
+# Class: <http://snomed.info/id/19829001> (<http://snomed.info/id/19829001>)
+
+SubClassOf(<http://snomed.info/id/19829001> <http://snomed.info/id/118946009>)
+SubClassOf(<http://snomed.info/id/19829001> <http://snomed.info/id/128272009>)
+SubClassOf(<http://snomed.info/id/19829001> <http://snomed.info/id/301230006>)
+
+# Class: <http://snomed.info/id/20139000> (<http://snomed.info/id/20139000>)
+
+SubClassOf(<http://snomed.info/id/20139000> <http://snomed.info/id/312419003>)
+
+# Class: <http://snomed.info/id/22943007> (<http://snomed.info/id/22943007>)
+
+SubClassOf(<http://snomed.info/id/22943007> <http://snomed.info/id/38866009>)
+
+# Class: <http://snomed.info/id/229761008> (<http://snomed.info/id/229761008>)
+
+SubClassOf(<http://snomed.info/id/229761008> <http://snomed.info/id/278264008>)
+SubClassOf(<http://snomed.info/id/229761008> <http://snomed.info/id/67734004>)
+
+# Class: <http://snomed.info/id/233814000> (<http://snomed.info/id/233814000>)
+
+SubClassOf(<http://snomed.info/id/233814000> <http://snomed.info/id/126725000>)
+SubClassOf(<http://snomed.info/id/233814000> <http://snomed.info/id/254618003>)
+
+# Class: <http://snomed.info/id/243796009> (<http://snomed.info/id/243796009>)
+
+SubClassOf(<http://snomed.info/id/243796009> <http://snomed.info/id/138875005>)
+
+# Class: <http://snomed.info/id/243928005> (<http://snomed.info/id/243928005>)
+
+SubClassOf(<http://snomed.info/id/243928005> <http://snomed.info/id/52530000>)
+
+# Class: <http://snomed.info/id/254618003> (<http://snomed.info/id/254618003>)
+
+SubClassOf(<http://snomed.info/id/254618003> <http://snomed.info/id/126667002>)
+SubClassOf(<http://snomed.info/id/254618003> <http://snomed.info/id/128272009>)
+SubClassOf(<http://snomed.info/id/254618003> <http://snomed.info/id/301226008>)
+
+# Class: <http://snomed.info/id/255058005> (<http://snomed.info/id/255058005>)
+
+SubClassOf(<http://snomed.info/id/255058005> <http://snomed.info/id/118946009>)
+SubClassOf(<http://snomed.info/id/255058005> <http://snomed.info/id/126637008>)
+SubClassOf(<http://snomed.info/id/255058005> <http://snomed.info/id/440299000>)
+
+# Class: <http://snomed.info/id/255203001> (<http://snomed.info/id/255203001>)
+
+SubClassOf(<http://snomed.info/id/255203001> <http://snomed.info/id/362981000>)
+
+# Class: <http://snomed.info/id/255395001> (<http://snomed.info/id/255395001>)
+
+SubClassOf(<http://snomed.info/id/255395001> <http://snomed.info/id/272099008>)
+
+# Class: <http://snomed.info/id/261060002> (<http://snomed.info/id/261060002>)
+
+SubClassOf(<http://snomed.info/id/261060002> <http://snomed.info/id/127947003>)
+
+# Class: <http://snomed.info/id/26107004> (<http://snomed.info/id/26107004>)
+
+SubClassOf(<http://snomed.info/id/26107004> <http://snomed.info/id/91689009>)
+
+# Class: <http://snomed.info/id/262225004> (<http://snomed.info/id/262225004>)
+
+SubClassOf(<http://snomed.info/id/262225004> <http://snomed.info/id/22943007>)
+SubClassOf(<http://snomed.info/id/262225004> <http://snomed.info/id/362873000>)
+
+# Class: <http://snomed.info/id/272099008> (<http://snomed.info/id/272099008>)
+
+SubClassOf(<http://snomed.info/id/272099008> <http://snomed.info/id/362981000>)
+
+# Class: <http://snomed.info/id/276438008> (<http://snomed.info/id/276438008>)
+
+SubClassOf(<http://snomed.info/id/276438008> <http://snomed.info/id/118222006>)
+
+# Class: <http://snomed.info/id/277739008> (<http://snomed.info/id/277739008>)
+
+SubClassOf(<http://snomed.info/id/277739008> <http://snomed.info/id/272099008>)
+
+# Class: <http://snomed.info/id/278195005> (<http://snomed.info/id/278195005>)
+
+SubClassOf(<http://snomed.info/id/278195005> <http://snomed.info/id/362889002>)
+SubClassOf(<http://snomed.info/id/278195005> <http://snomed.info/id/91689009>)
+
+# Class: <http://snomed.info/id/278197002> (<http://snomed.info/id/278197002>)
+
+SubClassOf(<http://snomed.info/id/278197002> <http://snomed.info/id/20139000>)
+SubClassOf(<http://snomed.info/id/278197002> <http://snomed.info/id/278195005>)
+
+# Class: <http://snomed.info/id/278264008> (<http://snomed.info/id/278264008>)
+
+SubClassOf(<http://snomed.info/id/278264008> <http://snomed.info/id/22943007>)
+SubClassOf(<http://snomed.info/id/278264008> <http://snomed.info/id/261060002>)
+
+# Class: <http://snomed.info/id/27832009> (<http://snomed.info/id/27832009>)
+
+SubClassOf(<http://snomed.info/id/27832009> <http://snomed.info/id/362937008>)
+SubClassOf(<http://snomed.info/id/27832009> <http://snomed.info/id/699593001>)
+
+# Class: <http://snomed.info/id/278441008> (<http://snomed.info/id/278441008>)
+
+SubClassOf(<http://snomed.info/id/278441008> <http://snomed.info/id/363743006>)
+
+# Class: <http://snomed.info/id/280542007> (<http://snomed.info/id/280542007>)
+
+SubClassOf(<http://snomed.info/id/280542007> <http://snomed.info/id/91723000>)
+
+# Class: <http://snomed.info/id/281483004> (<http://snomed.info/id/281483004>)
+
+SubClassOf(<http://snomed.info/id/281483004> <http://snomed.info/id/280542007>)
+
+# Class: <http://snomed.info/id/281586009> (<http://snomed.info/id/281586009>)
+
+SubClassOf(<http://snomed.info/id/281586009> <http://snomed.info/id/362981000>)
+
+# Class: <http://snomed.info/id/288529006> (<http://snomed.info/id/288529006>)
+
+SubClassOf(<http://snomed.info/id/288529006> <http://snomed.info/id/362981000>)
+
+# Class: <http://snomed.info/id/2969000> (<http://snomed.info/id/2969000>)
+
+SubClassOf(<http://snomed.info/id/2969000> <http://snomed.info/id/91723000>)
+
+# Class: <http://snomed.info/id/298705000> (<http://snomed.info/id/298705000>)
+
+SubClassOf(<http://snomed.info/id/298705000> <http://snomed.info/id/609623002>)
+
+# Class: <http://snomed.info/id/300848003> (<http://snomed.info/id/300848003>)
+
+SubClassOf(<http://snomed.info/id/300848003> <http://snomed.info/id/404684003>)
+
+# Class: <http://snomed.info/id/300851005> (<http://snomed.info/id/300851005>)
+
+SubClassOf(<http://snomed.info/id/300851005> <http://snomed.info/id/106048009>)
+SubClassOf(<http://snomed.info/id/300851005> <http://snomed.info/id/300848003>)
+
+# Class: <http://snomed.info/id/300862005> (<http://snomed.info/id/300862005>)
+
+SubClassOf(<http://snomed.info/id/300862005> <http://snomed.info/id/300848003>)
+
+# Class: <http://snomed.info/id/301226008> (<http://snomed.info/id/301226008>)
+
+SubClassOf(<http://snomed.info/id/301226008> <http://snomed.info/id/106048009>)
+
+# Class: <http://snomed.info/id/301230006> (<http://snomed.info/id/301230006>)
+
+SubClassOf(<http://snomed.info/id/301230006> <http://snomed.info/id/298705000>)
+SubClassOf(<http://snomed.info/id/301230006> <http://snomed.info/id/301226008>)
+SubClassOf(<http://snomed.info/id/301230006> <http://snomed.info/id/406123005>)
+
+# Class: <http://snomed.info/id/301232003> (<http://snomed.info/id/301232003>)
+
+SubClassOf(<http://snomed.info/id/301232003> <http://snomed.info/id/301230006>)
+
+# Class: <http://snomed.info/id/301296002> (<http://snomed.info/id/301296002>)
+
+SubClassOf(<http://snomed.info/id/301296002> <http://snomed.info/id/298705000>)
+
+# Class: <http://snomed.info/id/30217000> (<http://snomed.info/id/30217000>)
+
+SubClassOf(<http://snomed.info/id/30217000> <http://snomed.info/id/57697001>)
+
+# Class: <http://snomed.info/id/302292003> (<http://snomed.info/id/302292003>)
+
+SubClassOf(<http://snomed.info/id/302292003> <http://snomed.info/id/404684003>)
+
+# Class: <http://snomed.info/id/302551006> (<http://snomed.info/id/302551006>)
+
+SubClassOf(<http://snomed.info/id/302551006> <http://snomed.info/id/362873000>)
+SubClassOf(<http://snomed.info/id/302551006> <http://snomed.info/id/51185008>)
+
+# Class: <http://snomed.info/id/303102005> (<http://snomed.info/id/303102005>)
+
+SubClassOf(<http://snomed.info/id/303102005> <http://snomed.info/id/281586009>)
+
+# Class: <http://snomed.info/id/308489006> (<http://snomed.info/id/308489006>)
+
+SubClassOf(<http://snomed.info/id/308489006> <http://snomed.info/id/303102005>)
+SubClassOf(<http://snomed.info/id/308489006> <http://snomed.info/id/719982003>)
+
+# Class: <http://snomed.info/id/309524007> (<http://snomed.info/id/309524007>)
+
+SubClassOf(<http://snomed.info/id/309524007> <http://snomed.info/id/300862005>)
+SubClassOf(<http://snomed.info/id/309524007> <http://snomed.info/id/302292003>)
+
+# Class: <http://snomed.info/id/309529002> (<http://snomed.info/id/309529002>)
+
+SubClassOf(<http://snomed.info/id/309529002> <http://snomed.info/id/300851005>)
+SubClassOf(<http://snomed.info/id/309529002> <http://snomed.info/id/301232003>)
+SubClassOf(<http://snomed.info/id/309529002> <http://snomed.info/id/440299000>)
+
+# Class: <http://snomed.info/id/310787001> (<http://snomed.info/id/310787001>)
+
+SubClassOf(<http://snomed.info/id/310787001> <http://snomed.info/id/91689009>)
+
+# Class: <http://snomed.info/id/312419003> (<http://snomed.info/id/312419003>)
+
+SubClassOf(<http://snomed.info/id/312419003> <http://snomed.info/id/91689009>)
+
+# Class: <http://snomed.info/id/321667001> (<http://snomed.info/id/321667001>)
+
+SubClassOf(<http://snomed.info/id/321667001> <http://snomed.info/id/20139000>)
+
+# Class: <http://snomed.info/id/362873000> (<http://snomed.info/id/362873000>)
+
+SubClassOf(<http://snomed.info/id/362873000> <http://snomed.info/id/362889002>)
+SubClassOf(<http://snomed.info/id/362873000> <http://snomed.info/id/38866009>)
+
+# Class: <http://snomed.info/id/362874006> (<http://snomed.info/id/362874006>)
+
+SubClassOf(<http://snomed.info/id/362874006> <http://snomed.info/id/128262006>)
+
+# Class: <http://snomed.info/id/362889002> (<http://snomed.info/id/362889002>)
+
+SubClassOf(<http://snomed.info/id/362889002> <http://snomed.info/id/698967008>)
+
+# Class: <http://snomed.info/id/362937008> (<http://snomed.info/id/362937008>)
+
+SubClassOf(<http://snomed.info/id/362937008> <http://snomed.info/id/113343008>)
+
+# Class: <http://snomed.info/id/362965005> (<http://snomed.info/id/362965005>)
+
+SubClassOf(<http://snomed.info/id/362965005> <http://snomed.info/id/64572001>)
+
+# Class: <http://snomed.info/id/362981000> (<http://snomed.info/id/362981000>)
+
+SubClassOf(<http://snomed.info/id/362981000> <http://snomed.info/id/138875005>)
+
+# Class: <http://snomed.info/id/363346000> (<http://snomed.info/id/363346000>)
+
+SubClassOf(<http://snomed.info/id/363346000> <http://snomed.info/id/55342001>)
+
+# Class: <http://snomed.info/id/363358000> (<http://snomed.info/id/363358000>)
+
+SubClassOf(<http://snomed.info/id/363358000> <http://snomed.info/id/126713003>)
+SubClassOf(<http://snomed.info/id/363358000> <http://snomed.info/id/188361007>)
+SubClassOf(<http://snomed.info/id/363358000> <http://snomed.info/id/430621000>)
+
+# Class: <http://snomed.info/id/363536003> (<http://snomed.info/id/363536003>)
+
+SubClassOf(<http://snomed.info/id/363536003> <http://snomed.info/id/310787001>)
+
+# Class: <http://snomed.info/id/363743006> (<http://snomed.info/id/363743006>)
+
+SubClassOf(<http://snomed.info/id/363743006> <http://snomed.info/id/370115009>)
+
+# Class: <http://snomed.info/id/36692007> (<http://snomed.info/id/36692007>)
+
+SubClassOf(<http://snomed.info/id/36692007> <http://snomed.info/id/410514004>)
+
+# Class: <http://snomed.info/id/367651003> (<http://snomed.info/id/367651003>)
+
+SubClassOf(<http://snomed.info/id/367651003> <http://snomed.info/id/108369006>)
+
+# Class: <http://snomed.info/id/370115009> (<http://snomed.info/id/370115009>)
+
+SubClassOf(<http://snomed.info/id/370115009> <http://snomed.info/id/138875005>)
+
+# Class: <http://snomed.info/id/370136006> (<http://snomed.info/id/370136006>)
+
+SubClassOf(<http://snomed.info/id/370136006> <http://snomed.info/id/900000000000441003>)
+
+# Class: <http://snomed.info/id/372087000> (<http://snomed.info/id/372087000>)
+
+SubClassOf(<http://snomed.info/id/372087000> <http://snomed.info/id/363346000>)
+
+# Class: <http://snomed.info/id/38266002> (<http://snomed.info/id/38266002>)
+
+SubClassOf(<http://snomed.info/id/38266002> <http://snomed.info/id/362889002>)
+
+# Class: <http://snomed.info/id/38866009> (<http://snomed.info/id/38866009>)
+
+SubClassOf(<http://snomed.info/id/38866009> <http://snomed.info/id/52530000>)
+
+# Class: <http://snomed.info/id/394966004> (<http://snomed.info/id/394966004>)
+
+SubClassOf(<http://snomed.info/id/394966004> <http://snomed.info/id/41769001>)
+
+# Class: <http://snomed.info/id/39607008> (<http://snomed.info/id/39607008>)
+
+SubClassOf(<http://snomed.info/id/39607008> <http://snomed.info/id/27832009>)
+SubClassOf(<http://snomed.info/id/39607008> <http://snomed.info/id/363536003>)
+SubClassOf(<http://snomed.info/id/39607008> <http://snomed.info/id/699594007>)
+SubClassOf(<http://snomed.info/id/39607008> <http://snomed.info/id/714323000>)
+SubClassOf(<http://snomed.info/id/39607008> <http://snomed.info/id/82094008>)
+
+# Class: <http://snomed.info/id/399902003> (<http://snomed.info/id/399902003>)
+
+SubClassOf(<http://snomed.info/id/399902003> <http://snomed.info/id/64572001>)
+
+# Class: <http://snomed.info/id/399981008> (<http://snomed.info/id/399981008>)
+
+SubClassOf(<http://snomed.info/id/399981008> <http://snomed.info/id/64572001>)
+
+# Class: <http://snomed.info/id/400141005> (<http://snomed.info/id/400141005>)
+
+SubClassOf(<http://snomed.info/id/400141005> <http://snomed.info/id/20139000>)
+
+# Class: <http://snomed.info/id/400177003> (<http://snomed.info/id/400177003>)
+
+SubClassOf(<http://snomed.info/id/400177003> <http://snomed.info/id/416939005>)
+
+# Class: <http://snomed.info/id/404684003> (<http://snomed.info/id/404684003>)
+
+SubClassOf(<http://snomed.info/id/404684003> <http://snomed.info/id/138875005>)
+
+# Class: <http://snomed.info/id/406123005> (<http://snomed.info/id/406123005>)
+
+SubClassOf(<http://snomed.info/id/406123005> <http://snomed.info/id/404684003>)
+
+# Class: <http://snomed.info/id/410510008> (<http://snomed.info/id/410510008>)
+
+SubClassOf(<http://snomed.info/id/410510008> <http://snomed.info/id/288529006>)
+
+# Class: <http://snomed.info/id/410511007> (<http://snomed.info/id/410511007>)
+
+SubClassOf(<http://snomed.info/id/410511007> <http://snomed.info/id/410510008>)
+
+# Class: <http://snomed.info/id/410512000> (<http://snomed.info/id/410512000>)
+
+SubClassOf(<http://snomed.info/id/410512000> <http://snomed.info/id/410511007>)
+
+# Class: <http://snomed.info/id/410514004> (<http://snomed.info/id/410514004>)
+
+SubClassOf(<http://snomed.info/id/410514004> <http://snomed.info/id/288529006>)
+
+# Class: <http://snomed.info/id/410590009> (<http://snomed.info/id/410590009>)
+
+SubClassOf(<http://snomed.info/id/410590009> <http://snomed.info/id/36692007>)
+
+# Class: <http://snomed.info/id/410604004> (<http://snomed.info/id/410604004>)
+
+SubClassOf(<http://snomed.info/id/410604004> <http://snomed.info/id/419358007>)
+
+# Class: <http://snomed.info/id/413350009> (<http://snomed.info/id/413350009>)
+
+SubClassOf(<http://snomed.info/id/413350009> <http://snomed.info/id/243796009>)
+
+# Class: <http://snomed.info/id/4147007> (<http://snomed.info/id/4147007>)
+
+SubClassOf(<http://snomed.info/id/4147007> <http://snomed.info/id/52988006>)
+
+# Class: <http://snomed.info/id/415684004> (<http://snomed.info/id/415684004>)
+
+SubClassOf(<http://snomed.info/id/415684004> <http://snomed.info/id/410590009>)
+
+# Class: <http://snomed.info/id/416152001> (<http://snomed.info/id/416152001>)
+
+SubClassOf(<http://snomed.info/id/416152001> <http://snomed.info/id/416319003>)
+
+# Class: <http://snomed.info/id/416319003> (<http://snomed.info/id/416319003>)
+
+SubClassOf(<http://snomed.info/id/416319003> <http://snomed.info/id/52530000>)
+
+# Class: <http://snomed.info/id/416550000> (<http://snomed.info/id/416550000>)
+
+SubClassOf(<http://snomed.info/id/416550000> <http://snomed.info/id/416152001>)
+SubClassOf(<http://snomed.info/id/416550000> <http://snomed.info/id/416775004>)
+
+# Class: <http://snomed.info/id/416775004> (<http://snomed.info/id/416775004>)
+
+SubClassOf(<http://snomed.info/id/416775004> <http://snomed.info/id/52530000>)
+
+# Class: <http://snomed.info/id/416939005> (<http://snomed.info/id/416939005>)
+
+SubClassOf(<http://snomed.info/id/416939005> <http://snomed.info/id/30217000>)
+SubClassOf(<http://snomed.info/id/416939005> <http://snomed.info/id/4147007>)
+
+# Class: <http://snomed.info/id/417437006> (<http://snomed.info/id/417437006>)
+
+SubClassOf(<http://snomed.info/id/417437006> <http://snomed.info/id/416152001>)
+
+# Class: <http://snomed.info/id/41769001> (<http://snomed.info/id/41769001>)
+
+SubClassOf(<http://snomed.info/id/41769001> <http://snomed.info/id/444433005>)
+
+# Class: <http://snomed.info/id/419358007> (<http://snomed.info/id/419358007>)
+
+SubClassOf(<http://snomed.info/id/419358007> <http://snomed.info/id/125676002>)
+
+# Class: <http://snomed.info/id/420473002> (<http://snomed.info/id/420473002>)
+
+SubClassOf(<http://snomed.info/id/420473002> <http://snomed.info/id/22943007>)
+
+# Class: <http://snomed.info/id/428100006> (<http://snomed.info/id/428100006>)
+
+SubClassOf(<http://snomed.info/id/428100006> <http://snomed.info/id/188361007>)
+SubClassOf(<http://snomed.info/id/428100006> <http://snomed.info/id/362965005>)
+SubClassOf(<http://snomed.info/id/428100006> <http://snomed.info/id/399902003>)
+
+# Class: <http://snomed.info/id/430621000> (<http://snomed.info/id/430621000>)
+
+SubClassOf(<http://snomed.info/id/430621000> <http://snomed.info/id/254618003>)
+SubClassOf(<http://snomed.info/id/430621000> <http://snomed.info/id/449096009>)
+
+# Class: <http://snomed.info/id/43799004> (<http://snomed.info/id/43799004>)
+
+SubClassOf(<http://snomed.info/id/43799004> <http://snomed.info/id/312419003>)
+SubClassOf(<http://snomed.info/id/43799004> <http://snomed.info/id/699593001>)
+SubClassOf(<http://snomed.info/id/43799004> <http://snomed.info/id/91807006>)
+
+# Class: <http://snomed.info/id/440299000> (<http://snomed.info/id/440299000>)
+
+SubClassOf(<http://snomed.info/id/440299000> <http://snomed.info/id/298705000>)
+SubClassOf(<http://snomed.info/id/440299000> <http://snomed.info/id/309524007>)
+
+# Class: <http://snomed.info/id/442083009> (<http://snomed.info/id/442083009>)
+
+SubClassOf(<http://snomed.info/id/442083009> <http://snomed.info/id/123037004>)
+
+# Class: <http://snomed.info/id/443859009> (<http://snomed.info/id/443859009>)
+
+SubClassOf(<http://snomed.info/id/443859009> <http://snomed.info/id/413350009>)
+
+# Class: <http://snomed.info/id/444433005> (<http://snomed.info/id/444433005>)
+
+SubClassOf(<http://snomed.info/id/444433005> <http://snomed.info/id/443859009>)
+
+# Class: <http://snomed.info/id/448708002> (<http://snomed.info/id/448708002>)
+
+SubClassOf(<http://snomed.info/id/448708002> <http://snomed.info/id/300851005>)
+SubClassOf(<http://snomed.info/id/448708002> <http://snomed.info/id/50043002>)
+SubClassOf(<http://snomed.info/id/448708002> <http://snomed.info/id/55342001>)
+
+# Class: <http://snomed.info/id/449096009> (<http://snomed.info/id/449096009>)
+
+SubClassOf(<http://snomed.info/id/449096009> <http://snomed.info/id/363346000>)
+SubClassOf(<http://snomed.info/id/449096009> <http://snomed.info/id/448708002>)
+
+# Class: <http://snomed.info/id/48176007> (<http://snomed.info/id/48176007>)
+
+SubClassOf(<http://snomed.info/id/48176007> <http://snomed.info/id/138875005>)
+
+# Class: <http://snomed.info/id/49483002> (<http://snomed.info/id/49483002>)
+
+SubClassOf(<http://snomed.info/id/49483002> <http://snomed.info/id/118946009>)
+SubClassOf(<http://snomed.info/id/49483002> <http://snomed.info/id/301296002>)
+SubClassOf(<http://snomed.info/id/49483002> <http://snomed.info/id/362965005>)
+
+# Class: <http://snomed.info/id/49755003> (<http://snomed.info/id/49755003>)
+
+SubClassOf(<http://snomed.info/id/49755003> <http://snomed.info/id/118956008>)
+
+# Class: <http://snomed.info/id/50043002> (<http://snomed.info/id/50043002>)
+
+SubClassOf(<http://snomed.info/id/50043002> <http://snomed.info/id/106048009>)
+SubClassOf(<http://snomed.info/id/50043002> <http://snomed.info/id/362965005>)
+
+# Class: <http://snomed.info/id/51185008> (<http://snomed.info/id/51185008>)
+
+SubClassOf(<http://snomed.info/id/51185008> <http://snomed.info/id/416550000>)
+SubClassOf(<http://snomed.info/id/51185008> <http://snomed.info/id/417437006>)
+SubClassOf(<http://snomed.info/id/51185008> <http://snomed.info/id/67734004>)
+
+# Class: <http://snomed.info/id/52530000> (<http://snomed.info/id/52530000>)
+
+SubClassOf(<http://snomed.info/id/52530000> <http://snomed.info/id/91723000>)
+
+# Class: <http://snomed.info/id/52988006> (<http://snomed.info/id/52988006>)
+
+SubClassOf(<http://snomed.info/id/52988006> <http://snomed.info/id/49755003>)
+
+# Class: <http://snomed.info/id/55342001> (<http://snomed.info/id/55342001>)
+
+SubClassOf(<http://snomed.info/id/55342001> <http://snomed.info/id/399981008>)
+
+# Class: <http://snomed.info/id/57697001> (<http://snomed.info/id/57697001>)
+
+SubClassOf(<http://snomed.info/id/57697001> <http://snomed.info/id/49755003>)
+
+# Class: <http://snomed.info/id/609622007> (<http://snomed.info/id/609622007>)
+
+SubClassOf(<http://snomed.info/id/609622007> <http://snomed.info/id/128121009>)
+SubClassOf(<http://snomed.info/id/609622007> <http://snomed.info/id/609623002>)
+
+# Class: <http://snomed.info/id/609623002> (<http://snomed.info/id/609623002>)
+
+SubClassOf(<http://snomed.info/id/609623002> <http://snomed.info/id/302292003>)
+
+# Class: <http://snomed.info/id/64572001> (<http://snomed.info/id/64572001>)
+
+SubClassOf(<http://snomed.info/id/64572001> <http://snomed.info/id/404684003>)
+
+# Class: <http://snomed.info/id/67734004> (<http://snomed.info/id/67734004>)
+
+SubClassOf(<http://snomed.info/id/67734004> <http://snomed.info/id/70104002>)
+SubClassOf(<http://snomed.info/id/67734004> <http://snomed.info/id/816094009>)
+
+# Class: <http://snomed.info/id/698967008> (<http://snomed.info/id/698967008>)
+
+SubClassOf(<http://snomed.info/id/698967008> <http://snomed.info/id/91722005>)
+
+# Class: <http://snomed.info/id/699589007> (<http://snomed.info/id/699589007>)
+
+SubClassOf(<http://snomed.info/id/699589007> <http://snomed.info/id/91723000>)
+
+# Class: <http://snomed.info/id/699590003> (<http://snomed.info/id/699590003>)
+
+SubClassOf(<http://snomed.info/id/699590003> <http://snomed.info/id/699589007>)
+
+# Class: <http://snomed.info/id/699593001> (<http://snomed.info/id/699593001>)
+
+SubClassOf(<http://snomed.info/id/699593001> <http://snomed.info/id/51185008>)
+SubClassOf(<http://snomed.info/id/699593001> <http://snomed.info/id/91829005>)
+
+# Class: <http://snomed.info/id/699594007> (<http://snomed.info/id/699594007>)
+
+SubClassOf(<http://snomed.info/id/699594007> <http://snomed.info/id/699593001>)
+
+# Class: <http://snomed.info/id/70104002> (<http://snomed.info/id/70104002>)
+
+SubClassOf(<http://snomed.info/id/70104002> <http://snomed.info/id/128262006>)
+
+# Class: <http://snomed.info/id/714323000> (<http://snomed.info/id/714323000>)
+
+SubClassOf(<http://snomed.info/id/714323000> <http://snomed.info/id/113343008>)
+SubClassOf(<http://snomed.info/id/714323000> <http://snomed.info/id/118969007>)
+
+# Class: <http://snomed.info/id/714488006> (<http://snomed.info/id/714488006>)
+
+SubClassOf(<http://snomed.info/id/714488006> <http://snomed.info/id/91689009>)
+
+# Class: <http://snomed.info/id/719982003> (<http://snomed.info/id/719982003>)
+
+SubClassOf(<http://snomed.info/id/719982003> <http://snomed.info/id/362981000>)
+
+# Class: <http://snomed.info/id/72410000> (<http://snomed.info/id/72410000>)
+
+SubClassOf(<http://snomed.info/id/72410000> <http://snomed.info/id/310787001>)
+SubClassOf(<http://snomed.info/id/72410000> <http://snomed.info/id/699593001>)
+
+# Class: <http://snomed.info/id/816094009> (<http://snomed.info/id/816094009>)
+
+SubClassOf(<http://snomed.info/id/816094009> <http://snomed.info/id/420473002>)
+
+# Class: <http://snomed.info/id/82094008> (<http://snomed.info/id/82094008>)
+
+SubClassOf(<http://snomed.info/id/82094008> <http://snomed.info/id/321667001>)
+SubClassOf(<http://snomed.info/id/82094008> <http://snomed.info/id/400141005>)
+
+# Class: <http://snomed.info/id/86049000> (<http://snomed.info/id/86049000>)
+
+SubClassOf(<http://snomed.info/id/86049000> <http://snomed.info/id/367651003>)
+
+# Class: <http://snomed.info/id/900000000000441003> (<http://snomed.info/id/900000000000441003>)
+
+SubClassOf(<http://snomed.info/id/900000000000441003> <http://snomed.info/id/138875005>)
+
+# Class: <http://snomed.info/id/900000000000442005> (<http://snomed.info/id/900000000000442005>)
+
+SubClassOf(<http://snomed.info/id/900000000000442005> <http://snomed.info/id/900000000000441003>)
+
+# Class: <http://snomed.info/id/900000000000443000> (<http://snomed.info/id/900000000000443000>)
+
+SubClassOf(<http://snomed.info/id/900000000000443000> <http://snomed.info/id/900000000000442005>)
+
+# Class: <http://snomed.info/id/900000000000445007> (<http://snomed.info/id/900000000000445007>)
+
+SubClassOf(<http://snomed.info/id/900000000000445007> <http://snomed.info/id/900000000000443000>)
+
+# Class: <http://snomed.info/id/900000000000454005> (<http://snomed.info/id/900000000000454005>)
+
+SubClassOf(<http://snomed.info/id/900000000000454005> <http://snomed.info/id/900000000000441003>)
+
+# Class: <http://snomed.info/id/900000000000457003> (<http://snomed.info/id/900000000000457003>)
+
+SubClassOf(<http://snomed.info/id/900000000000457003> <http://snomed.info/id/900000000000454005>)
+
+# Class: <http://snomed.info/id/91689009> (<http://snomed.info/id/91689009>)
+
+SubClassOf(<http://snomed.info/id/91689009> <http://snomed.info/id/91723000>)
+
+# Class: <http://snomed.info/id/91690000> (<http://snomed.info/id/91690000>)
+
+SubClassOf(<http://snomed.info/id/91690000> <http://snomed.info/id/714488006>)
+
+# Class: <http://snomed.info/id/91722005> (<http://snomed.info/id/91722005>)
+
+SubClassOf(<http://snomed.info/id/91722005> <http://snomed.info/id/91723000>)
+
+# Class: <http://snomed.info/id/91723000> (<http://snomed.info/id/91723000>)
+
+SubClassOf(<http://snomed.info/id/91723000> <http://snomed.info/id/442083009>)
+
+# Class: <http://snomed.info/id/91806002> (<http://snomed.info/id/91806002>)
+
+SubClassOf(<http://snomed.info/id/91806002> <http://snomed.info/id/2969000>)
+
+# Class: <http://snomed.info/id/91807006> (<http://snomed.info/id/91807006>)
+
+SubClassOf(<http://snomed.info/id/91807006> <http://snomed.info/id/91806002>)
+
+# Class: <http://snomed.info/id/91829005> (<http://snomed.info/id/91829005>)
+
+SubClassOf(<http://snomed.info/id/91829005> <http://snomed.info/id/22943007>)
+SubClassOf(<http://snomed.info/id/91829005> <http://snomed.info/id/699590003>)
+
+# Class: <http://snomed.info/id/94111002> (<http://snomed.info/id/94111002>)
+
+SubClassOf(<http://snomed.info/id/94111002> <http://snomed.info/id/126637008>)
+SubClassOf(<http://snomed.info/id/94111002> <http://snomed.info/id/372087000>)
+
+# Class: <http://snomed.info/id/94147001> (<http://snomed.info/id/94147001>)
+
+SubClassOf(<http://snomed.info/id/94147001> <http://snomed.info/id/301296002>)
+SubClassOf(<http://snomed.info/id/94147001> <http://snomed.info/id/440299000>)
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: <http://ontologies-r.us/bdp/suspectedlungcancer/restructuredhospital#Shelly> (<http://ontologies-r.us/bdp/suspectedlungcancer/restructuredhospital#Shelly>)
+
+ObjectPropertyAssertion(<http://ontologies-r.us/bdp/suspectedlungcancer/restructuredhospital#hasDiagnosis> <http://ontologies-r.us/bdp/suspectedlungcancer/restructuredhospital#Shelly> <http://ontologies-r.us/bdp/suspectedlungcancer/restructuredhospital/w>)
+
+# Individual: <http://ontologies-r.us/bdp/suspectedlungcancer/restructuredhospital/w> (<http://ontologies-r.us/bdp/suspectedlungcancer/restructuredhospital/w>)
+
+ClassAssertion(<http://snomed.info/id/138875005> <http://ontologies-r.us/bdp/suspectedlungcancer/restructuredhospital/w>)
+ClassAssertion(<http://snomed.info/id/162572001> <http://ontologies-r.us/bdp/suspectedlungcancer/restructuredhospital/w>)
+ClassAssertion(<http://snomed.info/id/162573006> <http://ontologies-r.us/bdp/suspectedlungcancer/restructuredhospital/w>)
+ClassAssertion(<http://snomed.info/id/243796009> <http://ontologies-r.us/bdp/suspectedlungcancer/restructuredhospital/w>)
+ClassAssertion(<http://snomed.info/id/394966004> <http://ontologies-r.us/bdp/suspectedlungcancer/restructuredhospital/w>)
+ClassAssertion(<http://snomed.info/id/413350009> <http://ontologies-r.us/bdp/suspectedlungcancer/restructuredhospital/w>)
+ClassAssertion(<http://snomed.info/id/41769001> <http://ontologies-r.us/bdp/suspectedlungcancer/restructuredhospital/w>)
+ClassAssertion(<http://snomed.info/id/443859009> <http://ontologies-r.us/bdp/suspectedlungcancer/restructuredhospital/w>)
+ClassAssertion(<http://snomed.info/id/444433005> <http://ontologies-r.us/bdp/suspectedlungcancer/restructuredhospital/w>)
+
+
+)

@@ -1,0 +1,47 @@
+Prefix(:=<http://ontologies-r.us/bdp/suspectedlungcancer/restructuredhospital/>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(rsh:=<http://ontologies-r.us/bdp/suspectedlungcancer/restructuredhospital#>)
+Prefix(sct:=<http://snomed.info/id/>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://ontologies-r.us/bdp/suspectedlungcancer/restructuredhospital>
+Import(<http://ontologies-r.us/bdp/snomed/suspectedlungcancer>)
+
+Declaration(ObjectProperty(rsh:hasDiagnosis))
+Declaration(NamedIndividual(rsh:Shelly))
+Declaration(NamedIndividual(:w))
+
+############################
+#   Named Individuals
+############################
+
+# Individual: rsh:Shelly (rsh:Shelly)
+
+ObjectPropertyAssertion(rsh:hasDiagnosis rsh:Shelly :w)
+ClassAssertion(<http://snomed.info/id/162573006> :w)
+
+# EquivalentClasses(<http://snomed.info/id/162573006>
+#    ObjectIntersectionOf(<http://snomed.info/id/162572001>
+#                         <http://snomed.info/id/394966004>
+#                         ObjectSomeValuesFrom(<http://snomed.info/id/609096000>
+#                         ObjectIntersectionOf(
+#                               ObjectSomeValuesFrom(<http://snomed.info/id/246090004> <http://snomed.info/id/363358000>)
+#                               ObjectSomeValuesFrom(<http://snomed.info/id/408729009> <http://snomed.info/id/415684004>)
+#                               ObjectSomeValuesFrom(<http://snomed.info/id/408731000> <http://snomed.info/id/410512000>)
+#                               ObjectSomeValuesFrom(<http://snomed.info/id/408732007> <http://snomed.info/id/410604004>)))))
+Declaration(Annotation(rdfs:label "A role group") NamedIndividual(:g1))
+ClassAssertion(<http://snomed.info/id/609096000> :g1)
+ClassAssertion(<http://snomed.info/id/363358000> :e1)
+ObjectPropertyAssertion(<http://snomed.info/id/246090004> :g1 :e1)
+ClassAssertion(<http://snomed.info/id/415684004> :e2)
+ObjectPropertyAssertion(<http://snomed.info/id/408729009> :g1 :e2)
+ClassAssertion(<http://snomed.info/id/410512000> :e3)
+ObjectPropertyAssertion(<http://snomed.info/id/408731000> :g1 :e3)
+ClassAssertion(<http://snomed.info/id/410604004> :e4)
+ObjectPropertyAssertion(<http://snomed.info/id/408732007> :g1 :e4)
+
+)

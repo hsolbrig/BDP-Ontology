@@ -187,16 +187,6 @@ Declaration(Class(<http://snomed.info/id/94111002>))
 Declaration(Class(<http://snomed.info/id/94147001>))
 Declaration(ObjectProperty(<http://snomed.info/id/1003703000>))
 Declaration(ObjectProperty(<http://snomed.info/id/1003735000>))
-Declaration(ObjectProperty(<http://snomed.info/id/1142135004>))
-Declaration(ObjectProperty(<http://snomed.info/id/1142136003>))
-Declaration(ObjectProperty(<http://snomed.info/id/1142137007>))
-Declaration(ObjectProperty(<http://snomed.info/id/1142138002>))
-Declaration(ObjectProperty(<http://snomed.info/id/1142139005>))
-Declaration(ObjectProperty(<http://snomed.info/id/1142140007>))
-Declaration(ObjectProperty(<http://snomed.info/id/1142141006>))
-Declaration(ObjectProperty(<http://snomed.info/id/1142142004>))
-Declaration(ObjectProperty(<http://snomed.info/id/1142143009>))
-Declaration(ObjectProperty(<http://snomed.info/id/1148793005>))
 Declaration(ObjectProperty(<http://snomed.info/id/1148965004>))
 Declaration(ObjectProperty(<http://snomed.info/id/1148967007>))
 Declaration(ObjectProperty(<http://snomed.info/id/1148968002>))
@@ -257,7 +247,6 @@ Declaration(ObjectProperty(<http://snomed.info/id/408729009>))
 Declaration(ObjectProperty(<http://snomed.info/id/408730004>))
 Declaration(ObjectProperty(<http://snomed.info/id/408731000>))
 Declaration(ObjectProperty(<http://snomed.info/id/408732007>))
-Declaration(ObjectProperty(<http://snomed.info/id/410662002>))
 Declaration(ObjectProperty(<http://snomed.info/id/410675002>))
 Declaration(ObjectProperty(<http://snomed.info/id/411116001>))
 Declaration(ObjectProperty(<http://snomed.info/id/418775008>))
@@ -307,7 +296,6 @@ Declaration(ObjectProperty(<http://snomed.info/id/736476002>))
 Declaration(ObjectProperty(<http://snomed.info/id/736518005>))
 Declaration(ObjectProperty(<http://snomed.info/id/738774007>))
 Declaration(ObjectProperty(<http://snomed.info/id/762705008>))
-Declaration(ObjectProperty(<http://snomed.info/id/762706009>))
 Declaration(ObjectProperty(<http://snomed.info/id/762949000>))
 Declaration(ObjectProperty(<http://snomed.info/id/762951001>))
 Declaration(ObjectProperty(<http://snomed.info/id/763032000>))
@@ -322,6 +310,17 @@ Declaration(ObjectProperty(<http://snomed.info/id/836358009>))
 Declaration(ObjectProperty(<http://snomed.info/id/840560000>))
 Declaration(ObjectProperty(<http://snomed.info/id/860779006>))
 Declaration(ObjectProperty(<http://snomed.info/id/860781008>))
+Declaration(DataProperty(<http://snomed.info/id/1142135004>))
+Declaration(DataProperty(<http://snomed.info/id/1142136003>))
+Declaration(DataProperty(<http://snomed.info/id/1142137007>))
+Declaration(DataProperty(<http://snomed.info/id/1142138002>))
+Declaration(DataProperty(<http://snomed.info/id/1142139005>))
+Declaration(DataProperty(<http://snomed.info/id/1142140007>))
+Declaration(DataProperty(<http://snomed.info/id/1142141006>))
+Declaration(DataProperty(<http://snomed.info/id/1142142004>))
+Declaration(DataProperty(<http://snomed.info/id/1142143009>))
+Declaration(DataProperty(<http://snomed.info/id/1148793005>))
+Declaration(DataProperty(<http://snomed.info/id/762706009>))
 Declaration(AnnotationProperty(<http://www.w3.org/2004/02/skos/core#prefLabel>))
 
 ############################
@@ -341,56 +340,6 @@ AnnotationAssertion(rdfs:label <http://snomed.info/id/1003735000> "Process acts 
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/1003735000> "Process acts on"@en-gb)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/1003735000> "Process acts on"@en-us)
 SubObjectPropertyOf(<http://snomed.info/id/1003735000> <http://snomed.info/id/762705008>)
-
-# Object Property: <http://snomed.info/id/1142135004> (Has presentation strength numerator value (attribute))
-
-AnnotationAssertion(rdfs:label <http://snomed.info/id/1142135004> "Has presentation strength numerator value (attribute)"@en)
-SubObjectPropertyOf(<http://snomed.info/id/1142135004> <http://snomed.info/id/762706009>)
-
-# Object Property: <http://snomed.info/id/1142136003> (Has presentation strength denominator value (attribute))
-
-AnnotationAssertion(rdfs:label <http://snomed.info/id/1142136003> "Has presentation strength denominator value (attribute)"@en)
-SubObjectPropertyOf(<http://snomed.info/id/1142136003> <http://snomed.info/id/762706009>)
-
-# Object Property: <http://snomed.info/id/1142137007> (Has concentration strength denominator value (attribute))
-
-AnnotationAssertion(rdfs:label <http://snomed.info/id/1142137007> "Has concentration strength denominator value (attribute)"@en)
-SubObjectPropertyOf(<http://snomed.info/id/1142137007> <http://snomed.info/id/762706009>)
-
-# Object Property: <http://snomed.info/id/1142138002> (Has concentration strength numerator value (attribute))
-
-AnnotationAssertion(rdfs:label <http://snomed.info/id/1142138002> "Has concentration strength numerator value (attribute)"@en)
-SubObjectPropertyOf(<http://snomed.info/id/1142138002> <http://snomed.info/id/762706009>)
-
-# Object Property: <http://snomed.info/id/1142139005> (Count of base of active ingredient (attribute))
-
-AnnotationAssertion(rdfs:label <http://snomed.info/id/1142139005> "Count of base of active ingredient (attribute)"@en)
-SubObjectPropertyOf(<http://snomed.info/id/1142139005> <http://snomed.info/id/762706009>)
-
-# Object Property: <http://snomed.info/id/1142140007> (Count of active ingredient (attribute))
-
-AnnotationAssertion(rdfs:label <http://snomed.info/id/1142140007> "Count of active ingredient (attribute)"@en)
-SubObjectPropertyOf(<http://snomed.info/id/1142140007> <http://snomed.info/id/762706009>)
-
-# Object Property: <http://snomed.info/id/1142141006> (Count of base and modification pair (attribute))
-
-AnnotationAssertion(rdfs:label <http://snomed.info/id/1142141006> "Count of base and modification pair (attribute)"@en)
-SubObjectPropertyOf(<http://snomed.info/id/1142141006> <http://snomed.info/id/762706009>)
-
-# Object Property: <http://snomed.info/id/1142142004> (Has pack size (attribute))
-
-AnnotationAssertion(rdfs:label <http://snomed.info/id/1142142004> "Has pack size (attribute)"@en)
-SubObjectPropertyOf(<http://snomed.info/id/1142142004> <http://snomed.info/id/762706009>)
-
-# Object Property: <http://snomed.info/id/1142143009> (Count of clinical drug type (attribute))
-
-AnnotationAssertion(rdfs:label <http://snomed.info/id/1142143009> "Count of clinical drug type (attribute)"@en)
-SubObjectPropertyOf(<http://snomed.info/id/1142143009> <http://snomed.info/id/762706009>)
-
-# Object Property: <http://snomed.info/id/1148793005> (Unit of presentation size quantity (attribute))
-
-AnnotationAssertion(rdfs:label <http://snomed.info/id/1148793005> "Unit of presentation size quantity (attribute)"@en)
-SubObjectPropertyOf(<http://snomed.info/id/1148793005> <http://snomed.info/id/762706009>)
 
 # Object Property: <http://snomed.info/id/1148965004> (Is sterile (attribute))
 
@@ -1101,14 +1050,6 @@ SubObjectPropertyOf(<http://snomed.info/id/738774007> <http://snomed.info/id/762
 # Object Property: <http://snomed.info/id/762705008> (Concept model object attribute (attribute))
 
 AnnotationAssertion(rdfs:label <http://snomed.info/id/762705008> "Concept model object attribute (attribute)"@en)
-SubObjectPropertyOf(<http://snomed.info/id/762705008> <http://snomed.info/id/410662002>)
-
-# Object Property: <http://snomed.info/id/762706009> (Concept model data attribute (attribute))
-
-AnnotationAssertion(rdfs:label <http://snomed.info/id/762706009> "Concept model data attribute (attribute)"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/762706009> "Concept model data attribute"@en-gb)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/762706009> "Concept model data attribute"@en-us)
-SubObjectPropertyOf(<http://snomed.info/id/762706009> <http://snomed.info/id/410662002>)
 
 # Object Property: <http://snomed.info/id/762949000> (Has precise active ingredient (attribute))
 
@@ -1185,6 +1126,67 @@ SubObjectPropertyOf(<http://snomed.info/id/860779006> <http://snomed.info/id/762
 
 AnnotationAssertion(rdfs:label <http://snomed.info/id/860781008> "Has product characteristic (attribute)"@en)
 SubObjectPropertyOf(<http://snomed.info/id/860781008> <http://snomed.info/id/762705008>)
+
+
+############################
+#   Data Properties
+############################
+
+# Data Property: <http://snomed.info/id/1142135004> (Has presentation strength numerator value (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/1142135004> "Has presentation strength numerator value (attribute)"@en)
+SubDataPropertyOf(<http://snomed.info/id/1142135004> <http://snomed.info/id/762706009>)
+
+# Data Property: <http://snomed.info/id/1142136003> (Has presentation strength denominator value (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/1142136003> "Has presentation strength denominator value (attribute)"@en)
+SubDataPropertyOf(<http://snomed.info/id/1142136003> <http://snomed.info/id/762706009>)
+
+# Data Property: <http://snomed.info/id/1142137007> (Has concentration strength denominator value (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/1142137007> "Has concentration strength denominator value (attribute)"@en)
+SubDataPropertyOf(<http://snomed.info/id/1142137007> <http://snomed.info/id/762706009>)
+
+# Data Property: <http://snomed.info/id/1142138002> (Has concentration strength numerator value (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/1142138002> "Has concentration strength numerator value (attribute)"@en)
+SubDataPropertyOf(<http://snomed.info/id/1142138002> <http://snomed.info/id/762706009>)
+
+# Data Property: <http://snomed.info/id/1142139005> (Count of base of active ingredient (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/1142139005> "Count of base of active ingredient (attribute)"@en)
+SubDataPropertyOf(<http://snomed.info/id/1142139005> <http://snomed.info/id/762706009>)
+
+# Data Property: <http://snomed.info/id/1142140007> (Count of active ingredient (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/1142140007> "Count of active ingredient (attribute)"@en)
+SubDataPropertyOf(<http://snomed.info/id/1142140007> <http://snomed.info/id/762706009>)
+
+# Data Property: <http://snomed.info/id/1142141006> (Count of base and modification pair (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/1142141006> "Count of base and modification pair (attribute)"@en)
+SubDataPropertyOf(<http://snomed.info/id/1142141006> <http://snomed.info/id/762706009>)
+
+# Data Property: <http://snomed.info/id/1142142004> (Has pack size (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/1142142004> "Has pack size (attribute)"@en)
+SubDataPropertyOf(<http://snomed.info/id/1142142004> <http://snomed.info/id/762706009>)
+
+# Data Property: <http://snomed.info/id/1142143009> (Count of clinical drug type (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/1142143009> "Count of clinical drug type (attribute)"@en)
+SubDataPropertyOf(<http://snomed.info/id/1142143009> <http://snomed.info/id/762706009>)
+
+# Data Property: <http://snomed.info/id/1148793005> (Unit of presentation size quantity (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/1148793005> "Unit of presentation size quantity (attribute)"@en)
+SubDataPropertyOf(<http://snomed.info/id/1148793005> <http://snomed.info/id/762706009>)
+
+# Data Property: <http://snomed.info/id/762706009> (Concept model data attribute (attribute))
+
+AnnotationAssertion(rdfs:label <http://snomed.info/id/762706009> "Concept model data attribute (attribute)"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/762706009> "Concept model data attribute"@en-gb)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://snomed.info/id/762706009> "Concept model data attribute"@en-us)
 
 
 

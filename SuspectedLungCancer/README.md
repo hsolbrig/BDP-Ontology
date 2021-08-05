@@ -2,6 +2,13 @@
 This directory contains the various resources needed to demonstrate the "ISOSemantic" model of Suspected Lung Cancer, which
 was the textbook example for Stan Huff's CIMI initiative.
 
+## Notes on SNOMED CT and OWL
+To convert the complete SNOMED CT into OWL:
+1) Download https://github.com/IHTSDO/snomed-owl-toolkit/releases/download/3.0.3/snomed-owl-toolkit-3.0.3-executable.jar
+2) Using the instructions on https://github.com/IHTSDO/snomed-owl-toolkit:
+   1) java -jar snomed-owl-toolkit-3.0.3-executable.jar -rf2-to-owl -rf2-snapshot-archives SnomedCT_InternationalRF2_PRODUCTION_20210731T120000Z.zip
+
+This produces a file in the form `ontology-2021-08-04_12-14-31.owl`
 ## Contents
 ```
   + --- README.md:     this file
@@ -26,14 +33,14 @@ was the textbook example for Stan Huff's CIMI initiative.
 ## Process
 ### Generating the SNOMED CT subset
 1) Download and unzip the [latest SNOMED CT International Version](https://www.nlm.nih.gov/healthit/snomedct/index.html)
-2) Install the [SNOMEDCTToOWL package](https://github.com/hsolbrig/SNOMEDCtToOWL)
+2) Install the [SNOMEDToOWL package](https://github.com/hsolbrig/SNOMEDCTToOWL)
     ```bash
     > mkdir sctto_venv
     > cd sctto_venv
     > touch Pipfile
-    > pipenv install SNOMEDCTToOWL
+    > pipenv install SNOMEDToOWL
     > pipenv shell
-    (SNOMEDCTToOWL) >
+    (SNOMEDCTToOWL) 
     ```
 3) Extract the transitive neighborhood of [162573006 |Suspected lung cancer (situation)|](http://snomed.info/id/162573006)
    ```bash
@@ -80,7 +87,7 @@ was the textbook example for Stan Huff's CIMI initiative.
        Labels: 301
        Prefnames: 180
        Propchains: 1
-       Properties: 136
+       Properties: 134
        Rolegreoups: 0
        Subclassof: 139
        Synonyms: 0

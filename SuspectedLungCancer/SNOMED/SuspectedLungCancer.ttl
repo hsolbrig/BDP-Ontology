@@ -28,43 +28,43 @@ sct:106234000 a owl:Class ;
     rdfs:label "General adjectival modifier (qualifier value)"@en ;
     rdfs:subClassOf sct:106232001 .
 
-sct:1142135004 a owl:ObjectProperty ;
+sct:1142135004 a owl:DatatypeProperty ;
     rdfs:label "Has presentation strength numerator value (attribute)"@en ;
     rdfs:subPropertyOf sct:762706009 .
 
-sct:1142136003 a owl:ObjectProperty ;
+sct:1142136003 a owl:DatatypeProperty ;
     rdfs:label "Has presentation strength denominator value (attribute)"@en ;
     rdfs:subPropertyOf sct:762706009 .
 
-sct:1142137007 a owl:ObjectProperty ;
+sct:1142137007 a owl:DatatypeProperty ;
     rdfs:label "Has concentration strength denominator value (attribute)"@en ;
     rdfs:subPropertyOf sct:762706009 .
 
-sct:1142138002 a owl:ObjectProperty ;
+sct:1142138002 a owl:DatatypeProperty ;
     rdfs:label "Has concentration strength numerator value (attribute)"@en ;
     rdfs:subPropertyOf sct:762706009 .
 
-sct:1142139005 a owl:ObjectProperty ;
+sct:1142139005 a owl:DatatypeProperty ;
     rdfs:label "Count of base of active ingredient (attribute)"@en ;
     rdfs:subPropertyOf sct:762706009 .
 
-sct:1142140007 a owl:ObjectProperty ;
+sct:1142140007 a owl:DatatypeProperty ;
     rdfs:label "Count of active ingredient (attribute)"@en ;
     rdfs:subPropertyOf sct:762706009 .
 
-sct:1142141006 a owl:ObjectProperty ;
+sct:1142141006 a owl:DatatypeProperty ;
     rdfs:label "Count of base and modification pair (attribute)"@en ;
     rdfs:subPropertyOf sct:762706009 .
 
-sct:1142142004 a owl:ObjectProperty ;
+sct:1142142004 a owl:DatatypeProperty ;
     rdfs:label "Has pack size (attribute)"@en ;
     rdfs:subPropertyOf sct:762706009 .
 
-sct:1142143009 a owl:ObjectProperty ;
+sct:1142143009 a owl:DatatypeProperty ;
     rdfs:label "Count of clinical drug type (attribute)"@en ;
     rdfs:subPropertyOf sct:762706009 .
 
-sct:1148793005 a owl:ObjectProperty ;
+sct:1148793005 a owl:DatatypeProperty ;
     rdfs:label "Unit of presentation size quantity (attribute)"@en ;
     rdfs:subPropertyOf sct:762706009 .
 
@@ -148,14 +148,14 @@ sct:162573006 a owl:Class ;
                         owl:onProperty sct:609096000 ;
                         owl:someValuesFrom [ a owl:Class ;
                                 owl:intersectionOf ( [ a owl:Restriction ;
-                                            owl:onProperty sct:408731000 ;
-                                            owl:someValuesFrom sct:410512000 ] [ a owl:Restriction ;
-                                            owl:onProperty sct:246090004 ;
-                                            owl:someValuesFrom sct:363358000 ] [ a owl:Restriction ;
                                             owl:onProperty sct:408729009 ;
                                             owl:someValuesFrom sct:415684004 ] [ a owl:Restriction ;
                                             owl:onProperty sct:408732007 ;
-                                            owl:someValuesFrom sct:410604004 ] ) ] ] ) ] ;
+                                            owl:someValuesFrom sct:410604004 ] [ a owl:Restriction ;
+                                            owl:onProperty sct:408731000 ;
+                                            owl:someValuesFrom sct:410512000 ] [ a owl:Restriction ;
+                                            owl:onProperty sct:246090004 ;
+                                            owl:someValuesFrom sct:363358000 ] ) ] ] ) ] ;
     skos:prefLabel "Suspected lung cancer"@en-GB,
         "Suspected lung cancer"@en-US .
 
@@ -178,10 +178,10 @@ sct:233814000 a owl:Class ;
                         owl:onProperty sct:609096000 ;
                         owl:someValuesFrom [ a owl:Class ;
                                 owl:intersectionOf ( [ a owl:Restriction ;
-                                            owl:onProperty sct:363698007 ;
-                                            owl:someValuesFrom sct:82094008 ] [ a owl:Restriction ;
                                             owl:onProperty sct:116676008 ;
-                                            owl:someValuesFrom sct:108369006 ] ) ] ] ) ] .
+                                            owl:someValuesFrom sct:108369006 ] [ a owl:Restriction ;
+                                            owl:onProperty sct:363698007 ;
+                                            owl:someValuesFrom sct:82094008 ] ) ] ] ) ] .
 
 sct:246075003 a owl:ObjectProperty ;
     rdfs:label "Causative agent (attribute)"@en ;
@@ -520,10 +520,10 @@ sct:428100006 a owl:Class ;
                         owl:onProperty sct:609096000 ;
                         owl:someValuesFrom [ a owl:Class ;
                                 owl:intersectionOf ( [ a owl:Restriction ;
-                                            owl:onProperty sct:116676008 ;
-                                            owl:someValuesFrom sct:367651003 ] [ a owl:Restriction ;
                                             owl:onProperty sct:363698007 ;
-                                            owl:someValuesFrom sct:43799004 ] ) ] ] ) ] .
+                                            owl:someValuesFrom sct:43799004 ] [ a owl:Restriction ;
+                                            owl:onProperty sct:116676008 ;
+                                            owl:someValuesFrom sct:367651003 ] ) ] ] ) ] .
 
 sct:704319004 a owl:ObjectProperty ;
     rdfs:label "Inheres in (attribute)"@en ;
@@ -816,10 +816,10 @@ sct:126667002 a owl:Class ;
                         owl:onProperty sct:609096000 ;
                         owl:someValuesFrom [ a owl:Class ;
                                 owl:intersectionOf ( [ a owl:Restriction ;
-                                            owl:onProperty sct:116676008 ;
-                                            owl:someValuesFrom sct:108369006 ] [ a owl:Restriction ;
                                             owl:onProperty sct:363698007 ;
-                                            owl:someValuesFrom sct:321667001 ] ) ] ] ) ] .
+                                            owl:someValuesFrom sct:321667001 ] [ a owl:Restriction ;
+                                            owl:onProperty sct:116676008 ;
+                                            owl:someValuesFrom sct:108369006 ] ) ] ] ) ] .
 
 sct:126713003 a owl:Class ;
     rdfs:label "Neoplasm of lung (disorder)"@en ;
@@ -828,10 +828,10 @@ sct:126713003 a owl:Class ;
                         owl:onProperty sct:609096000 ;
                         owl:someValuesFrom [ a owl:Class ;
                                 owl:intersectionOf ( [ a owl:Restriction ;
-                                            owl:onProperty sct:363698007 ;
-                                            owl:someValuesFrom sct:39607008 ] [ a owl:Restriction ;
                                             owl:onProperty sct:116676008 ;
-                                            owl:someValuesFrom sct:108369006 ] ) ] ] ) ] .
+                                            owl:someValuesFrom sct:108369006 ] [ a owl:Restriction ;
+                                            owl:onProperty sct:363698007 ;
+                                            owl:someValuesFrom sct:39607008 ] ) ] ] ) ] .
 
 sct:126725000 a owl:Class ;
     rdfs:label "Neoplasm of mediastinum (disorder)"@en ;
@@ -840,10 +840,10 @@ sct:126725000 a owl:Class ;
                         owl:onProperty sct:609096000 ;
                         owl:someValuesFrom [ a owl:Class ;
                                 owl:intersectionOf ( [ a owl:Restriction ;
-                                            owl:onProperty sct:116676008 ;
-                                            owl:someValuesFrom sct:108369006 ] [ a owl:Restriction ;
                                             owl:onProperty sct:363698007 ;
-                                            owl:someValuesFrom sct:72410000 ] ) ] ] ) ] .
+                                            owl:someValuesFrom sct:72410000 ] [ a owl:Restriction ;
+                                            owl:onProperty sct:116676008 ;
+                                            owl:someValuesFrom sct:108369006 ] ) ] ] ) ] .
 
 sct:127947003 a owl:Class ;
     rdfs:label "Structure of body surface region (body structure)"@en ;
@@ -856,14 +856,14 @@ sct:162572001 a owl:Class ;
                         owl:onProperty sct:609096000 ;
                         owl:someValuesFrom [ a owl:Class ;
                                 owl:intersectionOf ( [ a owl:Restriction ;
-                                            owl:onProperty sct:408732007 ;
-                                            owl:someValuesFrom sct:410604004 ] [ a owl:Restriction ;
-                                            owl:onProperty sct:408729009 ;
-                                            owl:someValuesFrom sct:415684004 ] [ a owl:Restriction ;
                                             owl:onProperty sct:408731000 ;
                                             owl:someValuesFrom sct:410512000 ] [ a owl:Restriction ;
                                             owl:onProperty sct:246090004 ;
-                                            owl:someValuesFrom sct:363346000 ] ) ] ] ) ] .
+                                            owl:someValuesFrom sct:363346000 ] [ a owl:Restriction ;
+                                            owl:onProperty sct:408732007 ;
+                                            owl:someValuesFrom sct:410604004 ] [ a owl:Restriction ;
+                                            owl:onProperty sct:408729009 ;
+                                            owl:someValuesFrom sct:415684004 ] ) ] ] ) ] .
 
 sct:19829001 a owl:Class ;
     rdfs:label "Disorder of lung (disorder)"@en ;
@@ -917,10 +917,10 @@ sct:300862005 a owl:Class ;
                         owl:onProperty sct:609096000 ;
                         owl:someValuesFrom [ a owl:Class ;
                                 owl:intersectionOf ( [ a owl:Restriction ;
-                                            owl:onProperty sct:116676008 ;
-                                            owl:someValuesFrom sct:4147007 ] [ a owl:Restriction ;
                                             owl:onProperty sct:363698007 ;
-                                            owl:someValuesFrom sct:52530000 ] ) ] ] ) ] .
+                                            owl:someValuesFrom sct:52530000 ] [ a owl:Restriction ;
+                                            owl:onProperty sct:116676008 ;
+                                            owl:someValuesFrom sct:4147007 ] ) ] ] ) ] .
 
 sct:301232003 a owl:Class ;
     rdfs:label "Lesion of lung (finding)"@en ;
@@ -929,10 +929,10 @@ sct:301232003 a owl:Class ;
                         owl:onProperty sct:609096000 ;
                         owl:someValuesFrom [ a owl:Class ;
                                 owl:intersectionOf ( [ a owl:Restriction ;
-                                            owl:onProperty sct:363698007 ;
-                                            owl:someValuesFrom sct:39607008 ] [ a owl:Restriction ;
                                             owl:onProperty sct:116676008 ;
-                                            owl:someValuesFrom sct:52988006 ] ) ] ] ) ] .
+                                            owl:someValuesFrom sct:52988006 ] [ a owl:Restriction ;
+                                            owl:onProperty sct:363698007 ;
+                                            owl:someValuesFrom sct:39607008 ] ) ] ] ) ] .
 
 sct:30217000 a owl:Class ;
     rdfs:label "Proliferation (morphologic abnormality)"@en ;
@@ -961,10 +961,10 @@ sct:363358000 a owl:Class ;
                         owl:onProperty sct:609096000 ;
                         owl:someValuesFrom [ a owl:Class ;
                                 owl:intersectionOf ( [ a owl:Restriction ;
-                                            owl:onProperty sct:363698007 ;
-                                            owl:someValuesFrom sct:39607008 ] [ a owl:Restriction ;
                                             owl:onProperty sct:116676008 ;
-                                            owl:someValuesFrom sct:367651003 ] ) ] ] ) ] .
+                                            owl:someValuesFrom sct:367651003 ] [ a owl:Restriction ;
+                                            owl:onProperty sct:363698007 ;
+                                            owl:someValuesFrom sct:39607008 ] ) ] ] ) ] .
 
 sct:363536003 a owl:Class ;
     rdfs:label "Pulmonary structure including vessels and lymphoid tissue (body structure)"@en ;
@@ -992,14 +992,14 @@ sct:394966004 a owl:Class ;
                         owl:onProperty sct:609096000 ;
                         owl:someValuesFrom [ a owl:Class ;
                                 owl:intersectionOf ( [ a owl:Restriction ;
-                                            owl:onProperty sct:246090004 ;
-                                            owl:someValuesFrom sct:50043002 ] [ a owl:Restriction ;
-                                            owl:onProperty sct:408729009 ;
-                                            owl:someValuesFrom sct:415684004 ] [ a owl:Restriction ;
                                             owl:onProperty sct:408731000 ;
                                             owl:someValuesFrom sct:410512000 ] [ a owl:Restriction ;
                                             owl:onProperty sct:408732007 ;
-                                            owl:someValuesFrom sct:410604004 ] ) ] ] ) ] .
+                                            owl:someValuesFrom sct:410604004 ] [ a owl:Restriction ;
+                                            owl:onProperty sct:246090004 ;
+                                            owl:someValuesFrom sct:50043002 ] [ a owl:Restriction ;
+                                            owl:onProperty sct:408729009 ;
+                                            owl:someValuesFrom sct:415684004 ] ) ] ] ) ] .
 
 sct:399902003 a owl:Class ;
     rdfs:label "Disorder of body cavity (disorder)"@en ;
@@ -1067,10 +1067,10 @@ sct:430621000 a owl:Class ;
                         owl:onProperty sct:609096000 ;
                         owl:someValuesFrom [ a owl:Class ;
                                 owl:intersectionOf ( [ a owl:Restriction ;
-                                            owl:onProperty sct:363698007 ;
-                                            owl:someValuesFrom sct:82094008 ] [ a owl:Restriction ;
                                             owl:onProperty sct:116676008 ;
-                                            owl:someValuesFrom sct:367651003 ] ) ] ] ) ] .
+                                            owl:someValuesFrom sct:367651003 ] [ a owl:Restriction ;
+                                            owl:onProperty sct:363698007 ;
+                                            owl:someValuesFrom sct:82094008 ] ) ] ] ) ] .
 
 sct:43799004 a owl:Class ;
     rdfs:label "Thoracic cavity structure (body structure)"@en ;
@@ -1085,12 +1085,12 @@ sct:443859009 a owl:Class ;
                         owl:onProperty sct:609096000 ;
                         owl:someValuesFrom [ a owl:Class ;
                                 owl:intersectionOf ( [ a owl:Restriction ;
-                                            owl:onProperty sct:408732007 ;
-                                            owl:someValuesFrom sct:410604004 ] [ a owl:Restriction ;
                                             owl:onProperty sct:408729009 ;
                                             owl:someValuesFrom sct:410590009 ] [ a owl:Restriction ;
                                             owl:onProperty sct:408731000 ;
-                                            owl:someValuesFrom sct:410512000 ] ) ] ] ) ] .
+                                            owl:someValuesFrom sct:410512000 ] [ a owl:Restriction ;
+                                            owl:onProperty sct:408732007 ;
+                                            owl:someValuesFrom sct:410604004 ] ) ] ] ) ] .
 
 sct:444433005 a owl:Class ;
     rdfs:label "Suspected clinical finding (situation)"@en ;
@@ -1099,12 +1099,12 @@ sct:444433005 a owl:Class ;
                         owl:onProperty sct:609096000 ;
                         owl:someValuesFrom [ a owl:Class ;
                                 owl:intersectionOf ( [ a owl:Restriction ;
-                                            owl:onProperty sct:408729009 ;
-                                            owl:someValuesFrom sct:415684004 ] [ a owl:Restriction ;
                                             owl:onProperty sct:408731000 ;
                                             owl:someValuesFrom sct:410512000 ] [ a owl:Restriction ;
                                             owl:onProperty sct:408732007 ;
-                                            owl:someValuesFrom sct:410604004 ] ) ] ] ) ] .
+                                            owl:someValuesFrom sct:410604004 ] [ a owl:Restriction ;
+                                            owl:onProperty sct:408729009 ;
+                                            owl:someValuesFrom sct:415684004 ] ) ] ] ) ] .
 
 sct:449096009 a owl:Class ;
     rdfs:label "Malignant neoplasm of respiratory system (disorder)"@en ;
@@ -1113,10 +1113,10 @@ sct:449096009 a owl:Class ;
                         owl:onProperty sct:609096000 ;
                         owl:someValuesFrom [ a owl:Class ;
                                 owl:intersectionOf ( [ a owl:Restriction ;
-                                            owl:onProperty sct:116676008 ;
-                                            owl:someValuesFrom sct:367651003 ] [ a owl:Restriction ;
                                             owl:onProperty sct:363698007 ;
-                                            owl:someValuesFrom sct:20139000 ] ) ] ] ) ] .
+                                            owl:someValuesFrom sct:20139000 ] [ a owl:Restriction ;
+                                            owl:onProperty sct:116676008 ;
+                                            owl:someValuesFrom sct:367651003 ] ) ] ] ) ] .
 
 sct:48176007 a owl:Class ;
     rdfs:label "Social context (social concept)"@en ;
@@ -1225,10 +1225,10 @@ sct:94147001 a owl:Class ;
                         owl:onProperty sct:609096000 ;
                         owl:someValuesFrom [ a owl:Class ;
                                 owl:intersectionOf ( [ a owl:Restriction ;
-                                            owl:onProperty sct:116676008 ;
-                                            owl:someValuesFrom sct:4147007 ] [ a owl:Restriction ;
                                             owl:onProperty sct:363698007 ;
-                                            owl:someValuesFrom sct:72410000 ] ) ] ] ) ] .
+                                            owl:someValuesFrom sct:72410000 ] [ a owl:Restriction ;
+                                            owl:onProperty sct:116676008 ;
+                                            owl:someValuesFrom sct:4147007 ] ) ] ] ) ] .
 
 sct:113343008 a owl:Class ;
     rdfs:label "Body organ structure (body structure)"@en ;
@@ -1245,10 +1245,10 @@ sct:126637008 a owl:Class ;
                         owl:onProperty sct:609096000 ;
                         owl:someValuesFrom [ a owl:Class ;
                                 owl:intersectionOf ( [ a owl:Restriction ;
-                                            owl:onProperty sct:116676008 ;
-                                            owl:someValuesFrom sct:108369006 ] [ a owl:Restriction ;
                                             owl:onProperty sct:363698007 ;
-                                            owl:someValuesFrom sct:22943007 ] ) ] ] ) ] .
+                                            owl:someValuesFrom sct:22943007 ] [ a owl:Restriction ;
+                                            owl:onProperty sct:116676008 ;
+                                            owl:someValuesFrom sct:108369006 ] ) ] ] ) ] .
 
 sct:127489000 a owl:ObjectProperty ;
     rdfs:label "Has active ingredient (attribute)"@en ;
@@ -1281,10 +1281,10 @@ sct:188361007 a owl:Class ;
                         owl:onProperty sct:609096000 ;
                         owl:someValuesFrom [ a owl:Class ;
                                 owl:intersectionOf ( [ a owl:Restriction ;
-                                            owl:onProperty sct:363698007 ;
-                                            owl:someValuesFrom sct:51185008 ] [ a owl:Restriction ;
                                             owl:onProperty sct:116676008 ;
-                                            owl:someValuesFrom sct:367651003 ] ) ] ] ) ] .
+                                            owl:someValuesFrom sct:367651003 ] [ a owl:Restriction ;
+                                            owl:onProperty sct:363698007 ;
+                                            owl:someValuesFrom sct:51185008 ] ) ] ] ) ] .
 
 sct:27832009 a owl:Class ;
     rdfs:label "Structure of thoracic viscus (body structure)"@en ;
@@ -1314,10 +1314,10 @@ sct:300851005 a owl:Class ;
                         owl:onProperty sct:609096000 ;
                         owl:someValuesFrom [ a owl:Class ;
                                 owl:intersectionOf ( [ a owl:Restriction ;
-                                            owl:onProperty sct:363698007 ;
-                                            owl:someValuesFrom sct:20139000 ] [ a owl:Restriction ;
                                             owl:onProperty sct:116676008 ;
-                                            owl:someValuesFrom sct:4147007 ] ) ] ] ) ] .
+                                            owl:someValuesFrom sct:4147007 ] [ a owl:Restriction ;
+                                            owl:onProperty sct:363698007 ;
+                                            owl:someValuesFrom sct:20139000 ] ) ] ] ) ] .
 
 sct:301226008 a owl:Class ;
     rdfs:label "Lower respiratory tract finding (finding)"@en ;
@@ -1347,10 +1347,10 @@ sct:309524007 a owl:Class ;
                         owl:onProperty sct:609096000 ;
                         owl:someValuesFrom [ a owl:Class ;
                                 owl:intersectionOf ( [ a owl:Restriction ;
-                                            owl:onProperty sct:116676008 ;
-                                            owl:someValuesFrom sct:4147007 ] [ a owl:Restriction ;
                                             owl:onProperty sct:363698007 ;
-                                            owl:someValuesFrom sct:22943007 ] ) ] ] ) ] .
+                                            owl:someValuesFrom sct:22943007 ] [ a owl:Restriction ;
+                                            owl:onProperty sct:116676008 ;
+                                            owl:someValuesFrom sct:4147007 ] ) ] ] ) ] .
 
 sct:310787001 a owl:Class ;
     rdfs:label "Structure of lung and/or mediastinum (body structure)"@en ;
@@ -1433,14 +1433,14 @@ sct:41769001 a owl:Class ;
                         owl:onProperty sct:609096000 ;
                         owl:someValuesFrom [ a owl:Class ;
                                 owl:intersectionOf ( [ a owl:Restriction ;
-                                            owl:onProperty sct:408729009 ;
-                                            owl:someValuesFrom sct:415684004 ] [ a owl:Restriction ;
+                                            owl:onProperty sct:408731000 ;
+                                            owl:someValuesFrom sct:410512000 ] [ a owl:Restriction ;
                                             owl:onProperty sct:408732007 ;
                                             owl:someValuesFrom sct:410604004 ] [ a owl:Restriction ;
+                                            owl:onProperty sct:408729009 ;
+                                            owl:someValuesFrom sct:415684004 ] [ a owl:Restriction ;
                                             owl:onProperty sct:246090004 ;
-                                            owl:someValuesFrom sct:64572001 ] [ a owl:Restriction ;
-                                            owl:onProperty sct:408731000 ;
-                                            owl:someValuesFrom sct:410512000 ] ) ] ] ) ] .
+                                            owl:someValuesFrom sct:64572001 ] ) ] ] ) ] .
 
 sct:420473002 a owl:Class ;
     rdfs:label "Structure of subregion of trunk (body structure)"@en ;
@@ -1506,10 +1506,10 @@ sct:254618003 a owl:Class ;
                         owl:onProperty sct:609096000 ;
                         owl:someValuesFrom [ a owl:Class ;
                                 owl:intersectionOf ( [ a owl:Restriction ;
-                                            owl:onProperty sct:116676008 ;
-                                            owl:someValuesFrom sct:108369006 ] [ a owl:Restriction ;
                                             owl:onProperty sct:363698007 ;
-                                            owl:someValuesFrom sct:82094008 ] ) ] ] ) ] .
+                                            owl:someValuesFrom sct:82094008 ] [ a owl:Restriction ;
+                                            owl:onProperty sct:116676008 ;
+                                            owl:someValuesFrom sct:108369006 ] ) ] ] ) ] .
 
 sct:255058005 a owl:Class ;
     rdfs:label "Neoplasm of thorax (disorder)"@en ;
@@ -1518,10 +1518,10 @@ sct:255058005 a owl:Class ;
                         owl:onProperty sct:609096000 ;
                         owl:someValuesFrom [ a owl:Class ;
                                 owl:intersectionOf ( [ a owl:Restriction ;
-                                            owl:onProperty sct:363698007 ;
-                                            owl:someValuesFrom sct:51185008 ] [ a owl:Restriction ;
                                             owl:onProperty sct:116676008 ;
-                                            owl:someValuesFrom sct:108369006 ] ) ] ] ) ] .
+                                            owl:someValuesFrom sct:108369006 ] [ a owl:Restriction ;
+                                            owl:onProperty sct:363698007 ;
+                                            owl:someValuesFrom sct:51185008 ] ) ] ] ) ] .
 
 sct:272099008 a owl:Class ;
     rdfs:label "Descriptor (qualifier value)"@en ;
@@ -1728,9 +1728,8 @@ sct:22943007 a owl:Class ;
     rdfs:label "Trunk structure (body structure)"@en ;
     rdfs:subClassOf sct:38866009 .
 
-sct:762706009 a owl:ObjectProperty ;
+sct:762706009 a owl:DatatypeProperty ;
     rdfs:label "Concept model data attribute (attribute)"@en ;
-    rdfs:subPropertyOf sct:410662002 ;
     skos:prefLabel "Concept model data attribute"@en-GB,
         "Concept model data attribute"@en-US .
 
@@ -1757,8 +1756,7 @@ sct:363698007 a owl:ObjectProperty ;
         "Finding site"@en-US .
 
 sct:762705008 a owl:ObjectProperty ;
-    rdfs:label "Concept model object attribute (attribute)"@en ;
-    rdfs:subPropertyOf sct:410662002 .
+    rdfs:label "Concept model object attribute (attribute)"@en .
 
 [] rdfs:subPropertyOf sct:363701004 ;
     owl:propertyChain ( sct:363701004 sct:127489000 ) .
