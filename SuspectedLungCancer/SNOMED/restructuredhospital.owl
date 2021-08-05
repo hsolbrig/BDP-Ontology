@@ -6,14 +6,17 @@ Prefix(sct:=<http://snomed.info/id/>)
 Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
 Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
 Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+Prefix(skos:=<http://www.w3.org/2004/02/skos/core#>)
+Prefix(p:=<http://ontologies-r.us/proxy#>)
 
 
 Ontology(<http://ontologies-r.us/bdp/suspectedlungcancer/restructuredhospital>
 Import(<http://ontologies-r.us/bdp/snomed/suspectedlungcancer>)
 
 Declaration(ObjectProperty(rsh:hasDiagnosis))
+Declaration(ObjectProperty(rsh:includes))
 Declaration(NamedIndividual(rsh:Shelly))
-Declaration(NamedIndividual(:w))
+Declaration(NamedIndividual(p:162573006))
 
 ############################
 #   Named Individuals
@@ -21,27 +24,80 @@ Declaration(NamedIndividual(:w))
 
 # Individual: rsh:Shelly (rsh:Shelly)
 
-ObjectPropertyAssertion(rsh:hasDiagnosis rsh:Shelly :w)
-ClassAssertion(<http://snomed.info/id/162573006> :w)
+# Starting with an example:
+#   {
+#       "id": "Shelly",
+#       "dx" "162573006"
+#   }
+# Produce the following:
+#    rsh:Shelly rsh:hasDiagnosis p:162573006 .
+#    p:162573006 a sct:162573006 .
+#                rdfs:label "Instance of suspected lung cancer" .
 
+# For every coded category entry ("dx" in this case)
+#    1) Create a named individual that represents an instance of that property
+Declaration(NamedIndividual(rsh:Shelly))
+#    2) Declare its type as the class represented by the code
+ClassAssertion(<http://snomed.info/id/162573006> p:162573006)
+AnnotationAssertion(rdfs:label p:162573006 "Instance of suspected lung cancer (situation)"@en)
+#    3) Connect the individual to the source
+ObjectPropertyAssertion(rsh:hasDiagnosis rsh:Shelly p:162573006)
+
+# Recursively iterate over each existential assertion associated with the base class.
+#
 # EquivalentClasses(<http://snomed.info/id/162573006>
 #    ObjectIntersectionOf(<http://snomed.info/id/162572001>
 #                         <http://snomed.info/id/394966004>
+#    In the case below, We need to resolve the outer ObjectSomeValuesFrom:
 #                         ObjectSomeValuesFrom(<http://snomed.info/id/609096000>
-#                         ObjectIntersectionOf(
+#                           ObjectIntersectionOf(
 #                               ObjectSomeValuesFrom(<http://snomed.info/id/246090004> <http://snomed.info/id/363358000>)
 #                               ObjectSomeValuesFrom(<http://snomed.info/id/408729009> <http://snomed.info/id/415684004>)
 #                               ObjectSomeValuesFrom(<http://snomed.info/id/408731000> <http://snomed.info/id/410512000>)
 #                               ObjectSomeValuesFrom(<http://snomed.info/id/408732007> <http://snomed.info/id/410604004>)))))
-Declaration(Annotation(rdfs:label "A role group") NamedIndividual(:g1))
-ClassAssertion(<http://snomed.info/id/609096000> :g1)
-ClassAssertion(<http://snomed.info/id/363358000> :e1)
-ObjectPropertyAssertion(<http://snomed.info/id/246090004> :g1 :e1)
-ClassAssertion(<http://snomed.info/id/415684004> :e2)
-ObjectPropertyAssertion(<http://snomed.info/id/408729009> :g1 :e2)
-ClassAssertion(<http://snomed.info/id/410512000> :e3)
-ObjectPropertyAssertion(<http://snomed.info/id/408731000> :g1 :e3)
-ClassAssertion(<http://snomed.info/id/410604004> :e4)
-ObjectPropertyAssertion(<http://snomed.info/id/408732007> :g1 :e4)
+#
+# For each SomeValuesFrom CLASS entry (<http://snomed.info/id/609096000> in this case), create an individual
+Declaration(NamedIndividual(p:609096000_1))
+AnnotationAssertion(rdfs:label p:609096000_1 "Instance of role group (attribute)"@en)
+ObjectPropertyAssertion(rsh:includes p:162573006 p:609096000_1)
+ClassAssertion(<http://snomed.info/id/609096000> p:609096000_1)
+
+# Decend into the nested definition -- in this case, we deal with the for existential assertions:
+Declaration(NamedIndividual(p:363358000_1))
+AnnotationAssertion(rdfs:label p:363358000_1 "Instance of malignant tumor of lung (disorder)"@en)
+ClassAssertion(<http://snomed.info/id/363358000> p:363358000_1)
+ObjectPropertyAssertion(<http://snomed.info/id/246090004> p:609096000_1 p:363358000_1)
+
+Declaration(NamedIndividual(p:4415684004_1))
+AnnotationAssertion(rdfs:label p:4415684004_1 "Instance of Suspected (qualifier value)"@en)
+ClassAssertion(<http://snomed.info/id/415684004> p:415684004_1)
+ObjectPropertyAssertion(<http://snomed.info/id/408729009> p:609096000_1 p:415684004_1)
+ClassAssertion(<http://snomed.info/id/410512000> p:410512000_1)
+ObjectPropertyAssertion(<http://snomed.info/id/408731000> p:609096000_1 p:410512000_1)
+ClassAssertion(<http://snomed.info/id/410604004> p:410604004_1)
+ObjectPropertyAssertion(<http://snomed.info/id/408732007> p:609096000_1 p:410604004_1)
+
+# EquivalentClasses(<http://snomed.info/id/162572001>
+#   ObjectIntersectionOf(<http://snomed.info/id/41769001>
+#                        ObjectSomeValuesFrom(<http://snomed.info/id/609096000>
+#                        ObjectIntersectionOf(
+#                           ObjectSomeValuesFrom(<http://snomed.info/id/246090004> <http://snomed.info/id/363346000>)
+#                           ObjectSomeValuesFrom(<http://snomed.info/id/408729009> <http://snomed.info/id/415684004>)
+#                           ObjectSomeValuesFrom(<http://snomed.info/id/408731000> <http://snomed.info/id/410512000>)
+#                           ObjectSomeValuesFrom(<http://snomed.info/id/408732007> <http://snomed.info/id/410604004>)))))
+Declaration(Annotation(rdfs:label "A role group") NamedIndividual(p:609096000_2))
+ObjectPropertyAssertion(rsh:includes p:162573006 p:609096000_2)
+ClassAssertion(<http://snomed.info/id/609096000> p:609096000_2)
+ClassAssertion(<http://snomed.info/id/363346000> p:363346000_1)
+Declaration(NamedIndividual(p:363346000_1))
+ObjectPropertyAssertion(<http://snomed.info/id/246090004> p:609096000_2 p:363346000_1)
+AnnotationAssertion(rdfs:label p:363346000_1 "Instance of malignant neoplastic disease (disorder)"@en)
+ClassAssertion(<http://snomed.info/id/363346000> p:415684004_1)
+ObjectPropertyAssertion(<http://snomed.info/id/408729009> p:609096000_2 p:415684004_1)
+ClassAssertion(<http://snomed.info/id/415684004> p:410512000_1)
+ObjectPropertyAssertion(<http://snomed.info/id/410512000> p:609096000_2 p:410512000_1)
+ClassAssertion(<http://snomed.info/id/363346000> p:410604004_1)
+ObjectPropertyAssertion(<http://snomed.info/id/410604004> p:609096000_2 p:410604004_1)
+
 
 )
