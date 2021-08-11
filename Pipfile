@@ -4,9 +4,9 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-linkml = {path = "/Users/solbrig/git/linkml/linkml" }
+linkml = ">=1.0.3"
+funowl = ">=0.1.9"
 
 [dev-packages]
 
 [requires]
-python_version = "3.9"

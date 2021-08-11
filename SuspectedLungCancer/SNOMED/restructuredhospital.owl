@@ -69,7 +69,7 @@ ClassAssertion(<http://snomed.info/id/363358000> p:363358000_1)
 ObjectPropertyAssertion(<http://snomed.info/id/246090004> p:609096000_1 p:363358000_1)
 
 Declaration(NamedIndividual(p:4415684004_1))
-AnnotationAssertion(rdfs:label p:4415684004_1 "Instance of Suspected (qualifier value)"@en)
+AnnotationAssertion(rdfs:label p:4415684004_1 "Instance of suspected (qualifier value)"@en)
 ClassAssertion(<http://snomed.info/id/415684004> p:415684004_1)
 ObjectPropertyAssertion(<http://snomed.info/id/408729009> p:609096000_1 p:415684004_1)
 ClassAssertion(<http://snomed.info/id/410512000> p:410512000_1)
